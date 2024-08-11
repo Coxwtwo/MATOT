@@ -1,0 +1,3 @@
+[console_scripts]
+MaaDebugger = MaaDebugger.main:main
+

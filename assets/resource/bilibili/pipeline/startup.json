@@ -1,0 +1,89 @@
+{
+    "StartUp": {
+        "next": [
+            "Sub_StartTOT",
+            "mihoyoSlogan",
+            "StartLoading",
+            "Click_SignIn",
+            "Click_EnterGame",
+            "Sub_StartUp"
+        ]
+    },
+    "Sub_StartUp": {
+        "is_sub": true,
+        "next": [
+            "StartUp",
+            "Stop"
+        ]
+    },
+    "Sub_StartTOT": {
+        "is_sub": true,
+        "action": "StartApp",
+        "package": "com.miHoYo.wd.bilibili/com.miHoYo.wd.MainActivity",
+        "next": [
+            "mihoyoSlogan",
+            "StartLoading",
+            "Click_SignIn",
+            "Click_EnterGame"
+        ]
+    },
+    "mihoyoSlogan": {
+        "recognition": "OCR",
+        "expected": "TECH OTAKUS SAVE THE WORLD",
+        "roi": [
+            166,
+            436,
+            384,
+            33
+        ],
+        "next": [
+            "StartLoading",
+            "Click_SignIn",
+            "Click_EnterGame"
+        ]
+    },
+    "StartLoading": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/StartLoading.png",
+        "roi": [
+            129,
+            158,
+            442,
+            970
+        ],
+        "next": [
+            "StartLoading",
+            "Click_SignIn",
+            "Click_EnterGame"
+        ]
+    },
+    "Click_SignIn": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/SignIn.png",
+        "action": "Click",
+        "roi": [
+            197,
+            1036,
+            326,
+            76
+        ],
+        "next": [
+            "Click_EnterGame"
+        ]
+    },
+    "Click_EnterGame": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/EnterGame.png",
+        "action": "Click",
+        "roi": [
+            277,
+            975,
+            164,
+            36
+        ],
+        "next": [
+            "Stop"
+        ]
+    },
+    "Stop": {}
+}

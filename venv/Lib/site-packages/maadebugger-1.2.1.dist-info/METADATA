@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: MaaDebugger
+Version: 1.2.1
+Summary: MaaDebugger
+Author: MaaXYZ
+Project-URL: Homepage, https://github.com/MaaXYZ/MaaDebugger
+Requires-Python: >=3.11
+Requires-Dist: MaaFw>=1.7.3
+Requires-Dist: nicegui
+Description-Content-Type: text/markdown
+
+# MaaDebugger
+
+## Requirement
+
+Python >= 3.11
+
+## Installation
+
+```bash
+python -m pip install MaaDebugger
+```
+
+## Update
+
+```bash
+python -m pip install MaaDebugger MaaFW --upgrade
+```
+
+## Usage
+
+```bash
+python -m MaaDebugger
+```
+
+## Development of MaaDebugger itself
+
+```bash
+cd src
+python -m MaaDebugger
+```
+
+or
+
+Using VSCode, press F5 in the project directory.

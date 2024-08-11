@@ -1,0 +1,26 @@
+{
+    "controller": {
+        "name": "ADB 默认方式",
+        "type": "Adb"
+    },
+    "adb": {
+        "adb_path": "X:/Program Files/Netease/MuMuPlayer-12.0/shell/adb.exe",
+        "address": "127.0.0.1:16384",
+        "config": {
+            "extras": {
+                "mumu": {
+                    "enable": true,
+                    "index": 0,
+                    "path": "X:/Program Files/Netease/MuMuPlayer-12.0"
+                }
+            }
+        }
+    },
+    "resource": "B 服",
+    "task": [
+        {
+            "name": "启动游戏",
+            "option": []
+        }
+    ]
+}

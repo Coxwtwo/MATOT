@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pscript
+Version: 0.7.7
+Summary: Python to JavaScript compiler.
+Home-page: http://pscript.readthedocs.io
+Author: Almar Klein and contributors
+Author-email: almar.klein@gmail.com
+License: (new) BSD
+Download-URL: https://pypi.python.org/pypi/pscript
+Keywords: Python,JavaScript,compiler,transpiler
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides: pscript
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+

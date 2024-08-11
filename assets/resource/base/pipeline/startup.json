@@ -1,0 +1,12 @@
+{
+    "StartUp": {
+        "next": [
+            "Sub_StartTOT"
+        ]
+    },
+    "Sub_StartTOT": {
+        "is_sub": true,
+        "action": "StartApp",
+        "package": "com.miHoYo.wd/com.miHoYo.wd.MainActivity"
+    }
+}
