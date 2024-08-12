@@ -203,25 +203,16 @@
         ]
     },
     "X键": {
-        "recognition": "ColorMatch",
-        "lower": [
-            208,
-            208,
-            208
-        ],
-        "upper": [
-            244,
-            244,
-            244
-        ],
-        "count": 160,
+        "recognition": "TemplateMatch",
+        "template": "Button/XKey.png",
+        "green_mask": true,
         "action": "Click",
-        "post_delay": 800,
+        "pre_delay": 1000,
         "roi": [
             341,
-            1127,
+            1100,
             37,
-            37
+            65
         ]
     },
     "Click_一键解析": {
