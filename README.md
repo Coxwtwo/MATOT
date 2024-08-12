@@ -24,5 +24,9 @@
 
 本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！
 
+<<<<<<< HEAD
 感谢MaaFW开发者的贡献
+=======
+感谢MaaFW开发者对本项目作出的贡献
+>>>>>>> 6743317bab1a1d869061da8869b0154a2aeafb0c
 
