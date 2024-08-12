@@ -1,0 +1,207 @@
+{
+    "进行会展顾问": {
+        "next": [
+            "会展顾问05",
+            "会展顾问",
+            "进修",
+            "Sub_事件簿"
+        ]
+    },
+    "进行业务考核": {
+        "next": [
+            "业务考核05",
+            "业务考核",
+            "进修",
+            "Sub_事件簿"
+        ]
+    },
+    "刷思绪残影": {
+        "next": [
+            "复盘",
+            "点击残影获取关卡",
+            "点击对应残影",
+            "点击思绪残影",
+            "打开思绪"
+        ]
+    },
+    "Sub_事件簿": {
+        "is_sub": true,
+        "recognition": "OCR",
+        "expected": "Story",
+        "action": "Click",
+        "pre_delay": 500,
+        "roi": [
+            598,
+            987,
+            63,
+            29
+        ],
+        "next": [
+            "进修"
+        ]
+    },
+    "进修": {
+        "recognition": "OCR",
+        "expected": "进修",
+        "action": "Click",
+        "pre_delay": 1000,
+        "roi": [
+            319,
+            1191,
+            93,
+            54
+        ]
+    },
+    "会展顾问": {
+        "recognition": "OCR",
+        "expected": "会展顾问",
+        "action": "Click",
+        "roi": [
+            92,
+            402,
+            186,
+            49
+        ],
+        "next": [
+            "会展顾问05"
+        ]
+    },
+    "会展顾问05": {
+        "recognition": "OCR",
+        "expected": "会展顾问05",
+        "action": "Click",
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "target": [
+            416,
+            970,
+            30,
+            30
+        ],
+        "roi": [
+            416,
+            846,
+            130,
+            130
+        ],
+        "next": [
+            "复盘"
+        ]
+    },
+    "业务考核": {
+        "recognition": "OCR",
+        "expected": "业务考核",
+        "action": "Click",
+        "roi": [
+            92,
+            696,
+            186,
+            49
+        ],
+        "next": [
+            "业务考核05"
+        ]
+    },
+    "业务考核05": {
+        "recognition": "OCR",
+        "expected": "业务考核05",
+        "action": "Click",
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "target": [
+            416,
+            970,
+            30,
+            30
+        ],
+        "roi": [
+            416,
+            846,
+            130,
+            130
+        ],
+        "next": [
+            "复盘"
+        ]
+    },
+    "打开思绪": {
+        "recognition": "OCR",
+        "expected": "思绪",
+        "action": "Click",
+        "post_delay": 800,
+        "roi": [
+            181,
+            1232,
+            70,
+            34
+        ],
+        "next": [
+            "复盘",
+            "点击残影获取关卡",
+            "点击对应残影",
+            "点击思绪残影"
+        ]
+    },
+    "点击思绪残影": {
+        "recognition": "OCR",
+        "expected": "思绪残影",
+        "action": "Click",
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            445,
+            123,
+            110,
+            36
+        ],
+        "next": [
+            "复盘",
+            "点击残影获取关卡",
+            "点击对应残影"
+        ]
+    },
+    "点击对应残影": {
+        "recognition": "OCR",
+        "expected": [
+            "彼时少年",
+            "残影"
+        ],
+        "action": "Click",
+        "pre_delay": 800,
+        "post_delay": 800,
+        "target": [
+            75,
+            350,
+            30,
+            30
+        ],
+        "roi": [
+            71,
+            447,
+            151,
+            30
+        ],
+        "next": [
+            "复盘",
+            "点击残影获取关卡"
+        ]
+    },
+    "点击残影获取关卡": {
+        "recognition": "OCR",
+        "expected": [
+            "3/3"
+        ],
+        "action": "Click",
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            528,
+            719,
+            46,
+            37
+        ],
+        "next": [
+            "复盘"
+        ]
+    }
+}

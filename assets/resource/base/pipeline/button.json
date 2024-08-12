@@ -1,0 +1,206 @@
+{
+    "Click_返回": {
+        "recognition": "TemplateMatch",
+        "template": "Button/Back.PNG",
+        "action": "Click",
+        "roi": [
+            51,
+            31,
+            33,
+            39
+        ],
+        "next": [
+            "主界面标志",
+            "Click_返回"
+        ]
+    },
+    "GotoHome": {
+        "recognition": "TemplateMatch",
+        "template": "Button/Home.PNG",
+        "action": "Click",
+        "roi": [
+            168,
+            30,
+            44,
+            38
+        ]
+    },
+    "Sub_关闭奖励弹窗": {
+        "is_sub": true,
+        "recognition": "OCR",
+        "expected": "获得奖励",
+        "action": "Click",
+        "pre_delay": 1000,
+        "target": [
+            300,
+            900,
+            30,
+            30
+        ],
+        "roi": [
+            300,
+            228,
+            120,
+            220
+        ]
+    },
+    "结束": {
+        "recognition": "OCR",
+        "expected": "结束",
+        "action": "Click",
+        "pre_wait_freezes": {
+            "time": 500,
+            "target": [
+                43,
+                243,
+                600,
+                724
+            ]
+        },
+        "pre_delay": 800,
+        "roi": [
+            304,
+            1074,
+            109,
+            43
+        ],
+        "next": [
+            "GotoHome"
+        ]
+    },
+    "前往": {
+        "recognition": "OCR",
+        "expected": "前往",
+        "action": "Click",
+        "pre_delay": 800,
+        "roi": [
+            526,
+            862,
+            71,
+            42
+        ],
+        "next": [
+            "Stop"
+        ]
+    },
+    "复盘": {
+        "recognition": "OCR",
+        "expected": "复盘",
+        "action": "Click",
+        "pre_delay": 800,
+        "roi": [
+            194,
+            860,
+            70,
+            47
+        ],
+        "next": [
+            "确定"
+        ]
+    },
+    "确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "action": "Click",
+        "pre_delay": 500,
+        "roi": [
+            550,
+            744,
+            93,
+            47
+        ],
+        "next": [
+            "结束"
+        ]
+    },
+    "Sub_下载确定": {
+        "is_sub": true,
+        "recognition": "OCR",
+        "expected": "确定",
+        "action": "Click",
+        "pre_delay": 500,
+        "roi": [
+            550,
+            700,
+            93,
+            47
+        ]
+    },
+    "取消": {
+        "recognition": "OCR",
+        "expected": "取消",
+        "action": "Click",
+        "pre_delay": 500,
+        "roi": [
+            389,
+            744,
+            93,
+            47
+        ],
+        "next": [
+            "Stop"
+        ]
+    },
+    "Click_一键领取": {
+        "times_limit": 1,
+        "recognition": "OCR",
+        "expected": [
+            "一键领取",
+            "键领取"
+        ],
+        "action": "Click",
+        "pre_delay": 500,
+        "post_delay": 1000,
+        "roi": [
+            500,
+            1160,
+            180,
+            80
+        ],
+        "next": [
+            "Sub_关闭奖励弹窗",
+            "Click_一键领取"
+        ],
+        "runout_next": [
+            "Click_返回"
+        ]
+    },
+    "Click_一键领取_返回主界面": {
+        "recognition": "OCR",
+        "expected": [
+            "一键领取",
+            "键领取"
+        ],
+        "action": "Click",
+        "pre_delay": 500,
+        "post_delay": 1000,
+        "roi": [
+            500,
+            1160,
+            180,
+            80
+        ],
+        "next": [
+            "Sub_关闭奖励弹窗",
+            "GotoHome"
+        ]
+    },
+    "Click_一键解析": {
+        "recognition": "OCR",
+        "expected": [
+            "一键解析",
+            "键解析"
+        ],
+        "action": "Click",
+        "pre_delay": 500,
+        "roi": [
+            502,
+            1157,
+            162,
+            49
+        ],
+        "next": [
+            "GotoHome"
+        ]
+    }
+}

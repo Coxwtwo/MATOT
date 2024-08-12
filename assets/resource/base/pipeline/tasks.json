@@ -1,0 +1,13 @@
+{
+    "主界面标志": {
+        "recognition": "TemplateMatch",
+        "template": "Awards/活动.PNG",
+        "post_delay": 1000,
+        "roi": [
+            28,
+            454,
+            42,
+            41
+        ]
+    }
+}

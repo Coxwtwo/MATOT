@@ -1,0 +1,110 @@
+{
+    "专属甜心": {
+        "recognition": "ColorMatch",
+        "action": "Click",
+        "post_delay": 1800,
+        "lower": [
+            [
+                223,
+                199,
+                179
+            ]
+        ],
+        "upper": [
+            247,
+            222,
+            206
+        ],
+        "count": 60,
+        "roi": [
+            0,
+            832,
+            9,
+            12
+        ],
+        "next": [
+            "制作步骤",
+            "开始制作",
+            "选择图纸",
+            "打开甜心制作"
+        ]
+    },
+    "打开甜心制作": {
+        "recognition": "TemplateMatch",
+        "template": "Button/甜心制作.png",
+        "action": "Click",
+        "roi": [
+            427,
+            1164,
+            65,
+            51
+        ],
+        "next": [
+            "制作步骤",
+            "开始制作",
+            "选择图纸"
+        ]
+    },
+    "选择图纸": {
+        "recognition": "ColorMatch",
+        "action": "Click",
+        "lower": [
+            118,
+            117,
+            124
+        ],
+        "upper": [
+            141,
+            141,
+            147
+        ],
+        "count": 50,
+        "roi": [
+            124,
+            953,
+            16,
+            16
+        ],
+        "next": [
+            "制作步骤",
+            "开始制作"
+        ]
+    },
+    "开始制作": {
+        "recognition": "OCR",
+        "expected": "开始制作",
+        "action": "Click",
+        "roi": [
+            562,
+            724,
+            118,
+            45
+        ],
+        "next": [
+            "制作步骤"
+        ]
+    },
+    "制作步骤": {
+        "times_limit": 2,
+        "recognition": "OCR",
+        "expected": [
+            "制版",
+            "缝边",
+            "调版"
+        ],
+        "action": "Click",
+        "post_delay": 5000,
+        "roi": [
+            287,
+            970,
+            147,
+            62
+        ],
+        "next": [
+            "制作步骤"
+        ],
+        "runout_next": [
+            "GotoHome"
+        ]
+    }
+}

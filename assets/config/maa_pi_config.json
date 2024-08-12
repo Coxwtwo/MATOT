@@ -16,8 +16,16 @@
             }
         }
     },
-    "resource": "B 服",
+    "resource": "官服",
     "task": [
+        {
+            "name": "启动游戏",
+            "option": []
+        },
+        {
+            "name": "启动游戏",
+            "option": []
+        },
         {
             "name": "启动游戏",
             "option": []
