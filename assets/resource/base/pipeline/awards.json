@@ -145,6 +145,7 @@
         ],
         "count": 600,
         "action": "Click",
+        "pre_delay": 800,
         "roi": [
             608,
             237,
