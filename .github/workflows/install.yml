@@ -66,7 +66,7 @@ jobs:
         uses: robinraju/release-downloader@v1.8
         with:
           repository: MaaXYZ/MaaFramework
-          fileName: "MATOT-win-${{ matrix.arch }}*"
+          fileName: "MAA-win-${{ matrix.arch }}*"
           latest: true
           out-file-path: "deps"
           extract: true
@@ -98,7 +98,7 @@ jobs:
         uses: robinraju/release-downloader@v1.8
         with:
           repository: MaaXYZ/MaaFramework
-          fileName: "MATOT-linux-${{ matrix.arch }}*"
+          fileName: "MAA-linux-${{ matrix.arch }}*"
           latest: true
           out-file-path: "deps"
           extract: true
@@ -130,7 +130,7 @@ jobs:
         uses: robinraju/release-downloader@v1.8
         with:
           repository: MaaXYZ/MaaFramework
-          fileName: "MATOT-macos-${{ matrix.arch }}*"
+          fileName: "MAA-macos-${{ matrix.arch }}*"
           latest: true
           out-file-path: "deps"
           extract: true
