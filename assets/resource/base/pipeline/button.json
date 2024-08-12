@@ -206,6 +206,7 @@
         "recognition": "TemplateMatch",
         "template": "Button/XKey.png",
         "green_mask": true,
+        "threshold": 0.5,
         "action": "Click",
         "pre_delay": 1000,
         "roi": [
