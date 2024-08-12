@@ -1,6 +1,8 @@
 {
     "StartUp": {
         "next": [
+            "Sub_关闭奖励弹窗",
+            "Click_返回",
             "检查主界面",
             "Sub_StartTOT",
             "TipsLoading",
@@ -9,19 +11,24 @@
             "StartLoading",
             "StartLoading430",
             "Download",
+            "B服同意协议",
             "mihoyoSlogan"
         ]
     },
     "Sub_StartUp": {
         "is_sub": true,
         "next": [
+            "Sub_关闭奖励弹窗",
+            "Click_返回",
             "检查主界面",
             "Sub_StartTOT",
             "TipsLoading",
             "Click_EnterGame",
             "Click_SignIn",
+            "Click_B服SignIn",
             "StartLoading",
             "Download",
+            "B服同意协议",
             "mihoyoSlogan",
             "Stop"
         ]
@@ -33,12 +40,16 @@
         "post_delay": 8000,
         "package": "com.miHoYo.wd/com.miHoYo.wd.MainActivity",
         "next": [
+            "Sub_关闭奖励弹窗",
+            "Click_返回",
             "检查主界面",
             "TipsLoading",
             "Click_EnterGame",
             "Click_SignIn",
+            "Click_B服SignIn",
             "StartLoading",
             "Download",
+            "B服同意协议",
             "mihoyoSlogan"
         ]
     },
@@ -54,13 +65,40 @@
             33
         ],
         "next": [
+            "Sub_关闭奖励弹窗",
+            "Click_返回",
             "检查主界面",
             "TipsLoading",
             "Click_EnterGame",
             "Click_SignIn",
+            "Click_B服SignIn",
             "StartLoading",
             "Download",
+            "B服同意协议",
             "mihoyoSlogan"
+        ]
+    },
+    "B服同意协议": {
+        "recognition": "OCR",
+        "expected": "同意",
+        "action": "Click",
+        "post_delay": 800,
+        "roi": [
+            400,
+            877,
+            64,
+            33
+        ],
+        "next": [
+            "Sub_关闭奖励弹窗",
+            "Click_返回",
+            "检查主界面",
+            "TipsLoading",
+            "Click_EnterGame",
+            "Click_SignIn",
+            "Click_B服SignIn",
+            "StartLoading",
+            "Download"
         ]
     },
     "Download": {
@@ -74,11 +112,15 @@
             47
         ],
         "next": [
+            "Sub_关闭奖励弹窗",
+            "Click_返回",
             "Sub_下载确定",
             "TipsLoading",
             "Click_EnterGame",
             "Click_SignIn",
-            "StartLoading"
+            "Click_B服SignIn",
+            "StartLoading",
+            "B服同意协议"
         ]
     },
     "StartLoading430": {
@@ -93,10 +135,13 @@
             163
         ],
         "next": [
+            "Sub_关闭奖励弹窗",
+            "Click_返回",
             "检查主界面",
             "TipsLoading",
             "Click_EnterGame",
             "Click_SignIn",
+            "Click_B服SignIn",
             "StartLoading"
         ]
     },
@@ -111,11 +156,14 @@
             970
         ],
         "next": [
+            "Sub_关闭奖励弹窗",
+            "Click_返回",
             "检查主界面",
             "Download",
             "TipsLoading",
             "Click_EnterGame",
             "Click_SignIn",
+            "Click_B服SignIn",
             "StartLoading"
         ]
     },
@@ -131,6 +179,29 @@
             76
         ],
         "next": [
+            "Sub_关闭奖励弹窗",
+            "Click_返回",
+            "检查主界面",
+            "TipsLoading",
+            "Click_EnterGame",
+            "Click_B服SignIn",
+            "StartLoading"
+        ]
+    },
+    "Click_B服SignIn": {
+        "recognition": "OCR",
+        "expected": "登录",
+        "action": "Click",
+        "post_delay": 1000,
+        "roi": [
+            336,
+            655,
+            49,
+            38
+        ],
+        "next": [
+            "Sub_关闭奖励弹窗",
+            "Click_返回",
             "检查主界面",
             "TipsLoading",
             "Click_EnterGame",
@@ -150,6 +221,8 @@
             36
         ],
         "next": [
+            "Sub_关闭奖励弹窗",
+            "Click_返回",
             "检查主界面",
             "TipsLoading"
         ]
@@ -165,6 +238,8 @@
             56
         ],
         "next": [
+            "Sub_关闭奖励弹窗",
+            "Click_返回",
             "检查主界面",
             "TipsLoading",
             "Click_EnterGame",
@@ -190,7 +265,7 @@
         ],
         "next": [
             "Sub_关闭奖励弹窗",
-            "Click_返回",
+            "Sub_Click_返回",
             "GotoHome",
             "主界面标志",
             "检查主界面"

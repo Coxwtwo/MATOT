@@ -14,6 +14,22 @@
             "Click_返回"
         ]
     },
+    "Sub_Click_返回": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "Button/Back.PNG",
+        "action": "Click",
+        "roi": [
+            51,
+            31,
+            33,
+            39
+        ],
+        "next": [
+            "主界面标志",
+            "Click_返回"
+        ]
+    },
     "GotoHome": {
         "recognition": "TemplateMatch",
         "template": "Button/Home.PNG",
@@ -159,6 +175,7 @@
         ],
         "next": [
             "Sub_关闭奖励弹窗",
+            "X键",
             "Click_一键领取"
         ],
         "runout_next": [
@@ -183,6 +200,28 @@
         "next": [
             "Sub_关闭奖励弹窗",
             "GotoHome"
+        ]
+    },
+    "X键": {
+        "recognition": "ColorMatch",
+        "lower": [
+            208,
+            208,
+            208
+        ],
+        "upper": [
+            244,
+            244,
+            244
+        ],
+        "count": 160,
+        "action": "Click",
+        "post_delay": 800,
+        "roi": [
+            341,
+            1127,
+            37,
+            37
         ]
     },
     "Click_一键解析": {
