@@ -17,7 +17,7 @@
 
 ## 图形化界面
 
-本项目目前无GUI，但社区中有[overflow65537](https://github.com/overflow65537)贡献的MAAFW-GUI[MAAFW-GUI](https://github.com/overflow65537/Tkinter_MAA-GUI))项目
+本项目目前无GUI，但社区中有[overflow65537](https://github.com/overflow65537)贡献的[MAAFW-GUI](https://github.com/overflow65537/Tkinter_MAA-GUI)项目
 
 
 ## 鸣谢
