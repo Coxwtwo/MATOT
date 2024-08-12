@@ -447,6 +447,5 @@ install
 # Tools
 tools/ImageCropper/**/*.png
 
-#deps
-/venv/
-/install/
+#else
+venv

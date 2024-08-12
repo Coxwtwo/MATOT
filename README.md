@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD033 MD041 -->
 
-# MATOT
+## MATOT
 
 基于MAA全新架构的未定助手。图像技术 + 模拟控制，解放双手！
 由[MaaFramework](https://github.com/MaaXYZ/MaaFramework)强力驱动！
@@ -24,9 +24,5 @@
 
 本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！
 
-<<<<<<< HEAD
 感谢MaaFW开发者的贡献
-=======
-感谢MaaFW开发者对本项目作出的贡献
->>>>>>> 6743317bab1a1d869061da8869b0154a2aeafb0c
 
