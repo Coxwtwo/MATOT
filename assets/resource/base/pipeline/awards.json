@@ -161,6 +161,7 @@
         "recognition": "OCR",
         "expected": "领取奖励",
         "action": "Click",
+        "pre_delay": 1000,
         "roi": [
             292,
             1077,
@@ -191,6 +192,12 @@
         "expected": "点击开启",
         "action": "Click",
         "pre_delay": 800,
+        "target": [
+            375,
+            700,
+            30,
+            30
+        ],
         "roi": [
             305,
             813,
