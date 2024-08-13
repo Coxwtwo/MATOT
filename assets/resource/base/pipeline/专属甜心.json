@@ -90,7 +90,8 @@
         "expected": [
             "制版",
             "缝边",
-            "调版"
+            "调版",
+            "定版"
         ],
         "action": "Click",
         "post_delay": 5000,
