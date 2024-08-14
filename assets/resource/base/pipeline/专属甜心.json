@@ -258,48 +258,5 @@
             35,
             30
         ]
-    },
-    "点击返回上一级键": {
-        "next": [
-            "Flag_主界面",
-            "Sub_Click_返回上一级键"
-        ]
-    },
-    "Click_返回主界面键": {
-        "action": "Click",
-        "pre_delay": 1000,
-        "recognition": "TemplateMatch",
-        "template": "Button/Home.PNG",
-        "roi": [
-            168,
-            30,
-            44,
-            38
-        ]
-    },
-    "Sub_Click_返回上一级键": {
-        "is_sub": true,
-        "action": "Click",
-        "pre_delay": 1000,
-        "recognition": "TemplateMatch",
-        "template": "Button/Back.PNG",
-        "roi": [
-            51,
-            31,
-            33,
-            39
-        ]
-    },
-    "Flag_主界面": {
-        "recognition": "TemplateMatch",
-        "template": "Awards/活动.PNG",
-        "pre_delay": 800,
-        "post_delay": 1000,
-        "roi": [
-            28,
-            454,
-            42,
-            41
-        ]
     }
 }

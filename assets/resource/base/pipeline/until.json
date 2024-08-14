@@ -1,16 +1,90 @@
 {
     "Flag_StartLoadingVersion": {
-        "enabled": false,
         "recognition": "TemplateMatch",
-        "template": "StartUp/StartLoading430.png",
-        "post_delay": 1000,
+        "template": "StartUp/StartLoading.png",
+        "post_delay": 800,
         "roi": [
-            123,
-            981,
-            469,
-            163
+            112,
+            960,
+            480,
+            184
         ]
     },
-    "Flag_ThemisLoading": {},
-    "Flag_TipsLoading": {}
+    "Flag_ThemisLoading": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/ThemisLoading.png",
+        "post_delay": 800,
+        "roi": [
+            129,
+            158,
+            442,
+            970
+        ]
+    },
+    "Flag_TipsLoading": {
+        "recognition": "OCR",
+        "expected": "Tips",
+        "post_delay": 800,
+        "roi": [
+            448,
+            258,
+            99,
+            56
+        ]
+    },
+    "Flag_MihoyoSlogan": {
+        "recognition": "OCR",
+        "expected": [
+            "TECHOTAKUSSAVETHEWORLD",
+            "TECH OTAKUS SAVE THE WORLD"
+        ],
+        "post_delay": 800,
+        "roi": [
+            166,
+            436,
+            384,
+            33
+        ]
+    },
+    "Flag_主界面任务": {
+        "recognition": "TemplateMatch",
+        "template": "Awards/任务.PNG",
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            28,
+            359,
+            44,
+            40
+        ]
+    },
+    "Flag_主界面活动": {
+        "recognition": "TemplateMatch",
+        "template": "Awards/活动.PNG",
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            28,
+            454,
+            42,
+            41
+        ]
+    },
+    "Flag_任务界面": {
+        "recognition": "OCR",
+        "expected": [
+            "每",
+            "母",
+            "每日"
+        ],
+        "pre_delay": 800,
+        "roi": [
+            [
+                208,
+                123,
+                70,
+                36
+            ]
+        ]
+    }
 }

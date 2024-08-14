@@ -1,4 +1,47 @@
 {
+    "Click_返回主界面键": {
+        "action": "Click",
+        "pre_delay": 1000,
+        "recognition": "TemplateMatch",
+        "template": "Button/Home.PNG",
+        "roi": [
+            168,
+            30,
+            44,
+            38
+        ]
+    },
+    "Sub_Click_返回主界面键": {
+        "action": "Click",
+        "pre_delay": 1400,
+        "recognition": "TemplateMatch",
+        "template": "Button/Home.PNG",
+        "roi": [
+            168,
+            30,
+            44,
+            38
+        ]
+    },
+    "点击返回上一级键": {
+        "next": [
+            "Flag_主界面任务",
+            "Sub_Click_返回上一级键"
+        ]
+    },
+    "Sub_Click_返回上一级键": {
+        "is_sub": true,
+        "action": "Click",
+        "pre_delay": 1000,
+        "recognition": "TemplateMatch",
+        "template": "Button/Back.PNG",
+        "roi": [
+            51,
+            31,
+            33,
+            39
+        ]
+    },
     "Click_返回": {
         "recognition": "TemplateMatch",
         "template": "Button/Back.PNG",
@@ -10,7 +53,7 @@
             39
         ],
         "next": [
-            "主界面标志",
+            "Flag_主界面任务",
             "Click_返回"
         ]
     },
@@ -26,28 +69,17 @@
             39
         ],
         "next": [
-            "主界面标志",
+            "Flag_主界面任务",
             "Click_返回"
-        ]
-    },
-    "GotoHome": {
-        "recognition": "TemplateMatch",
-        "template": "Button/Home.PNG",
-        "action": "Click",
-        "roi": [
-            168,
-            30,
-            44,
-            38
         ]
     },
     "Sub_关闭奖励弹窗": {
         "next": [
-            "Flag_主界面",
-            "Click_关闭奖励弹窗"
+            "Flag_主界面任务",
+            "Sub_Click_关闭奖励弹窗"
         ]
     },
-    "Click_关闭奖励弹窗": {
+    "Sub_Click_关闭奖励弹窗": {
         "is_sub": true,
         "recognition": "OCR",
         "expected": "获得奖励",
@@ -87,7 +119,7 @@
             43
         ],
         "next": [
-            "GotoHome"
+            "Click_返回主界面键"
         ]
     },
     "前往": {
@@ -199,7 +231,7 @@
         ],
         "next": [
             "Sub_关闭奖励弹窗",
-            "GotoHome"
+            "Click_返回主界面键"
         ]
     },
     "X键": {
@@ -231,7 +263,7 @@
             49
         ],
         "next": [
-            "GotoHome"
+            "Click_返回主界面键"
         ]
     }
 }

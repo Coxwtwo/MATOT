@@ -1,0 +1,118 @@
+{
+    "StartUp": {
+        "next": [
+            "Sub_Click_关闭奖励弹窗",
+            "Sub_Click_返回主界面键",
+            "Sub_Click_返回上一级键",
+            "Flag_主界面任务",
+            "Sub_点击关闭广告弹窗"
+        ]
+    },
+    "Sub_StartUp": {
+        "is_sub": true,
+        "next": [
+            "Sub_Click_关闭奖励弹窗",
+            "Sub_Click_返回主界面键",
+            "Sub_Click_返回上一级键",
+            "Flag_主界面任务",
+            "Sub_点击关闭广告弹窗"
+        ]
+    },
+    "Sub_点击关闭广告弹窗": {
+        "is_sub": true,
+        "next": [
+            "Flag_任务界面",
+            "Sub_Click_下载确定",
+            "Sub_Click_账户登录",
+            "Sub_Click_点击进入",
+            "Sub_Click_关闭奖励弹窗",
+            "Sub_Click_返回上一级键",
+            "Click_返回主界面键",
+            "Sub_Click_关闭广告弹窗",
+            "Flag_TipsLoading",
+            "Flag_ThemisLoading",
+            "Flag_StartLoadingVersion",
+            "Flag_MihoyoSlogan",
+            "Sub_StartApp"
+        ]
+    },
+    "Sub_StartApp": {
+        "is_sub": true,
+        "post_wait_freezes": 1000,
+        "next": [
+            "Flag_主界面任务",
+            "Flag_TipsLoading",
+            "Flag_ThemisLoading",
+            "Flag_StartLoadingVersion",
+            "Flag_MihoyoSlogan",
+            "StartTOT"
+        ]
+    },
+    "StartTOT": {
+        "action": "StartApp",
+        "package": "com.miHoYo.wd/com.miHoYo.wd.MainActivity"
+    },
+    "Sub_Click_下载确定": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "确定",
+        "pre_delay": 500,
+        "roi": [
+            550,
+            700,
+            93,
+            47
+        ]
+    },
+    "Sub_Click_账户登录": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "账号登录",
+        "post_delay": 1000,
+        "roi": [
+            197,
+            1036,
+            326,
+            76
+        ]
+    },
+    "Flag_点击进入": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/EnterGame.png",
+        "pre_delay": 800,
+        "roi": [
+            277,
+            975,
+            164,
+            36
+        ]
+    },
+    "Sub_Click_点击进入": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "StartUp/EnterGame.png",
+        "pre_delay": 800,
+        "roi": [
+            277,
+            975,
+            164,
+            36
+        ]
+    },
+    "Sub_Click_关闭广告弹窗": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Awards/任务.PNG",
+        "pre_delay": 800,
+        "roi": [
+            28,
+            359,
+            44,
+            40
+        ]
+    }
+}
