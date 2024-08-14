@@ -1,6 +1,169 @@
 {
     "StartUp": {
-        "next": [],
-        "next": []
+        "next": [
+            "Flag_主界面",
+            "Sub_关闭奖励弹窗",
+            "点击返回上一级键",
+            "Sub_点击关闭广告弹窗",
+            "Sub_StartUp"
+        ]
+    },
+    "Sub_StartUp": {
+        "is_sub": true,
+        "next": [
+            "Flag_主界面",
+            "Sub_关闭奖励弹窗",
+            "点击返回上一级键",
+            "Sub_点击关闭广告弹窗",
+            "Sub_点击进入"
+        ]
+    },
+    "Sub_点击关闭广告弹窗": {
+        "is_sub": true,
+        "next": [
+            "Flag_主界面",
+            "Sub_Click_关闭广告弹窗"
+        ]
+    },
+    "Sub_点击进入": {
+        "is_sub": true,
+        "next": [
+            "Flag_TipsLoading",
+            "Sub_Click_点击进入",
+            "Sub_点击B服登录"
+        ]
+    },
+    "Sub_点击B服登录": {
+        "is_sub": true,
+        "next": [
+            "Flag_点击进入",
+            "Sub_Click_点击B服登录",
+            "Sub_点击账户登录"
+        ]
+    },
+    "Sub_点击账户登录": {
+        "is_sub": true,
+        "next": [
+            "Flag_ThemisLoading",
+            "Sub_Click_账户登录",
+            "Sub_点击下载"
+        ]
+    },
+    "Sub_点击下载": {
+        "is_sub": true,
+        "next": [
+            "Flag_StartLoadingVersion",
+            "Sub_Click_下载确定",
+            "Sub_点击B服同意协议"
+        ]
+    },
+    "Sub_点击B服同意协议": {
+        "is_sub": true,
+        "next": [
+            "Flag_StartLoadingVersion",
+            "Sub_Click_B服同意协议",
+            "Sub_StartTOT"
+        ]
+    },
+    "Sub_StartTOT": {
+        "is_sub": true,
+        "action": "StartApp",
+        "package": "com.miHoYo.wd/com.miHoYo.wd.MainActivity"
+    },
+    "Sub_Click_B服同意协议": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "同意",
+        "post_delay": 800,
+        "roi": [
+            400,
+            877,
+            64,
+            33
+        ]
+    },
+    "Sub_Click_下载确定": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "确定",
+        "pre_delay": 500,
+        "roi": [
+            550,
+            700,
+            93,
+            47
+        ]
+    },
+    "Sub_Click_账户登录": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "账号登录",
+        "post_delay": 1000,
+        "roi": [
+            197,
+            1036,
+            326,
+            76
+        ]
+    },
+    "Sub_Click_点击B服登录": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "登录",
+        "post_delay": 1000,
+        "roi": [
+            336,
+            655,
+            49,
+            38
+        ]
+    },
+    "Flag_点击进入": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/EnterGame.png",
+        "pre_delay": 800,
+        "roi": [
+            277,
+            975,
+            164,
+            36
+        ]
+    },
+    "Sub_Click_点击进入": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "StartUp/EnterGame.png",
+        "pre_delay": 800,
+        "post_delay": 8000,
+        "roi": [
+            277,
+            975,
+            164,
+            36
+        ]
+    },
+    "Sub_Click_关闭广告弹窗": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Awards/任务.PNG",
+        "pre_delay": 800,
+        "post_delay": 800,
+        "target": [
+            130,
+            1000,
+            30,
+            30
+        ],
+        "roi": [
+            28,
+            359,
+            44,
+            40
+        ]
     }
 }

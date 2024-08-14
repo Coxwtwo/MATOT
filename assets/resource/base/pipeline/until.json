@@ -1,0 +1,16 @@
+{
+    "Flag_StartLoadingVersion": {
+        "enabled": false,
+        "recognition": "TemplateMatch",
+        "template": "StartUp/StartLoading430.png",
+        "post_delay": 1000,
+        "roi": [
+            123,
+            981,
+            469,
+            163
+        ]
+    },
+    "Flag_ThemisLoading": {},
+    "Flag_TipsLoading": {}
+}

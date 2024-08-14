@@ -40,10 +40,6 @@
     "Sub_点击专属甜心": {
         "is_sub": true,
         "next": [
-            "Flag_Zero蜜意甜心值",
-            "Flag_In开始制作",
-            "Flag_In图纸",
-            "Flag_In图纸背包",
             "Flag_In专属甜心",
             "Sub_Click_专属甜心"
         ]
@@ -297,7 +293,8 @@
     "Flag_主界面": {
         "recognition": "TemplateMatch",
         "template": "Awards/活动.PNG",
-        "pre_delay": 1000,
+        "pre_delay": 800,
+        "post_delay": 1000,
         "roi": [
             28,
             454,
