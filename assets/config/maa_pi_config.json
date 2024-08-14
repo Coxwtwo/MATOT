@@ -19,15 +19,27 @@
     "resource": "B 服",
     "task": [
         {
-            "name": "启动游戏",
+            "name": "资源申请",
             "option": []
         },
         {
-            "name": "启动游戏",
+            "name": "资料室",
             "option": []
         },
         {
-            "name": "启动游戏",
+            "name": "进行会展顾问",
+            "option": []
+        },
+        {
+            "name": "进行业务考核",
+            "option": []
+        },
+        {
+            "name": "领取每日",
+            "option": []
+        },
+        {
+            "name": "领取每周",
             "option": []
         }
     ]

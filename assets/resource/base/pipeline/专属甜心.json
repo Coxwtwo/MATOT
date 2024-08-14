@@ -1,8 +1,59 @@
 {
     "专属甜心": {
-        "recognition": "ColorMatch",
+        "next": [
+            "Click_返回主界面键",
+            "Sub_点击具体制作步骤"
+        ]
+    },
+    "Sub_点击具体制作步骤": {
+        "is_sub": true,
+        "next": [
+            "Flag_Zero蜜意甜心值",
+            "Sub_Click_具体制作步骤",
+            "Sub_点击开始制作"
+        ]
+    },
+    "Sub_点击开始制作": {
+        "is_sub": true,
+        "next": [
+            "Flag_In开始制作",
+            "Sub_Click_开始制作",
+            "Sub_点击图纸"
+        ]
+    },
+    "Sub_点击图纸": {
+        "is_sub": true,
+        "next": [
+            "Flag_In图纸",
+            "Sub_Click_图纸",
+            "Sub_点击剪刀按钮"
+        ]
+    },
+    "Sub_点击剪刀按钮": {
+        "is_sub": true,
+        "next": [
+            "Flag_In图纸背包",
+            "Sub_Click_剪刀按钮",
+            "Sub_点击专属甜心"
+        ]
+    },
+    "Sub_点击专属甜心": {
+        "is_sub": true,
+        "next": [
+            "Flag_Zero蜜意甜心值",
+            "Flag_In开始制作",
+            "Flag_In图纸",
+            "Flag_In图纸背包",
+            "Flag_In专属甜心",
+            "Sub_Click_专属甜心"
+        ]
+    },
+    "Sub_Click_专属甜心": {
+        "is_sub": true,
         "action": "Click",
-        "post_delay": 1800,
+        "pre_delay": 1000,
+        "recognition": "ColorMatch",
+        "post_delay": 2000,
         "lower": [
             [
                 223,
@@ -21,33 +72,84 @@
             832,
             9,
             12
-        ],
-        "next": [
-            "制作步骤",
-            "开始制作",
-            "选择图纸",
-            "打开甜心制作"
         ]
     },
-    "打开甜心制作": {
+    "Flag_In专属甜心": {
+        "pre_delay": 1000,
         "recognition": "TemplateMatch",
-        "template": "Button/甜心制作.png",
-        "action": "Click",
+        "template": "Button/甜心剪刀.png",
         "roi": [
             427,
             1164,
             65,
             51
-        ],
-        "next": [
-            "制作步骤",
-            "开始制作",
-            "选择图纸"
         ]
     },
-    "选择图纸": {
-        "recognition": "ColorMatch",
+    "Sub_Click_剪刀按钮": {
+        "is_sub": true,
         "action": "Click",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "recognition": "TemplateMatch",
+        "template": "Button/甜心剪刀.png",
+        "roi": [
+            427,
+            1164,
+            65,
+            51
+        ]
+    },
+    "Flag_In图纸背包": {
+        "pre_delay": 1000,
+        "recognition": "OCR",
+        "expected": "头饰",
+        "roi": [
+            52,
+            1181,
+            76,
+            46
+        ]
+    },
+    "Flag_No开始制作": {
+        "inverse": true,
+        "pre_delay": 1000,
+        "recognition": "OCR",
+        "expected": "开始制作",
+        "roi": [
+            562,
+            724,
+            118,
+            45
+        ]
+    },
+    "Sub_Click_开始制作": {
+        "is_sub": true,
+        "action": "Click",
+        "pre_delay": 1000,
+        "recognition": "OCR",
+        "expected": "开始制作",
+        "roi": [
+            562,
+            724,
+            118,
+            45
+        ]
+    },
+    "Flag_In开始制作": {
+        "pre_delay": 1000,
+        "recognition": "OCR",
+        "expected": "蜜意甜心值",
+        "roi": [
+            471,
+            1169,
+            132,
+            36
+        ]
+    },
+    "Flag_No可制作图纸": {
+        "inverse": true,
+        "pre_delay": 1000,
+        "recognition": "ColorMatch",
         "lower": [
             118,
             117,
@@ -64,48 +166,143 @@
             953,
             16,
             16
-        ],
-        "next": [
-            "制作步骤",
-            "开始制作"
         ]
     },
-    "开始制作": {
-        "recognition": "OCR",
-        "expected": "开始制作",
+    "Sub_Click_图纸": {
+        "is_sub": true,
         "action": "Click",
-        "roi": [
-            562,
-            724,
-            118,
-            45
+        "pre_delay": 1000,
+        "recognition": "ColorMatch",
+        "lower": [
+            110,
+            116,
+            112
         ],
-        "next": [
-            "制作步骤"
+        "upper": [
+            141,
+            141,
+            147
+        ],
+        "count": 50,
+        "roi": [
+            124,
+            953,
+            16,
+            16
         ]
     },
-    "制作步骤": {
-        "times_limit": 2,
+    "Flag_In图纸": {
+        "pre_delay": 1000,
+        "recognition": "ColorMatch",
+        "lower": [
+            110,
+            116,
+            112
+        ],
+        "upper": [
+            141,
+            141,
+            147
+        ],
+        "count": 200,
+        "roi": [
+            598,
+            240,
+            40,
+            20
+        ]
+    },
+    "Sub_Click_具体制作步骤": {
+        "is_sub": true,
+        "action": "Click",
+        "pre_delay": 1000,
         "recognition": "OCR",
         "expected": [
             "制版",
             "缝边",
             "调版",
-            "定版"
+            "定版",
+            "缝制"
         ],
-        "action": "Click",
         "post_delay": 5000,
         "roi": [
             287,
             970,
             147,
             62
+        ]
+    },
+    "Flag_Zero蜜意甜心值": {
+        "pre_delay": 1000,
+        "recognition": "OCR",
+        "expected": [
+            "0",
+            "Q",
+            "o",
+            "O",
+            "0/2"
         ],
+        "roi": [
+            621,
+            1171,
+            35,
+            30
+        ]
+    },
+    "Flag_Exist蜜意甜心值": {
+        "inverse": true,
+        "pre_delay": 1000,
+        "recognition": "OCR",
+        "expected": [
+            "0"
+        ],
+        "roi": [
+            621,
+            1171,
+            35,
+            30
+        ]
+    },
+    "点击返回上一级键": {
         "next": [
-            "制作步骤"
-        ],
-        "runout_next": [
-            "GotoHome"
+            "Flag_主界面",
+            "Sub_Click_返回上一级键"
+        ]
+    },
+    "Click_返回主界面键": {
+        "action": "Click",
+        "pre_delay": 1000,
+        "recognition": "TemplateMatch",
+        "template": "Button/Home.PNG",
+        "roi": [
+            168,
+            30,
+            44,
+            38
+        ]
+    },
+    "Sub_Click_返回上一级键": {
+        "is_sub": true,
+        "action": "Click",
+        "pre_delay": 1000,
+        "recognition": "TemplateMatch",
+        "template": "Button/Back.PNG",
+        "roi": [
+            51,
+            31,
+            33,
+            39
+        ]
+    },
+    "Flag_主界面": {
+        "recognition": "TemplateMatch",
+        "template": "Awards/活动.PNG",
+        "pre_delay": 1000,
+        "roi": [
+            28,
+            454,
+            42,
+            41
         ]
     }
 }
