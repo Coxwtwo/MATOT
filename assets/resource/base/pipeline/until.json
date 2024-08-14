@@ -24,7 +24,9 @@
     "Flag_TipsLoading": {
         "recognition": "OCR",
         "expected": "Tips",
+        "pre_delay": 800,
         "post_delay": 800,
+        "post_wait_freezes": 1000,
         "roi": [
             448,
             258,
