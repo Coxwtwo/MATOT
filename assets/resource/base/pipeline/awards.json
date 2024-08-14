@@ -1,16 +1,50 @@
 {
-    "友谊徽章": {
+    "领取友谊徽章": {
         "next": [
-            "Click_一键领取",
-            "Sub_好友赠送",
-            "Sub_打开主页菜单"
+            "Click_返回主界面键",
+            "Click_返回上一级键",
+            "Sub_领取友谊徽章"
+        ]
+    },
+    "Sub_领取友谊徽章": {
+        "is_sub": true,
+        "next": [
+            "Flag_一键领取暗",
+            "Click_一键领取亮",
+            "Sub_Click_关闭奖励弹窗",
+            "Sub_打开好友列表"
+        ]
+    },
+    "Sub_打开好友列表": {
+        "is_sub": true,
+        "next": [
+            "Flag_好友列表",
+            "Click_好友",
+            "Sub_Click_主界面左侧菜单"
         ]
     },
     "领取邮件": {
         "next": [
-            "Click_一键领取",
-            "Sub_邮件",
-            "Sub_打开主页菜单"
+            "Click_返回主界面键",
+            "Click_返回上一级键",
+            "Sub_领取邮件"
+        ]
+    },
+    "Sub_领取邮件": {
+        "is_sub": true,
+        "next": [
+            "Flag_一键领取暗",
+            "Click_一键领取亮",
+            "Sub_Click_关闭奖励弹窗",
+            "Sub_打开邮件列表"
+        ]
+    },
+    "Sub_打开邮件列表": {
+        "is_sub": true,
+        "next": [
+            "Flag_邮件列表",
+            "Click_邮件",
+            "Sub_Click_主界面左侧菜单"
         ]
     },
     "资源申请": {
@@ -49,55 +83,6 @@
             "Sub_关闭奖励弹窗",
             "打开每周任务",
             "Click_返回"
-        ]
-    },
-    "Sub_打开主页菜单": {
-        "is_sub": true,
-        "recognition": "TemplateMatch",
-        "template": "Awards/主界面菜单.PNG",
-        "green_mask": true,
-        "action": "Click",
-        "roi": [
-            26,
-            151,
-            43,
-            44
-        ]
-    },
-    "Sub_好友赠送": {
-        "is_sub": true,
-        "recognition": "ColorMatch",
-        "lower": [
-            255,
-            255,
-            255
-        ],
-        "upper": [
-            255,
-            255,
-            255
-        ],
-        "count": 300,
-        "action": "Click",
-        "post_delay": 800,
-        "roi": [
-            205,
-            147,
-            41,
-            46
-        ]
-    },
-    "Sub_邮件": {
-        "is_sub": true,
-        "recognition": "TemplateMatch",
-        "template": "Awards/邮件.PNG",
-        "action": "Click",
-        "post_delay": 800,
-        "roi": [
-            293,
-            149,
-            42,
-            43
         ]
     },
     "Sub_打开基地和沙龙": {

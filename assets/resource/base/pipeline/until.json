@@ -81,12 +81,59 @@
         ],
         "pre_delay": 800,
         "roi": [
-            [
-                208,
-                123,
-                70,
-                36
-            ]
+            208,
+            123,
+            70,
+            36
         ]
+    },
+    "Flag_好友列表": {
+        "recognition": "OCR",
+        "expected": [
+            "好友数"
+        ],
+        "pre_delay": 800,
+        "roi": [
+            19,
+            222,
+            92,
+            37
+        ]
+    },
+    "Flag_邮件列表": {
+        "recognition": "OCR",
+        "expected": [
+            "邮箱"
+        ],
+        "pre_delay": 800,
+        "roi": [
+            45,
+            126,
+            71,
+            51
+        ]
+    },
+    "Flag_一键领取暗": {
+        "action": "Click",
+        "recognition": "ColorMatch",
+        "pre_delay": 500,
+        "post_delay": 1000,
+        "roi": [
+            500,
+            1160,
+            180,
+            80
+        ],
+        "lower": [
+            66,
+            66,
+            94
+        ],
+        "upper": [
+            74,
+            74,
+            102
+        ],
+        "count": 4000
     }
 }
