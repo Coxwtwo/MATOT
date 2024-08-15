@@ -9,6 +9,7 @@
         "is_sub": true,
         "next": [
             "Flag_Zero蜜意甜心值",
+            "Flag_蜜意甜心值不足",
             "Sub_Click_具体制作步骤",
             "Sub_点击开始制作"
         ]
@@ -18,29 +19,8 @@
         "next": [
             "Flag_In开始制作",
             "Sub_Click_开始制作",
-            "Sub_点击图纸"
-        ]
-    },
-    "Sub_点击图纸": {
-        "is_sub": true,
-        "next": [
-            "Flag_In图纸",
             "Sub_Click_图纸",
-            "Sub_点击剪刀按钮"
-        ]
-    },
-    "Sub_点击剪刀按钮": {
-        "is_sub": true,
-        "next": [
-            "Flag_In图纸背包",
             "Sub_Click_剪刀按钮",
-            "Sub_点击专属甜心"
-        ]
-    },
-    "Sub_点击专属甜心": {
-        "is_sub": true,
-        "next": [
-            "Flag_In专属甜心",
             "Sub_Click_专属甜心"
         ]
     },
@@ -51,11 +31,9 @@
         "recognition": "ColorMatch",
         "post_delay": 2000,
         "lower": [
-            [
-                223,
-                199,
-                179
-            ]
+            223,
+            199,
+            179
         ],
         "upper": [
             247,
@@ -68,17 +46,6 @@
             832,
             9,
             12
-        ]
-    },
-    "Flag_In专属甜心": {
-        "pre_delay": 1000,
-        "recognition": "TemplateMatch",
-        "template": "Button/甜心剪刀.png",
-        "roi": [
-            427,
-            1164,
-            65,
-            51
         ]
     },
     "Sub_Click_剪刀按钮": {
@@ -95,7 +62,7 @@
             51
         ]
     },
-    "Flag_In图纸背包": {
+    "Flag_头饰": {
         "pre_delay": 1000,
         "recognition": "OCR",
         "expected": "头饰",
@@ -104,18 +71,6 @@
             1181,
             76,
             46
-        ]
-    },
-    "Flag_No开始制作": {
-        "inverse": true,
-        "pre_delay": 1000,
-        "recognition": "OCR",
-        "expected": "开始制作",
-        "roi": [
-            562,
-            724,
-            118,
-            45
         ]
     },
     "Sub_Click_开始制作": {
@@ -140,28 +95,6 @@
             1169,
             132,
             36
-        ]
-    },
-    "Flag_No可制作图纸": {
-        "inverse": true,
-        "pre_delay": 1000,
-        "recognition": "ColorMatch",
-        "lower": [
-            118,
-            117,
-            124
-        ],
-        "upper": [
-            141,
-            141,
-            147
-        ],
-        "count": 50,
-        "roi": [
-            124,
-            953,
-            16,
-            16
         ]
     },
     "Sub_Click_图纸": {
@@ -212,6 +145,7 @@
         "is_sub": true,
         "action": "Click",
         "pre_delay": 1000,
+        "post_delay": 5000,
         "recognition": "OCR",
         "expected": [
             "制版",
@@ -220,7 +154,6 @@
             "定版",
             "缝制"
         ],
-        "post_delay": 5000,
         "roi": [
             287,
             970,
@@ -232,10 +165,7 @@
         "pre_delay": 1000,
         "recognition": "OCR",
         "expected": [
-            "0",
             "Q",
-            "o",
-            "O",
             "0/2"
         ],
         "roi": [
@@ -245,18 +175,17 @@
             30
         ]
     },
-    "Flag_Exist蜜意甜心值": {
-        "inverse": true,
+    "Flag_蜜意甜心值不足": {
         "pre_delay": 1000,
         "recognition": "OCR",
         "expected": [
-            "0"
+            "蜜意甜心值不足"
         ],
         "roi": [
-            621,
-            1171,
-            35,
-            30
+            218,
+            546,
+            156,
+            34
         ]
     }
 }
