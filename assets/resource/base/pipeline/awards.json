@@ -101,6 +101,7 @@
             "Sub_Click_资料室",
             "Sub_Click_基地",
             "Sub_Click_基地和沙龙",
+            "Sub_Click_X按钮",
             "Sub_Click_关闭奖励弹窗"
         ]
     },
@@ -146,7 +147,7 @@
         "next": [
             "Flag_一键领取暗",
             "Sub_Click_关闭奖励弹窗",
-            "Sub_Click_一键领取亮",
+            "Click_一键领取重复",
             "Sub_Click_任务"
         ]
     },
@@ -268,7 +269,8 @@
             "一键解析",
             "键解析"
         ],
-        "pre_delay": 500,
+        "pre_delay": 1000,
+        "post_delay": 800,
         "roi": [
             502,
             1157,

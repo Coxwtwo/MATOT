@@ -17,5 +17,38 @@
         }
     },
     "resource": "B 服",
-    "task": []
+    "task": [
+        {
+            "name": "启动游戏",
+            "option": []
+        },
+        {
+            "name": "领取友谊徽章",
+            "option": []
+        },
+        {
+            "name": "领取邮件",
+            "option": []
+        },
+        {
+            "name": "领取资源申请",
+            "option": []
+        },
+        {
+            "name": "领取案件解析",
+            "option": []
+        },
+        {
+            "name": "领取酬谢",
+            "option": []
+        },
+        {
+            "name": "专属甜心",
+            "option": []
+        },
+        {
+            "name": "领取任务奖励",
+            "option": []
+        }
+    ]
 }

@@ -76,7 +76,7 @@
         "next": [
             "Sub_Click_关闭奖励弹窗",
             "Click_X按钮",
-            "Click_一键领取亮"
+            "Click_一键领取重复"
         ],
         "recognition": "OCR",
         "expected": [
