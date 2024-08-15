@@ -1,49 +1,120 @@
 {
-    "进行会展顾问": {
+    "刷会展顾问": {
         "next": [
-            "会展顾问05",
-            "会展顾问",
-            "进修",
-            "Sub_事件簿"
+            "Click_返回主界面键",
+            "Sub_Click_X按钮",
+            "Sub_刷会展顾问"
         ]
     },
-    "进行业务考核": {
+    "Sub_刷会展顾问": {
+        "is_sub": true,
         "next": [
-            "业务考核05",
-            "业务考核",
-            "进修",
-            "Sub_事件簿"
+            "Click_结束",
+            "Click_取消",
+            "Sub_Click_确定",
+            "Sub_Click_复盘",
+            "Sub_Click_会展顾问05",
+            "Sub_Click_会展顾问",
+            "Sub_Click_进修",
+            "Sub_Click_事件簿"
+        ]
+    },
+    "刷业务考核": {
+        "next": [
+            "Click_返回主界面键",
+            "Sub_Click_X按钮",
+            "Sub_刷业务考核"
+        ]
+    },
+    "Sub_刷业务考核": {
+        "is_sub": true,
+        "next": [
+            "Click_结束",
+            "Click_取消",
+            "Sub_Click_确定",
+            "Sub_Click_复盘",
+            "Sub_Click_业务考核05",
+            "Sub_Click_业务考核",
+            "Sub_Click_进修",
+            "Sub_Click_事件簿"
         ]
     },
     "刷思绪残影": {
         "next": [
-            "复盘",
-            "点击残影获取关卡",
-            "点击对应残影",
-            "点击思绪残影",
-            "打开思绪"
+            "Click_返回主界面键",
+            "Sub_Click_X按钮",
+            "Sub_刷思绪残影"
         ]
     },
-    "Sub_事件簿": {
+    "Sub_刷思绪残影": {
         "is_sub": true,
+        "next": [
+            "Click_结束",
+            "Click_取消",
+            "Flag_Zero残影关卡次数",
+            "Sub_Click_确定",
+            "Sub_Click_复盘",
+            "Sub_Click_残影获取关卡",
+            "Sub_Click_选择残影",
+            "Sub_Click_思绪残影",
+            "Sub_Click_思绪"
+        ]
+    },
+    "刷外勤日常": {
+        "next": [
+            "Click_返回主界面键",
+            "Sub_Click_X按钮",
+            "Click_返回上一级键重复",
+            "Sub_刷外勤日常"
+        ]
+    },
+    "Sub_刷外勤日常": {
+        "is_sub": true,
+        "next": [
+            "Click_结束",
+            "Click_庭审委托结束",
+            "Click_取消",
+            "Flag_疲劳值满",
+            "Flag_战力不足",
+            "Sub_Click_点击继续",
+            "Sub_Click_居中开始辩论",
+            "Sub_Click_开始处理",
+            "Sub_Click_日常委托",
+            "Sub_Click_庭审委托",
+            "Sub_进入外勤区域"
+        ]
+    },
+    "Sub_进入外勤区域": {
+        "times_limit": 5,
+        "is_sub": true,
+        "next": [
+            "Sub_Click_点击继续",
+            "Flag_自动出卡中",
+            "Click_庭审委托结束",
+            "Flag_In外勤区域",
+            "Sub_Click_选择外勤区域",
+            "Sub_Click_法律援助",
+            "Sub_Click_外勤"
+        ]
+    },
+    "Sub_Click_事件簿": {
+        "is_sub": true,
+        "action": "Click",
         "recognition": "OCR",
         "expected": "Story",
-        "action": "Click",
         "pre_delay": 500,
         "roi": [
             598,
             987,
             63,
             29
-        ],
-        "next": [
-            "进修"
         ]
     },
-    "进修": {
+    "Sub_Click_进修": {
+        "is_sub": true,
+        "action": "Click",
         "recognition": "OCR",
         "expected": "进修",
-        "action": "Click",
         "pre_delay": 1000,
         "roi": [
             319,
@@ -52,24 +123,23 @@
             54
         ]
     },
-    "会展顾问": {
+    "Sub_Click_会展顾问": {
+        "is_sub": true,
+        "action": "Click",
         "recognition": "OCR",
         "expected": "会展顾问",
-        "action": "Click",
         "roi": [
             92,
             402,
             186,
             49
-        ],
-        "next": [
-            "会展顾问05"
         ]
     },
-    "会展顾问05": {
+    "Sub_Click_会展顾问05": {
+        "is_sub": true,
+        "action": "Click",
         "recognition": "OCR",
         "expected": "会展顾问05",
-        "action": "Click",
         "pre_delay": 800,
         "post_delay": 1000,
         "target": [
@@ -83,29 +153,25 @@
             846,
             130,
             130
-        ],
-        "next": [
-            "复盘"
         ]
     },
-    "业务考核": {
+    "Sub_Click_业务考核": {
+        "is_sub": true,
+        "action": "Click",
         "recognition": "OCR",
         "expected": "业务考核",
-        "action": "Click",
         "roi": [
             92,
             696,
             186,
             49
-        ],
-        "next": [
-            "业务考核05"
         ]
     },
-    "业务考核05": {
+    "Sub_Click_业务考核05": {
+        "is_sub": true,
+        "action": "Click",
         "recognition": "OCR",
         "expected": "业务考核05",
-        "action": "Click",
         "pre_delay": 800,
         "post_delay": 1000,
         "target": [
@@ -119,33 +185,26 @@
             846,
             130,
             130
-        ],
-        "next": [
-            "复盘"
         ]
     },
-    "打开思绪": {
+    "Sub_Click_思绪": {
+        "is_sub": true,
+        "action": "Click",
         "recognition": "OCR",
         "expected": "思绪",
-        "action": "Click",
         "post_delay": 800,
         "roi": [
             181,
             1232,
             70,
             34
-        ],
-        "next": [
-            "复盘",
-            "点击残影获取关卡",
-            "点击对应残影",
-            "点击思绪残影"
         ]
     },
-    "点击思绪残影": {
+    "Sub_Click_思绪残影": {
+        "is_sub": true,
+        "action": "Click",
         "recognition": "OCR",
         "expected": "思绪残影",
-        "action": "Click",
         "pre_delay": 800,
         "post_delay": 800,
         "roi": [
@@ -153,20 +212,15 @@
             123,
             110,
             36
-        ],
-        "next": [
-            "复盘",
-            "点击残影获取关卡",
-            "点击对应残影"
         ]
     },
-    "点击对应残影": {
+    "Sub_Click_选择残影": {
+        "is_sub": true,
+        "action": "Click",
         "recognition": "OCR",
         "expected": [
-            "彼时少年",
             "残影"
         ],
-        "action": "Click",
         "pre_delay": 800,
         "post_delay": 800,
         "target": [
@@ -180,20 +234,17 @@
             447,
             151,
             30
-        ],
-        "next": [
-            "复盘",
-            "点击残影获取关卡"
         ]
     },
-    "点击残影获取关卡": {
+    "Sub_Click_残影获取关卡": {
+        "is_sub": true,
+        "action": "Click",
         "recognition": "OCR",
         "expected": [
             "3/3",
             "2/3",
             "1/3"
         ],
-        "action": "Click",
         "pre_delay": 800,
         "post_delay": 800,
         "roi": [
@@ -201,9 +252,102 @@
             719,
             46,
             50
+        ]
+    },
+    "Sub_Click_外勤": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "外勤"
         ],
-        "next": [
-            "复盘"
+        "pre_delay": 800,
+        "post_delay": 1500,
+        "roi": [
+            37,
+            1230,
+            73,
+            40
+        ]
+    },
+    "Sub_Click_法律援助": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "法律援助"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            547,
+            1160,
+            127,
+            42
+        ]
+    },
+    "Sub_Click_选择外勤区域": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "滨河区"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            45,
+            1112,
+            77,
+            30
+        ]
+    },
+    "Sub_Click_日常委托": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "疲劳值"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            0,
+            177,
+            713,
+            854
+        ]
+    },
+    "Sub_Click_庭审委托": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "剩余血量"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            0,
+            177,
+            713,
+            854
+        ]
+    },
+    "Sub_Click_开始处理": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "开始处理"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            277,
+            872,
+            164,
+            52
         ]
     }
 }
