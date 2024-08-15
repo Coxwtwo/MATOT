@@ -113,11 +113,42 @@
             51
         ]
     },
+    "Flag_In基地": {
+        "recognition": "OCR",
+        "expected": "资料室",
+        "pre_delay": 800,
+        "roi": [
+            582,
+            1013,
+            104,
+            47
+        ]
+    },
+    "Flag_资源申请界面": {
+        "recognition": "OCR",
+        "expected": "资源申请",
+        "pre_delay": 800,
+        "roi": [
+            42,
+            131,
+            209,
+            60
+        ]
+    },
+    "Flag_资料室界面": {
+        "recognition": "OCR",
+        "expected": "资料室",
+        "pre_delay": 800,
+        "roi": [
+            33,
+            140,
+            166,
+            74
+        ]
+    },
     "Flag_一键领取暗": {
-        "action": "Click",
         "recognition": "ColorMatch",
         "pre_delay": 500,
-        "post_delay": 1000,
         "roi": [
             500,
             1160,
@@ -125,15 +156,55 @@
             80
         ],
         "lower": [
-            66,
-            66,
-            94
+            60,
+            60,
+            90
         ],
         "upper": [
-            74,
-            74,
-            102
+            80,
+            80,
+            110
         ],
         "count": 4000
+    },
+    "Flag_暂无可领取的奖励": {
+        "recognition": "OCR",
+        "expected": "暂无可领取的奖励",
+        "roi": [
+            266,
+            545,
+            187,
+            39
+        ]
+    },
+    "Flag_暂无可领取的资源申请": {
+        "recognition": "OCR",
+        "expected": "暂无可领取的资源申请",
+        "roi": [
+            244,
+            540,
+            227,
+            43
+        ]
+    },
+    "Flag_奖励已领取": {
+        "recognition": "OCR",
+        "expected": "奖励已领取",
+        "roi": [
+            292,
+            1077,
+            135,
+            44
+        ]
+    },
+    "Flag_酬谢界面": {
+        "recognition": "OCR",
+        "expected": "贡献等级",
+        "roi": [
+            307,
+            225,
+            104,
+            34
+        ]
     }
 }

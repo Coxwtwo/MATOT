@@ -56,7 +56,11 @@
     },
     "Click_一键领取亮": {
         "action": "Click",
-        "recognition": "ColorMatch",
+        "recognition": "OCR",
+        "expected": [
+            "一键领取",
+            "键领取"
+        ],
         "pre_delay": 500,
         "post_delay": 1000,
         "roi": [
@@ -64,18 +68,44 @@
             1160,
             180,
             80
+        ]
+    },
+    "Click_一键领取重复": {
+        "action": "Click",
+        "times_limit": 6,
+        "next": [
+            "Sub_Click_关闭奖励弹窗",
+            "Click_X按钮",
+            "Click_一键领取亮"
         ],
-        "lower": [
-            115,
-            115,
-            161
+        "recognition": "OCR",
+        "expected": [
+            "一键领取",
+            "键领取"
         ],
-        "upper": [
-            127,
-            127,
-            176
+        "pre_delay": 500,
+        "post_delay": 1000,
+        "roi": [
+            500,
+            1160,
+            180,
+            80
+        ]
+    },
+    "Sub_Click_一键领取亮": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "一键领取",
+            "键领取"
         ],
-        "count": 4000
+        "roi": [
+            500,
+            1160,
+            180,
+            80
+        ]
     },
     "Click_返回": {
         "action": "Click",
@@ -120,38 +150,16 @@
             44
         ]
     },
-    "Click_好友": {
-        "action": "Click",
-        "recognition": "ColorMatch",
-        "lower": [
-            255,
-            255,
-            255
-        ],
-        "upper": [
-            255,
-            255,
-            255
-        ],
-        "count": 300,
-        "post_delay": 800,
-        "roi": [
-            205,
-            147,
-            41,
-            46
-        ]
-    },
-    "Click_邮件": {
-        "action": "Click",
+    "Sub_Click_任务": {
+        "is_sub": true,
         "recognition": "TemplateMatch",
-        "template": "Awards/邮件.PNG",
-        "post_delay": 800,
+        "template": "Awards/任务.PNG",
+        "action": "Click",
         "roi": [
-            293,
-            149,
-            42,
-            43
+            28,
+            359,
+            44,
+            40
         ]
     },
     "Sub_关闭奖励弹窗": {
@@ -245,19 +253,6 @@
             "结束"
         ]
     },
-    "Sub_下载确定": {
-        "is_sub": true,
-        "recognition": "OCR",
-        "expected": "确定",
-        "action": "Click",
-        "pre_delay": 500,
-        "roi": [
-            550,
-            700,
-            93,
-            47
-        ]
-    },
     "取消": {
         "recognition": "OCR",
         "expected": "取消",
@@ -288,7 +283,7 @@
         ],
         "next": [
             "Sub_关闭奖励弹窗",
-            "X键",
+            "Click_X按钮",
             "Click_一键领取"
         ],
         "runout_next": [
@@ -315,12 +310,12 @@
             "Click_返回主界面键"
         ]
     },
-    "X键": {
+    "Click_X按钮": {
+        "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Button/XKey.png",
         "green_mask": true,
         "threshold": 0.5,
-        "action": "Click",
         "pre_delay": 1000,
         "roi": [
             341,
@@ -329,22 +324,19 @@
             65
         ]
     },
-    "Click_一键解析": {
-        "recognition": "OCR",
-        "expected": [
-            "一键解析",
-            "键解析"
-        ],
+    "Sub_Click_X按钮": {
+        "is_sub": true,
         "action": "Click",
-        "pre_delay": 500,
+        "recognition": "TemplateMatch",
+        "template": "Button/XKey.png",
+        "green_mask": true,
+        "threshold": 0.5,
+        "pre_delay": 1000,
         "roi": [
-            502,
-            1157,
-            162,
-            49
-        ],
-        "next": [
-            "Click_返回主界面键"
+            341,
+            1100,
+            37,
+            65
         ]
     }
 }
