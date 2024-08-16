@@ -1,0 +1,289 @@
+{
+    "领取资源申请": {
+        "is_sub": true,
+        "next": [
+            "Click_返回主界面键",
+            "Click_返回上一级键",
+            "Sub_领取资源申请"
+        ]
+    },
+    "Sub_领取资源申请": {
+        "is_sub": true,
+        "next": [
+            "Flag_暂无可领取的资源申请",
+            "Flag_一键领取暗",
+            "Click_一键领取亮",
+            "Sub_Click_关闭奖励弹窗",
+            "Sub_打开资源申请"
+        ]
+    },
+    "Sub_打开资源申请": {
+        "is_sub": true,
+        "next": [
+            "Flag_资源申请界面",
+            "Sub_Click_资源申请",
+            "Sub_Click_基地",
+            "Sub_Click_基地和沙龙",
+            "Sub_Click_关闭奖励弹窗"
+        ]
+    },
+    "领取案件解析": {
+        "is_sub": true,
+        "next": [
+            "Click_返回主界面键",
+            "Click_返回上一级键",
+            "Sub_领取案件解析"
+        ]
+    },
+    "Sub_领取案件解析": {
+        "is_sub": true,
+        "next": [
+            "Flag_暂无可领取的奖励",
+            "Click_一键解析",
+            "Sub_Click_X按钮",
+            "Sub_Click_关闭奖励弹窗",
+            "Sub_Click_一键领取亮",
+            "Sub_打开案件解析"
+        ]
+    },
+    "Sub_打开案件解析": {
+        "is_sub": true,
+        "next": [
+            "Flag_资料室界面",
+            "Sub_Click_资料室",
+            "Sub_Click_基地",
+            "Sub_Click_基地和沙龙",
+            "Sub_Click_X按钮",
+            "Sub_Click_关闭奖励弹窗"
+        ]
+    },
+    "领取酬谢": {
+        "is_sub": true,
+        "next": [
+            "Click_返回主界面键",
+            "Click_返回上一级键",
+            "Sub_领取酬谢"
+        ]
+    },
+    "Sub_领取酬谢": {
+        "is_sub": true,
+        "next": [
+            "Flag_奖励已领取",
+            "Sub_Click_X按钮",
+            "Sub_Click_关闭奖励弹窗",
+            "Sub_Click_点击开启",
+            "Sub_Click_领取奖励",
+            "Sub_打开酬谢界面"
+        ]
+    },
+    "Sub_打开酬谢界面": {
+        "is_sub": true,
+        "next": [
+            "Flag_酬谢界面",
+            "Sub_Click_X按钮",
+            "Sub_Click_关闭奖励弹窗",
+            "Click_酬谢",
+            "Sub_Click_基地",
+            "Sub_Click_基地和沙龙"
+        ]
+    },
+    "Sub_Click_基地和沙龙": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "基地",
+            "基址"
+        ],
+        "roi": [
+            445,
+            1232,
+            54,
+            30
+        ]
+    },
+    "Sub_Click_基地": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "基地",
+            "基址"
+        ],
+        "post_delay": 1500,
+        "roi": [
+            431,
+            1064,
+            64,
+            38
+        ]
+    },
+    "Sub_Click_资源申请": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "资源申请",
+        "roi": [
+            555,
+            908,
+            128,
+            49
+        ]
+    },
+    "Sub_Click_资料室": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "资料室",
+        "roi": [
+            582,
+            1013,
+            104,
+            47
+        ]
+    },
+    "Click_酬谢": {
+        "action": "Click",
+        "recognition": "ColorMatch",
+        "lower": [
+            255,
+            255,
+            255
+        ],
+        "upper": [
+            255,
+            255,
+            255
+        ],
+        "count": 600,
+        "pre_delay": 800,
+        "roi": [
+            608,
+            237,
+            41,
+            69
+        ]
+    },
+    "Click_一键解析": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "一键解析",
+            "键解析"
+        ],
+        "pre_delay": 1000,
+        "post_delay": 800,
+        "roi": [
+            502,
+            1157,
+            162,
+            49
+        ]
+    },
+    "Sub_Click_领取奖励": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "领取奖励",
+        "pre_delay": 1000,
+        "roi": [
+            292,
+            1077,
+            135,
+            44
+        ]
+    },
+    "Sub_Click_点击开启": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "点击开启",
+        "pre_delay": 800,
+        "post_delay": 1200,
+        "target": [
+            375,
+            700,
+            30,
+            30
+        ],
+        "roi": [
+            305,
+            813,
+            109,
+            44
+        ]
+    },
+    "Flag_资源申请界面": {
+        "recognition": "OCR",
+        "expected": "资源申请",
+        "pre_delay": 800,
+        "roi": [
+            42,
+            131,
+            209,
+            60
+        ]
+    },
+    "Flag_资料室界面": {
+        "recognition": "OCR",
+        "expected": "资料室",
+        "pre_delay": 800,
+        "roi": [
+            33,
+            140,
+            166,
+            74
+        ]
+    },
+    "Flag_酬谢界面": {
+        "recognition": "OCR",
+        "expected": "贡献等级",
+        "roi": [
+            307,
+            225,
+            104,
+            34
+        ]
+    },
+    "Flag_暂无可领取的奖励": {
+        "recognition": "OCR",
+        "expected": "暂无可领取的奖励",
+        "roi": [
+            266,
+            545,
+            187,
+            39
+        ]
+    },
+    "Flag_暂无可领取的资源申请": {
+        "recognition": "OCR",
+        "expected": "暂无可领取的资源申请",
+        "roi": [
+            244,
+            540,
+            227,
+            43
+        ]
+    },
+    "Flag_奖励已领取": {
+        "recognition": "OCR",
+        "expected": "奖励已领取",
+        "roi": [
+            292,
+            1077,
+            135,
+            44
+        ]
+    },
+    "Flag_In基地": {
+        "recognition": "OCR",
+        "expected": "资料室",
+        "pre_delay": 800,
+        "roi": [
+            582,
+            1013,
+            104,
+            47
+        ]
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "领取邮件": {
+        "next": [
+            "Click_返回主界面键",
+            "Click_返回上一级键",
+            "Sub_领取邮件"
+        ]
+    },
+    "Sub_领取邮件": {
+        "is_sub": true,
+        "next": [
+            "Flag_一键领取暗",
+            "Click_一键领取亮",
+            "Sub_Click_关闭奖励弹窗",
+            "Sub_打开邮件列表"
+        ]
+    },
+    "Sub_打开邮件列表": {
+        "is_sub": true,
+        "next": [
+            "Flag_邮件列表",
+            "Click_邮件",
+            "Sub_Click_主界面左侧菜单"
+        ]
+    },
+    "Click_邮件": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Awards/邮件.PNG",
+        "post_delay": 800,
+        "roi": [
+            293,
+            149,
+            42,
+            43
+        ]
+    },
+    "Flag_邮件列表": {
+        "recognition": "OCR",
+        "expected": [
+            "邮箱"
+        ],
+        "pre_delay": 800,
+        "roi": [
+            45,
+            126,
+            71,
+            51
+        ]
+    }
+}
