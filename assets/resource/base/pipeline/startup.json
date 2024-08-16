@@ -27,7 +27,7 @@
             "Sub_Click_点击进入",
             "Sub_Click_关闭奖励弹窗",
             "Sub_Click_返回上一级键",
-            "Click_返回主界面键",
+            "Sub_Click_返回主界面键",
             "Sub_Click_关闭广告弹窗",
             "Flag_TipsLoading",
             "Flag_ThemisLoading",
@@ -41,6 +41,7 @@
         "post_wait_freezes": 1000,
         "next": [
             "Flag_主界面任务",
+            "Flag_主界面思绪",
             "Flag_In思绪",
             "Flag_TipsLoading",
             "Flag_ThemisLoading",
@@ -116,6 +117,42 @@
             1232,
             70,
             34
+        ]
+    },
+    "Flag_MihoyoSlogan": {
+        "recognition": "OCR",
+        "expected": [
+            "TECHOTAKUSSAVETHEWORLD",
+            "TECH OTAKUS SAVE THE WORLD"
+        ],
+        "post_delay": 800,
+        "roi": [
+            166,
+            436,
+            384,
+            33
+        ]
+    },
+    "Flag_StartLoadingVersion": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/StartLoading.png",
+        "post_delay": 800,
+        "roi": [
+            112,
+            960,
+            480,
+            184
+        ]
+    },
+    "Flag_ThemisLoading": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/ThemisLoading.png",
+        "post_delay": 800,
+        "roi": [
+            129,
+            158,
+            442,
+            970
         ]
     }
 }

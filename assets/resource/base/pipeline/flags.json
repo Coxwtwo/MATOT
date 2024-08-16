@@ -1,31 +1,8 @@
 {
-    "Flag_StartLoadingVersion": {
-        "recognition": "TemplateMatch",
-        "template": "StartUp/StartLoading.png",
-        "post_delay": 800,
-        "roi": [
-            112,
-            960,
-            480,
-            184
-        ]
-    },
-    "Flag_ThemisLoading": {
-        "recognition": "TemplateMatch",
-        "template": "StartUp/ThemisLoading.png",
-        "post_delay": 800,
-        "roi": [
-            129,
-            158,
-            442,
-            970
-        ]
-    },
     "Flag_TipsLoading": {
         "recognition": "OCR",
         "expected": "Tips",
-        "pre_delay": 800,
-        "post_delay": 800,
+        "pre_wait_freezes": 800,
         "post_wait_freezes": 1000,
         "roi": [
             448,
@@ -34,38 +11,10 @@
             56
         ]
     },
-    "Flag_MihoyoSlogan": {
-        "recognition": "OCR",
-        "expected": [
-            "TECHOTAKUSSAVETHEWORLD",
-            "TECH OTAKUS SAVE THE WORLD"
-        ],
-        "post_delay": 800,
-        "roi": [
-            166,
-            436,
-            384,
-            33
-        ]
-    },
-    "Flag_自动出卡中": {
-        "recognition": "OCR",
-        "expected": [
-            "自动出卡中"
-        ],
-        "pre_delay": 1000,
-        "post_delay": 1000,
-        "roi": [
-            258,
-            1009,
-            166,
-            44
-        ]
-    },
     "Flag_主界面任务": {
         "recognition": "TemplateMatch",
         "template": "Awards/任务.PNG",
-        "pre_delay": 800,
+        "pre_wait_freezes": 1500,
         "post_delay": 1000,
         "roi": [
             28,
@@ -77,7 +26,7 @@
     "Flag_主界面活动": {
         "recognition": "TemplateMatch",
         "template": "Awards/活动.PNG",
-        "pre_delay": 800,
+        "pre_wait_freezes": 800,
         "post_delay": 1000,
         "roi": [
             28,
@@ -86,12 +35,25 @@
             41
         ]
     },
+    "Flag_主界面思绪": {
+        "recognition": "OCR",
+        "expected": [
+            "思绪"
+        ],
+        "pre_wait_freezes": 800,
+        "roi": [
+            181,
+            1232,
+            70,
+            34
+        ]
+    },
     "Flag_In思绪": {
         "recognition": "OCR",
         "expected": [
             "思绪"
         ],
-        "pre_delay": 800,
+        "pre_wait_freezes": 800,
         "roi": [
             183,
             119,
@@ -99,9 +61,23 @@
             40
         ]
     },
+    "Flag_自动出卡中": {
+        "recognition": "OCR",
+        "expected": [
+            "自动出卡中"
+        ],
+        "pre_wait_freezes": 1000,
+        "post_delay": 1000,
+        "roi": [
+            258,
+            1009,
+            166,
+            44
+        ]
+    },
     "Flag_一键领取暗": {
         "recognition": "ColorMatch",
-        "pre_delay": 500,
+        "pre_wait_freezes": 800,
         "roi": [
             500,
             1160,
