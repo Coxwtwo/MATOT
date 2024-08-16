@@ -73,5 +73,19 @@
             46,
             50
         ]
+    },
+    "Flag_Zero残影关卡次数": {
+        "recognition": "OCR",
+        "expected": [
+            "0/3"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            528,
+            719,
+            46,
+            50
+        ]
     }
 }

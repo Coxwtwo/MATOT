@@ -244,20 +244,6 @@
             44
         ]
     },
-    "Flag_Zero残影关卡次数": {
-        "recognition": "OCR",
-        "expected": [
-            "0/3"
-        ],
-        "pre_delay": 800,
-        "post_delay": 800,
-        "roi": [
-            528,
-            719,
-            46,
-            50
-        ]
-    },
     "Flag_战力不足": {
         "recognition": "ColorMatch",
         "roi": [
@@ -277,31 +263,5 @@
             63
         ],
         "count": 100
-    },
-    "Flag_In外勤区域": {
-        "recognition": "OCR",
-        "expected": [
-            "疲劳值"
-        ],
-        "pre_delay": 800,
-        "roi": [
-            113,
-            1160,
-            75,
-            33
-        ]
-    },
-    "Flag_疲劳值满": {
-        "recognition": "OCR",
-        "expected": [
-            "50/50"
-        ],
-        "pre_delay": 800,
-        "roi": [
-            190,
-            1160,
-            80,
-            33
-        ]
     }
 }
