@@ -1,0 +1,156 @@
+{
+    "刷外勤日常": {
+        "next": [
+            "Click_返回主界面键",
+            "Sub_Click_X按钮",
+            "Click_返回上一级键重复",
+            "Sub_刷外勤日常"
+        ]
+    },
+    "Sub_刷外勤日常": {
+        "is_sub": true,
+        "next": [
+            "Click_结束",
+            "Click_庭审委托结束",
+            "Click_取消",
+            "Flag_疲劳值满",
+            "Flag_战力不足",
+            "Sub_Click_点击继续",
+            "Sub_Click_居中开始辩论",
+            "Sub_Click_开始处理",
+            "Sub_Click_日常委托",
+            "Sub_Click_庭审委托",
+            "Sub_进入外勤区域"
+        ]
+    },
+    "Sub_进入外勤区域": {
+        "times_limit": 5,
+        "is_sub": true,
+        "next": [
+            "Sub_Click_点击继续",
+            "Flag_自动出卡中",
+            "Click_庭审委托结束",
+            "Flag_In外勤区域",
+            "Sub_Click_选择外勤区域",
+            "Sub_Click_法律援助",
+            "Sub_Click_外勤"
+        ]
+    },
+    "Sub_Click_外勤": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "外勤"
+        ],
+        "pre_delay": 800,
+        "post_delay": 1500,
+        "roi": [
+            37,
+            1230,
+            73,
+            40
+        ]
+    },
+    "Sub_Click_法律援助": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "法律援助"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            547,
+            1160,
+            127,
+            42
+        ]
+    },
+    "Sub_Click_选择外勤区域": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "滨河区"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            45,
+            1112,
+            77,
+            30
+        ]
+    },
+    "Sub_Click_日常委托": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "疲劳值"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            0,
+            177,
+            713,
+            854
+        ]
+    },
+    "Sub_Click_庭审委托": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "剩余血量"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            0,
+            177,
+            713,
+            854
+        ]
+    },
+    "Sub_Click_开始处理": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "开始处理"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            277,
+            872,
+            164,
+            52
+        ]
+    },
+    "Click_庭审委托结束": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "结束",
+        "pre_wait_freezes": {
+            "time": 500,
+            "target": [
+                43,
+                243,
+                600,
+                724
+            ]
+        },
+        "pre_delay": 800,
+        "roi": [
+            304,
+            885,
+            109,
+            43
+        ]
+    }
+}

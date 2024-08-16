@@ -1,0 +1,77 @@
+{
+    "刷思绪残影": {
+        "next": [
+            "Click_返回主界面键",
+            "Sub_Click_X按钮",
+            "Sub_刷思绪残影"
+        ]
+    },
+    "Sub_刷思绪残影": {
+        "is_sub": true,
+        "next": [
+            "Click_结束",
+            "Click_取消",
+            "Flag_Zero残影关卡次数",
+            "Sub_Click_确定",
+            "Sub_Click_复盘",
+            "Sub_Click_残影获取关卡",
+            "Sub_Click_选择残影",
+            "Sub_Click_思绪残影",
+            "Sub_Click_思绪"
+        ]
+    },
+    "Sub_Click_思绪残影": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "思绪残影",
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            445,
+            123,
+            110,
+            36
+        ]
+    },
+    "Sub_Click_选择残影": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "残影"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "target": [
+            75,
+            350,
+            30,
+            30
+        ],
+        "roi": [
+            71,
+            447,
+            151,
+            30
+        ]
+    },
+    "Sub_Click_残影获取关卡": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "3/3",
+            "2/3",
+            "1/3"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            528,
+            719,
+            46,
+            50
+        ]
+    }
+}

@@ -6,7 +6,7 @@
     "Sub_点击关闭广告弹窗": {
         "is_sub": true,
         "next": [
-            "Flag_任务界面",
+            "Flag_In思绪",
             "Sub_Click_B服同意协议",
             "Sub_Click_下载确定",
             "Sub_Click_账户登录",

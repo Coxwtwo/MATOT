@@ -1,0 +1,119 @@
+{
+    "刷会展顾问": {
+        "next": [
+            "Click_返回主界面键",
+            "Sub_Click_X按钮",
+            "Sub_刷会展顾问"
+        ]
+    },
+    "Sub_刷会展顾问": {
+        "is_sub": true,
+        "next": [
+            "Click_结束",
+            "Click_取消",
+            "Sub_Click_确定",
+            "Sub_Click_复盘",
+            "Sub_Click_会展顾问05",
+            "Sub_Click_会展顾问",
+            "Sub_Click_进修",
+            "Sub_Click_事件簿"
+        ]
+    },
+    "刷业务考核": {
+        "next": [
+            "Click_返回主界面键",
+            "Sub_Click_X按钮",
+            "Sub_刷业务考核"
+        ]
+    },
+    "Sub_刷业务考核": {
+        "is_sub": true,
+        "next": [
+            "Click_结束",
+            "Click_取消",
+            "Sub_Click_确定",
+            "Sub_Click_复盘",
+            "Sub_Click_业务考核05",
+            "Sub_Click_业务考核",
+            "Sub_Click_进修",
+            "Sub_Click_事件簿"
+        ]
+    },
+    "Sub_Click_进修": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "进修",
+        "pre_delay": 1000,
+        "roi": [
+            319,
+            1191,
+            93,
+            54
+        ]
+    },
+    "Sub_Click_会展顾问": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "会展顾问",
+        "roi": [
+            92,
+            402,
+            186,
+            49
+        ]
+    },
+    "Sub_Click_会展顾问05": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "会展顾问05",
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "target": [
+            416,
+            970,
+            30,
+            30
+        ],
+        "roi": [
+            416,
+            846,
+            130,
+            130
+        ]
+    },
+    "Sub_Click_业务考核": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "业务考核",
+        "roi": [
+            92,
+            696,
+            186,
+            49
+        ]
+    },
+    "Sub_Click_业务考核05": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "业务考核05",
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "target": [
+            416,
+            970,
+            30,
+            30
+        ],
+        "roi": [
+            416,
+            846,
+            130,
+            130
+        ]
+    }
+}

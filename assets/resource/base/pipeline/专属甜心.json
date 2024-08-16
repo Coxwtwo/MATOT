@@ -62,17 +62,6 @@
             51
         ]
     },
-    "Flag_头饰": {
-        "pre_delay": 1000,
-        "recognition": "OCR",
-        "expected": "头饰",
-        "roi": [
-            52,
-            1181,
-            76,
-            46
-        ]
-    },
     "Sub_Click_开始制作": {
         "is_sub": true,
         "action": "Click",
@@ -84,17 +73,6 @@
             724,
             118,
             45
-        ]
-    },
-    "Flag_In开始制作": {
-        "pre_delay": 1000,
-        "recognition": "OCR",
-        "expected": "蜜意甜心值",
-        "roi": [
-            471,
-            1169,
-            132,
-            36
         ]
     },
     "Sub_Click_图纸": {
@@ -120,6 +98,48 @@
             16
         ]
     },
+    "Sub_Click_具体制作步骤": {
+        "is_sub": true,
+        "action": "Click",
+        "pre_delay": 1000,
+        "post_delay": 5000,
+        "recognition": "OCR",
+        "expected": [
+            "制版",
+            "缝边",
+            "调版",
+            "定版",
+            "缝制"
+        ],
+        "roi": [
+            287,
+            970,
+            147,
+            62
+        ]
+    },
+    "Flag_头饰": {
+        "pre_delay": 1000,
+        "recognition": "OCR",
+        "expected": "头饰",
+        "roi": [
+            52,
+            1181,
+            76,
+            46
+        ]
+    },
+    "Flag_In开始制作": {
+        "pre_delay": 1000,
+        "recognition": "OCR",
+        "expected": "蜜意甜心值",
+        "roi": [
+            471,
+            1169,
+            132,
+            36
+        ]
+    },
     "Flag_In图纸": {
         "pre_delay": 1000,
         "recognition": "ColorMatch",
@@ -139,26 +159,6 @@
             240,
             40,
             20
-        ]
-    },
-    "Sub_Click_具体制作步骤": {
-        "is_sub": true,
-        "action": "Click",
-        "pre_delay": 1000,
-        "post_delay": 5000,
-        "recognition": "OCR",
-        "expected": [
-            "制版",
-            "缝边",
-            "调版",
-            "定版",
-            "缝制"
-        ],
-        "roi": [
-            287,
-            970,
-            147,
-            62
         ]
     },
     "Flag_Zero蜜意甜心值": {

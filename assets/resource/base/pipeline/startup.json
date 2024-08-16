@@ -21,7 +21,7 @@
     "Sub_点击关闭广告弹窗": {
         "is_sub": true,
         "next": [
-            "Flag_任务界面",
+            "Flag_In思绪",
             "Sub_Click_下载确定",
             "Sub_Click_账户登录",
             "Sub_Click_点击进入",
@@ -41,6 +41,7 @@
         "post_wait_freezes": 1000,
         "next": [
             "Flag_主界面任务",
+            "Flag_In思绪",
             "Flag_TipsLoading",
             "Flag_ThemisLoading",
             "Flag_StartLoadingVersion",
@@ -105,20 +106,16 @@
     "Sub_Click_关闭广告弹窗": {
         "is_sub": true,
         "action": "Click",
-        "recognition": "TemplateMatch",
-        "template": "Awards/任务.PNG",
+        "recognition": "OCR",
+        "expected": [
+            "思绪"
+        ],
         "pre_delay": 800,
         "roi": [
-            28,
-            359,
-            44,
-            40
-        ],
-        "target": [
-            130,
-            1000,
-            30,
-            30
+            181,
+            1232,
+            70,
+            34
         ]
     }
 }

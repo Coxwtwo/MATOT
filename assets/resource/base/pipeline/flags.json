@@ -86,7 +86,7 @@
             41
         ]
     },
-    "Flag_任务界面": {
+    "Flag_In任务": {
         "recognition": "OCR",
         "expected": [
             "每",
@@ -99,6 +99,19 @@
             123,
             70,
             36
+        ]
+    },
+    "Flag_In思绪": {
+        "recognition": "OCR",
+        "expected": [
+            "思绪"
+        ],
+        "pre_delay": 800,
+        "roi": [
+            183,
+            119,
+            73,
+            40
         ]
     },
     "Flag_好友列表": {
