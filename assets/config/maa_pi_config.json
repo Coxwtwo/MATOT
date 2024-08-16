@@ -19,11 +19,11 @@
     "resource": "B 服",
     "task": [
         {
-            "name": "刷外勤日常",
+            "name": "刷思绪残影",
             "option": [
                 {
-                    "name": "外勤区域",
-                    "value": "嘉南区"
+                    "name": "思绪名称",
+                    "value": "彼时少年"
                 }
             ]
         }

@@ -59,7 +59,10 @@
         },
         {
             "name": "刷思绪残影",
-            "entry": "刷思绪残影"
+            "entry": "刷思绪残影",
+            "option": [
+                "思绪名称"
+            ]
         },
         {
             "name": "刷外勤日常",
@@ -116,6 +119,180 @@
                         "Sub_Click_选择外勤区域": {
                             "expected": [
                                 "嘉南区"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "思绪名称": {
+            "cases": [
+                {
+                    "name": "锋芒褪尽",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "锋芒褪尽"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "彼时少年",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "彼时少年"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "初光倾泻",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "初光倾泻"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "心头撞鹿",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "心头撞鹿"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "坠入心扉",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "坠入心扉"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "与子偕行",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "与子偕行"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "长夜微明",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "长夜微明"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "入局",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "入局"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "抉择",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "抉择"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "静默之下",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "静默之下"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "繁嚣一梦",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "繁嚣一梦"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "刻心",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "刻心"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "此间",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "此间"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "思欲",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "思欲"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "情染",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "情染"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "灼光",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "灼光"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "铭忘",
+                    "param": {
+                        "Sub_Click_选择残影": {
+                            "expected": [
+                                "铭忘"
                             ]
                         }
                     }

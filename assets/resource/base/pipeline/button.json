@@ -221,7 +221,7 @@
         "recognition": "OCR",
         "expected": "结束",
         "pre_wait_freezes": {
-            "time": 1000,
+            "time": 800,
             "target": [
                 43,
                 243,
@@ -229,7 +229,7 @@
                 724
             ]
         },
-        "pre_delay": 800,
+        "pre_delay": 7000,
         "roi": [
             304,
             1074,
@@ -261,7 +261,7 @@
             550,
             720,
             93,
-            47
+            70
         ]
     },
     "Click_取消": {

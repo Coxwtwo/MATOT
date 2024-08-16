@@ -10,17 +10,20 @@
         "is_sub": true,
         "next": [
             "Click_结束",
-            "Click_取消",
-            "Flag_Zero残影关卡次数",
             "Sub_Click_确定",
+            "Flag_Zero残影关卡次数",
             "Sub_Click_复盘",
             "Sub_Click_残影获取关卡",
             "Sub_Click_选择残影",
+            "Sub_Swipe_上滑寻找残影",
             "Sub_Click_思绪残影",
-            "Sub_Click_思绪"
+            "Sub_Click_思绪",
+            "Sub_Click_X按钮",
+            "Click_取消"
         ]
     },
     "Sub_Click_思绪残影": {
+        "times_limit": 1,
         "is_sub": true,
         "action": "Click",
         "recognition": "OCR",
@@ -43,17 +46,17 @@
         ],
         "pre_delay": 800,
         "post_delay": 800,
-        "target": [
-            75,
-            350,
-            30,
-            30
+        "target_offset": [
+            0,
+            -60,
+            0,
+            0
         ],
         "roi": [
-            71,
-            447,
-            151,
-            30
+            70,
+            445,
+            600,
+            660
         ]
     },
     "Sub_Click_残影获取关卡": {
@@ -72,6 +75,34 @@
             719,
             46,
             50
+        ]
+    },
+    "Sub_Swipe_上滑寻找残影": {
+        "is_sub": true,
+        "action": "Swipe",
+        "recognition": "OCR",
+        "post_delay": 800,
+        "expected": [
+            "残影",
+            "线影"
+        ],
+        "roi": [
+            70,
+            400,
+            600,
+            280
+        ],
+        "begin": [
+            75,
+            650,
+            30,
+            30
+        ],
+        "end": [
+            75,
+            400,
+            30,
+            30
         ]
     },
     "Flag_Zero残影关卡次数": {
