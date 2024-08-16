@@ -10,13 +10,13 @@
         "is_sub": true,
         "next": [
             "Click_结束",
-            "Click_取消",
-            "Sub_Click_确定",
             "Sub_Click_复盘",
             "Sub_Click_会展顾问05",
             "Sub_Click_会展顾问",
             "Sub_Click_进修",
-            "Sub_Click_事件簿"
+            "Sub_Click_事件簿",
+            "Sub_Click_确定",
+            "Click_取消"
         ]
     },
     "刷业务考核": {
@@ -30,13 +30,13 @@
         "is_sub": true,
         "next": [
             "Click_结束",
-            "Click_取消",
-            "Sub_Click_确定",
             "Sub_Click_复盘",
             "Sub_Click_业务考核05",
             "Sub_Click_业务考核",
             "Sub_Click_进修",
-            "Sub_Click_事件簿"
+            "Sub_Click_事件簿",
+            "Sub_Click_确定",
+            "Click_取消"
         ]
     },
     "Sub_Click_进修": {

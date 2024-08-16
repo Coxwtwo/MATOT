@@ -24,16 +24,16 @@
         ]
     },
     "Sub_进入外勤区域": {
-        "times_limit": 5,
         "is_sub": true,
         "next": [
-            "Sub_Click_点击继续",
-            "Flag_自动出卡中",
-            "Click_庭审委托结束",
             "Flag_In外勤区域",
             "Sub_Click_选择外勤区域",
             "Sub_Click_法律援助",
-            "Sub_Click_外勤"
+            "Sub_Click_外勤",
+            "Click_结束",
+            "Click_庭审委托结束",
+            "Sub_Click_点击继续",
+            "Flag_自动出卡中"
         ]
     },
     "Sub_Click_外勤": {

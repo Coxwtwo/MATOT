@@ -15,6 +15,7 @@
         ]
     },
     "Sub_点击开始制作": {
+        "times_limit": 20,
         "is_sub": true,
         "next": [
             "Flag_In开始制作",
