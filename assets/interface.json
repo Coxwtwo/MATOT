@@ -63,7 +63,10 @@
         },
         {
             "name": "刷外勤日常",
-            "entry": "刷外勤日常"
+            "entry": "刷外勤日常",
+            "option": [
+                "外勤区域"
+            ]
         },
         {
             "name": "领取任务奖励",
@@ -73,5 +76,51 @@
             "name": "退出游戏",
             "entry": "CloseTOT"
         }
-    ]
+    ],
+    "option": {
+        "外勤区域": {
+            "cases": [
+                {
+                    "name": "滨河区",
+                    "param": {
+                        "Sub_Click_选择外勤区域": {
+                            "expected": [
+                                "滨河区"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "锦兰区",
+                    "param": {
+                        "Sub_Click_选择外勤区域": {
+                            "expected": [
+                                "锦兰区"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "长滩区",
+                    "param": {
+                        "Sub_Click_选择外勤区域": {
+                            "expected": [
+                                "长滩区"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "嘉南区",
+                    "param": {
+                        "Sub_Click_选择外勤区域": {
+                            "expected": [
+                                "嘉南区"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
 }

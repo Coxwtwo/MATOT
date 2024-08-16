@@ -19,48 +19,13 @@
     "resource": "B 服",
     "task": [
         {
-            "name": "领取友谊徽章",
-            "option": []
-        },
-        {
-            "name": "领取邮件",
-            "option": []
-        },
-        {
-            "name": "领取资源申请",
-            "option": []
-        },
-        {
-            "name": "领取案件解析",
-            "option": []
-        },
-        {
-            "name": "领取酬谢",
-            "option": []
-        },
-        {
-            "name": "专属甜心",
-            "option": []
-        },
-        {
-            "name": "刷会展顾问",
-            "option": []
-        },
-        {
-            "name": "刷业务考核",
-            "option": []
-        },
-        {
             "name": "刷外勤日常",
-            "option": []
-        },
-        {
-            "name": "刷思绪残影",
-            "option": []
-        },
-        {
-            "name": "领取任务奖励",
-            "option": []
+            "option": [
+                {
+                    "name": "外勤区域",
+                    "value": "嘉南区"
+                }
+            ]
         }
     ]
 }
