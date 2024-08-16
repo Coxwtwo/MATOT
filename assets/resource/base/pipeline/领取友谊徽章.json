@@ -50,7 +50,7 @@
         "expected": [
             "好友数"
         ],
-        "pre_delay": 800,
+        "pre_wait_freezes": 800,
         "roi": [
             19,
             222,

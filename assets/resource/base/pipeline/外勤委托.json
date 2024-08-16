@@ -158,7 +158,7 @@
         "expected": [
             "疲劳值"
         ],
-        "pre_delay": 800,
+        "pre_wait_freezes": 800,
         "roi": [
             113,
             1160,
@@ -171,7 +171,7 @@
         "expected": [
             "50/50"
         ],
-        "pre_delay": 800,
+        "pre_wait_freezes": 800,
         "roi": [
             190,
             1160,

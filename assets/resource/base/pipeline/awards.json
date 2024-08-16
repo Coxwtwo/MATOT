@@ -52,7 +52,7 @@
             "母",
             "每日"
         ],
-        "pre_delay": 800,
+        "pre_wait_freezes": 800,
         "roi": [
             208,
             123,

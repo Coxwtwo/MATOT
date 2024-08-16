@@ -40,7 +40,7 @@
         "expected": [
             "邮箱"
         ],
-        "pre_delay": 800,
+        "pre_wait_freezes": 800,
         "roi": [
             45,
             126,

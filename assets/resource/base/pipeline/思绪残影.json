@@ -79,7 +79,7 @@
         "expected": [
             "0/3"
         ],
-        "pre_delay": 800,
+        "pre_wait_freezes": 800,
         "post_delay": 800,
         "roi": [
             528,

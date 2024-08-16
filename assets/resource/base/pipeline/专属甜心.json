@@ -120,7 +120,7 @@
         ]
     },
     "Flag_头饰": {
-        "pre_delay": 1000,
+        "pre_wait_freezes": 800,
         "recognition": "OCR",
         "expected": "头饰",
         "roi": [
@@ -131,7 +131,7 @@
         ]
     },
     "Flag_In开始制作": {
-        "pre_delay": 1000,
+        "pre_wait_freezes": 800,
         "recognition": "OCR",
         "expected": "蜜意甜心值",
         "roi": [
@@ -142,7 +142,7 @@
         ]
     },
     "Flag_In图纸": {
-        "pre_delay": 1000,
+        "pre_wait_freezes": 800,
         "recognition": "ColorMatch",
         "lower": [
             110,

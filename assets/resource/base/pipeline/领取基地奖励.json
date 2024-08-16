@@ -216,7 +216,7 @@
     "Flag_资源申请界面": {
         "recognition": "OCR",
         "expected": "资源申请",
-        "pre_delay": 800,
+        "pre_wait_freezes": 800,
         "roi": [
             42,
             131,
@@ -227,7 +227,7 @@
     "Flag_资料室界面": {
         "recognition": "OCR",
         "expected": "资料室",
-        "pre_delay": 800,
+        "pre_wait_freezes": 800,
         "roi": [
             33,
             140,
@@ -238,6 +238,7 @@
     "Flag_酬谢界面": {
         "recognition": "OCR",
         "expected": "贡献等级",
+        "pre_wait_freezes": 800,
         "roi": [
             307,
             225,
@@ -278,7 +279,7 @@
     "Flag_In基地": {
         "recognition": "OCR",
         "expected": "资料室",
-        "pre_delay": 800,
+        "pre_wait_freezes": 800,
         "roi": [
             582,
             1013,

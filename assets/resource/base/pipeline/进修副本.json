@@ -119,6 +119,7 @@
     "Flag_进修副本": {
         "recognition": "OCR",
         "expected": "进修副本",
+        "pre_wait_freezes": 800,
         "roi": [
             56,
             154,
