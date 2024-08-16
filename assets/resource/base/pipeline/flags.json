@@ -115,5 +115,17 @@
             63
         ],
         "count": 100
+    },
+    "Flag_自动剧情开启中": {
+        "recognition": "TemplateMatch",
+        "template": "Button/自动剧情开启中.png",
+        "pre_wait_freezes": 800,
+        "post_delay": 5000,
+        "roi": [
+            532,
+            1162,
+            33,
+            40
+        ]
     }
 }
