@@ -449,4 +449,5 @@ tools/ImageCropper/**/*.png
 
 #else
 venv
-tmp.txt
+GitReference.txt
+assets/config
