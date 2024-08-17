@@ -105,7 +105,7 @@
         "is_sub": true,
         "action": "Click",
         "pre_delay": 1000,
-        "post_delay": 5000,
+        "post_delay": 10000,
         "recognition": "OCR",
         "expected": [
             "制版",
