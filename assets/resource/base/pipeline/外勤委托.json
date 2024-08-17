@@ -17,6 +17,7 @@
             "Flag_战力不足",
             "Flag_委托搜寻中",
             "Sub_Click_点击继续",
+            "Sub_Click_自动出卡",
             "Sub_Click_居中开始辩论",
             "Sub_Click_开始处理",
             "Sub_Click_日常委托",
@@ -34,7 +35,8 @@
             "Click_结束",
             "Click_庭审委托结束",
             "Sub_Click_点击继续",
-            "Flag_自动出卡中"
+            "Flag_自动出卡中",
+            "Sub_Click_自动出卡"
         ]
     },
     "Sub_Click_外勤": {
