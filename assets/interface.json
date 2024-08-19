@@ -50,12 +50,12 @@
             "entry": "专属甜心"
         },
         {
-            "name": "刷会展顾问",
-            "entry": "刷会展顾问"
-        },
-        {
-            "name": "刷业务考核",
-            "entry": "刷业务考核"
+            "name": "进修副本",
+            "entry": "进修副本",
+            "option": [
+                "进修关卡",
+                "进修关卡次数"
+            ]
         },
         {
             "name": "刷思绪残影",
@@ -70,7 +70,14 @@
             "option": [
                 "外勤区域",
                 "日常委托完成次数"
-            ]
+            ],
+            "param": {
+                "Click_点击继续": {
+                    "next": [
+                        "Click_外勤结算界面"
+                    ]
+                }
+            }
         },
         {
             "name": "领取任务奖励",
@@ -82,6 +89,213 @@
         }
     ],
     "option": {
+        "进修关卡": {
+            "cases": [
+                {
+                    "name": "会展顾问（未名币）",
+                    "param": {
+                        "Click_事件簿": {
+                            "next": [
+                                "Click_进修"
+                            ]
+                        },
+                        "Click_进入进修副本": {
+                            "expected": "会展顾问"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "05"
+                        }
+                    }
+                },
+                {
+                    "name": "业务考核（思绪经验）",
+                    "param": {
+                        "Click_事件簿": {
+                            "next": [
+                                "Click_进修"
+                            ]
+                        },
+                        "Click_进入进修副本": {
+                            "expected": "业务考核"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "05"
+                        }
+                    }
+                },
+                {
+                    "name": "推理应用（夏彦）",
+                    "param": {
+                        "Click_事件簿": {
+                            "next": [
+                                "Click_进修"
+                            ]
+                        },
+                        "Click_进入进化素材副本": {
+                            "expected": "推理应用"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "03"
+                        }
+                    }
+                },
+                {
+                    "name": "案件分析（左然）",
+                    "param": {
+                        "Click_事件簿": {
+                            "next": [
+                                "Click_进修"
+                            ]
+                        },
+                        "Click_进入进化素材副本": {
+                            "expected": "案件分析"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "03"
+                        }
+                    }
+                },
+                {
+                    "name": "心理治疗（莫弈）",
+                    "param": {
+                        "Click_事件簿": {
+                            "next": [
+                                "Click_进修"
+                            ]
+                        },
+                        "Click_进入进化素材副本": {
+                            "expected": "心理治疗"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "03"
+                        }
+                    }
+                },
+                {
+                    "name": "法务咨询（陆景和）",
+                    "param": {
+                        "Click_事件簿": {
+                            "next": [
+                                "Click_进修"
+                            ]
+                        },
+                        "Click_进入进化素材副本": {
+                            "expected": "法务咨询"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "03"
+                        }
+                    }
+                },
+                {
+                    "name": "危机干预（逻辑）",
+                    "param": {
+                        "Click_事件簿": {
+                            "next": [
+                                "Click_进修"
+                            ]
+                        },
+                        "Click_进入进化素材副本": {
+                            "expected": "危机干预"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "03"
+                        }
+                    }
+                },
+                {
+                    "name": "问题疏导（共情）",
+                    "param": {
+                        "Click_事件簿": {
+                            "next": [
+                                "Click_进修"
+                            ]
+                        },
+                        "Click_进入进化素材副本": {
+                            "expected": "问题疏导"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "03"
+                        }
+                    }
+                },
+                {
+                    "name": "心理咨询（直觉）",
+                    "param": {
+                        "Click_事件簿": {
+                            "next": [
+                                "Click_进修"
+                            ]
+                        },
+                        "Click_进入进化素材副本": {
+                            "expected": "心理咨询"
+                        },
+                        "Click_进入进修关卡": {
+                            "expected": "03"
+                        }
+                    }
+                }
+            ]
+        },
+        "进修关卡次数": {
+            "cases": [
+                {
+                    "name": "x1",
+                    "param": {
+                        "Click_工作证使用张数": {
+                            "expected": 1
+                        },
+                        "Click_复盘次数": {
+                            "expected": 1
+                        }
+                    }
+                },
+                {
+                    "name": "x2",
+                    "param": {
+                        "Click_工作证使用张数": {
+                            "expected": 2
+                        },
+                        "Click_复盘次数": {
+                            "expected": 2
+                        }
+                    }
+                },
+                {
+                    "name": "x3",
+                    "param": {
+                        "Click_工作证使用张数": {
+                            "expected": 3
+                        },
+                        "Click_复盘次数": {
+                            "expected": 3
+                        }
+                    }
+                },
+                {
+                    "name": "x4",
+                    "param": {
+                        "Click_工作证使用张数": {
+                            "expected": 4
+                        },
+                        "Click_复盘次数": {
+                            "expected": 4
+                        }
+                    }
+                },
+                {
+                    "name": "x5",
+                    "param": {
+                        "Click_工作证使用张数": {
+                            "expected": 5
+                        },
+                        "Click_复盘次数": {
+                            "expected": 5
+                        }
+                    }
+                }
+            ]
+        },
         "外勤区域": {
             "cases": [
                 {

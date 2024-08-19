@@ -1,46 +1,11 @@
 {
-    "刷会展顾问": {
+    "进修副本": {
         "next": [
-            "Click_返回主界面键",
-            "Sub_Click_X按钮",
-            "Sub_刷会展顾问"
+            "Click_事件簿",
+            "Sub_StartUp"
         ]
     },
-    "Sub_刷会展顾问": {
-        "is_sub": true,
-        "next": [
-            "Click_结束",
-            "Sub_Click_复盘",
-            "Sub_Click_会展顾问05",
-            "Sub_Click_会展顾问",
-            "Sub_Click_进修",
-            "Sub_Click_事件簿",
-            "Sub_Click_确定",
-            "Click_取消"
-        ]
-    },
-    "刷业务考核": {
-        "next": [
-            "Click_返回主界面键",
-            "Sub_Click_X按钮",
-            "Sub_刷业务考核"
-        ]
-    },
-    "Sub_刷业务考核": {
-        "is_sub": true,
-        "next": [
-            "Click_结束",
-            "Sub_Click_复盘",
-            "Sub_Click_业务考核05",
-            "Sub_Click_业务考核",
-            "Sub_Click_进修",
-            "Sub_Click_事件簿",
-            "Sub_Click_确定",
-            "Click_取消"
-        ]
-    },
-    "Sub_Click_进修": {
-        "is_sub": true,
+    "Click_进修": {
         "action": "Click",
         "recognition": "OCR",
         "expected": "进修",
@@ -50,81 +15,166 @@
             1191,
             93,
             54
+        ],
+        "next": [
+            "寻找进修副本"
         ]
     },
-    "Sub_Click_会展顾问": {
-        "is_sub": true,
+    "寻找进修副本": {
+        "next": [
+            "Click_进入进修副本",
+            "Swipe_向上滑动寻找进修副本"
+        ]
+    },
+    "Swipe_向上滑动寻找进修副本": {
+        "action": "Swipe",
+        "begin": [
+            75,
+            650,
+            30,
+            30
+        ],
+        "end": [
+            75,
+            400,
+            30,
+            30
+        ],
+        "next": [
+            "寻找进修副本"
+        ]
+    },
+    "Click_进入进修副本": {
         "action": "Click",
         "recognition": "OCR",
-        "expected": "会展顾问",
+        "expected": "By_User_Setttings",
         "roi": [
-            92,
+            95,
+            275,
+            185,
+            860
+        ],
+        "next": [
+            "进修关卡"
+        ]
+    },
+    "进修关卡": {
+        "next": [
+            "Flag_该副本今日未开启",
+            "Click_进入进修关卡"
+        ]
+    },
+    "Flag_该副本今日未开启": {
+        "recognition": "OCR",
+        "expected": "该副本今日未开启",
+        "roi": [
+            253,
+            357,
+            216,
+            43
+        ],
+        "next": [
+            "Click_取消消耗晶片开启副本"
+        ]
+    },
+    "Click_取消消耗晶片开启副本": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "取消",
+        "pre_delay": 500,
+        "roi": [
+            380,
+            700,
+            100,
+            250
+        ],
+        "next": [
+            "Click_返回主界面键"
+        ]
+    },
+    "Click_进入进修关卡": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "By_User_Setttings",
+        "target_offset": [
+            50,
+            100,
+            0,
+            0
+        ],
+        "roi": [
+            93,
+            191,
+            445,
+            862
+        ],
+        "next": [
+            "Click_复盘进修关卡"
+        ]
+    },
+    "Click_复盘进修关卡": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "复盘",
+        "roi": [
+            194,
+            860,
+            70,
+            47
+        ],
+        "next": [
+            "Flag_体力不足弹窗",
+            "Flag_使用工作证页面",
+            "Flag_复盘确认界面"
+        ]
+    },
+    "Flag_使用工作证页面": {
+        "recognition": "OCR",
+        "expected": "当前关卡可进行次数",
+        "roi": [
+            271,
+            328,
+            257,
+            41
+        ],
+        "next": [
+            "Click_工作证使用张数",
+            "Click_增加工作证张数"
+        ]
+    },
+    "Click_工作证使用张数": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "By_User_Setttings",
+        "roi": [
+            519,
             402,
-            186,
-            49
-        ]
-    },
-    "Sub_Click_会展顾问05": {
-        "is_sub": true,
-        "action": "Click",
-        "recognition": "OCR",
-        "expected": "会展顾问05",
-        "pre_delay": 800,
-        "post_delay": 1000,
-        "target": [
-            416,
-            970,
-            30,
-            30
+            66,
+            66
         ],
-        "roi": [
-            416,
-            846,
-            130,
-            130
-        ]
-    },
-    "Sub_Click_业务考核": {
-        "is_sub": true,
-        "action": "Click",
-        "recognition": "OCR",
-        "expected": "业务考核",
-        "roi": [
-            92,
-            696,
-            186,
-            49
-        ]
-    },
-    "Sub_Click_业务考核05": {
-        "is_sub": true,
-        "action": "Click",
-        "recognition": "OCR",
-        "expected": "业务考核05",
-        "pre_delay": 800,
-        "post_delay": 1000,
         "target": [
-            416,
-            970,
-            30,
-            30
+            539,
+            804,
+            136,
+            50
         ],
-        "roi": [
-            416,
-            846,
-            130,
-            130
+        "next": [
+            "Click_复盘进修关卡"
         ]
     },
-    "Flag_进修副本": {
-        "recognition": "OCR",
-        "expected": "进修副本",
-        "pre_wait_freezes": 800,
+    "Click_增加工作证张数": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/工作证使用张数加一.png",
+        "pre_delay": 800,
         "roi": [
-            56,
-            154,
-            172,
+            573,
+            546,
+            65,
             48
+        ],
+        "next": [
+            "Flag_使用工作证页面"
         ]
     }
 }

@@ -251,6 +251,18 @@
             47
         ]
     },
+    "Click_取消": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "取消",
+        "pre_delay": 500,
+        "roi": [
+            380,
+            700,
+            100,
+            250
+        ]
+    },
     "Sub_Click_确定": {
         "is_sub": true,
         "action": "Click",
@@ -262,18 +274,6 @@
             720,
             93,
             70
-        ]
-    },
-    "Click_取消": {
-        "action": "Click",
-        "recognition": "OCR",
-        "expected": "取消",
-        "pre_delay": 500,
-        "roi": [
-            380,
-            700,
-            100,
-            250
         ]
     },
     "前往": {
@@ -371,6 +371,262 @@
             1208,
             46,
             27
+        ]
+    },
+    "By_User_Setttings": {},
+    "Click_事件簿": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "Story",
+        "pre_delay": 500,
+        "roi": [
+            598,
+            987,
+            63,
+            29
+        ],
+        "next": [
+            "By_User_Setttings"
+        ]
+    },
+    "Flag_复盘确认界面": {
+        "recognition": "OCR",
+        "expected": "复盘确认",
+        "roi": [
+            300,
+            360,
+            114,
+            43
+        ],
+        "next": [
+            "Click_复盘次数",
+            "Click_减少复盘次数"
+        ]
+    },
+    "Click_复盘次数": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "By_User_Setttings",
+        "post_delay": 4000,
+        "roi": [
+            280,
+            570,
+            168,
+            49
+        ],
+        "target": [
+            550,
+            720,
+            93,
+            70
+        ],
+        "next": [
+            "Click_副本结算界面"
+        ]
+    },
+    "Click_减少复盘次数": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/复盘次数减一.png",
+        "pre_delay": 800,
+        "roi": [
+            203,
+            567,
+            56,
+            56
+        ],
+        "next": [
+            "Flag_复盘确认界面"
+        ]
+    },
+    "Click_副本结算界面": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "结束",
+        "pre_wait_freezes": 500,
+        "pre_delay": 800,
+        "roi": [
+            304,
+            885,
+            109,
+            232
+        ],
+        "next": [
+            "Click_副本结算界面",
+            "Click_返回主界面键"
+        ]
+    },
+    "Click_居中开始辩论": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "开始辩论",
+        "pre_delay": 800,
+        "post_delay": 10000,
+        "roi": [
+            294,
+            1170,
+            130,
+            46
+        ],
+        "next": [
+            "Flag_自动出卡已开启",
+            "Click_开启自动出卡"
+        ]
+    },
+    "Flag_战力不足": {
+        "recognition": "ColorMatch",
+        "roi": [
+            570,
+            130,
+            100,
+            36
+        ],
+        "lower": [
+            155,
+            71,
+            58
+        ],
+        "upper": [
+            213,
+            82,
+            63
+        ],
+        "count": 100,
+        "next": [
+            "Click_战力不足返回上一级"
+        ]
+    },
+    "Click_战力不足返回上一级": {
+        "action": "Click",
+        "pre_delay": 1000,
+        "recognition": "TemplateMatch",
+        "template": "Button/Back.PNG",
+        "roi": [
+            51,
+            31,
+            33,
+            39
+        ],
+        "next": [
+            "Click_退出委托X按钮"
+        ]
+    },
+    "Click_退出委托X按钮": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/XKey.png",
+        "green_mask": true,
+        "threshold": 0.5,
+        "pre_delay": 1000,
+        "roi": [
+            341,
+            1100,
+            37,
+            65
+        ],
+        "next": [
+            "Sub_StartUp"
+        ]
+    },
+    "Flag_体力不足弹窗": {
+        "recognition": "OCR",
+        "expected": "体力补充",
+        "roi": [
+            260,
+            290,
+            112,
+            36
+        ],
+        "next": [
+            "喝能量饮料",
+            "Click_取消喝饮料"
+        ]
+    },
+    "喝能量饮料": {
+        "next": [
+            "Click_取消喝饮料"
+        ]
+    },
+    "Click_取消喝饮料": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "取消",
+        "pre_delay": 500,
+        "roi": [
+            380,
+            700,
+            100,
+            250
+        ],
+        "next": [
+            "Click_退出委托X按钮"
+        ]
+    },
+    "Flag_自动出卡已开启": {
+        "recognition": "OCR",
+        "expected": [
+            "自动出卡中"
+        ],
+        "pre_wait_freezes": 1000,
+        "post_delay": 1000,
+        "roi": [
+            258,
+            1009,
+            166,
+            44
+        ],
+        "next": [
+            "Flag_自动出卡中"
+        ]
+    },
+    "Click_开启自动出卡": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/自动出卡.png",
+        "pre_delay": 800,
+        "post_delay": 10000,
+        "roi": [
+            650,
+            1202,
+            28,
+            37
+        ],
+        "next": [
+            "Flag_自动出卡中"
+        ]
+    },
+    "Flag_自动出卡中": {
+        "recognition": "OCR",
+        "expected": [
+            "自动出卡中"
+        ],
+        "pre_wait_freezes": 1000,
+        "post_delay": 1000,
+        "roi": [
+            258,
+            1009,
+            166,
+            44
+        ],
+        "next": [
+            "Flag_自动出卡中",
+            "Click_点击继续"
+        ]
+    },
+    "Click_点击继续": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "点击继续",
+        "pre_delay": 800,
+        "post_wait_freezes": 1000,
+        "roi": [
+            292,
+            1060,
+            132,
+            51
+        ],
+        "next": [
+            "Click_副本结算界面"
         ]
     }
 }
