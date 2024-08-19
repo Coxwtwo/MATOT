@@ -61,20 +61,6 @@
             40
         ]
     },
-    "Flag_自动出卡中": {
-        "recognition": "OCR",
-        "expected": [
-            "自动出卡中"
-        ],
-        "pre_wait_freezes": 1000,
-        "post_delay": 1000,
-        "roi": [
-            258,
-            1009,
-            166,
-            44
-        ]
-    },
     "Flag_一键领取暗": {
         "recognition": "ColorMatch",
         "pre_wait_freezes": 800,
@@ -95,26 +81,6 @@
             110
         ],
         "count": 4000
-    },
-    "Flag_战力不足": {
-        "recognition": "ColorMatch",
-        "roi": [
-            570,
-            130,
-            100,
-            36
-        ],
-        "lower": [
-            155,
-            71,
-            58
-        ],
-        "upper": [
-            213,
-            82,
-            63
-        ],
-        "count": 100
     },
     "Flag_自动剧情开启中": {
         "recognition": "TemplateMatch",

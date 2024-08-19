@@ -65,10 +65,11 @@
             ]
         },
         {
-            "name": "刷外勤日常",
-            "entry": "刷外勤日常",
+            "name": "外勤委托",
+            "entry": "外勤委托",
             "option": [
-                "外勤区域"
+                "外勤区域",
+                "日常委托完成次数"
             ]
         },
         {
@@ -86,7 +87,7 @@
                 {
                     "name": "滨河区",
                     "param": {
-                        "Sub_Click_选择外勤区域": {
+                        "Click_进入外勤区域": {
                             "expected": [
                                 "滨河区"
                             ]
@@ -96,7 +97,7 @@
                 {
                     "name": "锦兰区",
                     "param": {
-                        "Sub_Click_选择外勤区域": {
+                        "Click_进入外勤区域": {
                             "expected": [
                                 "锦兰区"
                             ]
@@ -106,7 +107,7 @@
                 {
                     "name": "长滩区",
                     "param": {
-                        "Sub_Click_选择外勤区域": {
+                        "Click_进入外勤区域": {
                             "expected": [
                                 "长滩区"
                             ]
@@ -116,10 +117,38 @@
                 {
                     "name": "嘉南区",
                     "param": {
-                        "Sub_Click_选择外勤区域": {
+                        "Click_进入外勤区域": {
                             "expected": [
                                 "嘉南区"
                             ]
+                        }
+                    }
+                }
+            ]
+        },
+        "日常委托完成次数": {
+            "cases": [
+                {
+                    "name": "x1",
+                    "param": {
+                        "Click_日常委托": {
+                            "times_limit": 1
+                        }
+                    }
+                },
+                {
+                    "name": "x2",
+                    "param": {
+                        "Click_日常委托": {
+                            "times_limit": 2
+                        }
+                    }
+                },
+                {
+                    "name": "x3",
+                    "param": {
+                        "Click_日常委托": {
+                            "times_limit": 3
                         }
                     }
                 }

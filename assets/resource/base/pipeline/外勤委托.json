@@ -1,82 +1,51 @@
 {
-    "刷外勤日常": {
+    "外勤委托": {
         "next": [
-            "Click_返回主界面键",
-            "Sub_Click_X按钮",
-            "Click_返回上一级键重复",
-            "Sub_刷外勤日常"
+            "Click_外勤",
+            "Sub_StartUp"
         ]
     },
-    "Sub_刷外勤日常": {
-        "is_sub": true,
-        "next": [
-            "Click_结束",
-            "Click_庭审委托结束",
-            "Click_取消",
-            "Flag_疲劳值满",
-            "Flag_战力不足",
-            "Flag_委托搜寻中",
-            "Sub_Click_点击继续",
-            "Sub_Click_自动出卡",
-            "Sub_Click_居中开始辩论",
-            "Sub_Click_开始处理",
-            "Sub_Click_日常委托",
-            "Sub_Click_庭审委托",
-            "Sub_进入外勤区域"
-        ]
-    },
-    "Sub_进入外勤区域": {
-        "is_sub": true,
-        "next": [
-            "Flag_In外勤区域",
-            "Sub_Click_选择外勤区域",
-            "Sub_Click_法律援助",
-            "Sub_Click_外勤",
-            "Click_结束",
-            "Click_庭审委托结束",
-            "Sub_Click_点击继续",
-            "Flag_自动出卡中",
-            "Sub_Click_自动出卡"
-        ]
-    },
-    "Sub_Click_外勤": {
-        "is_sub": true,
+    "Click_外勤": {
         "action": "Click",
         "recognition": "OCR",
         "expected": [
             "外勤"
         ],
         "pre_delay": 800,
-        "post_delay": 1500,
+        "post_delay": 4500,
         "roi": [
             37,
             1230,
             73,
             40
+        ],
+        "next": [
+            "Click_法律援助"
         ]
     },
-    "Sub_Click_法律援助": {
-        "is_sub": true,
+    "Click_法律援助": {
         "action": "Click",
         "recognition": "OCR",
         "expected": [
             "法律援助"
         ],
         "pre_delay": 800,
-        "post_delay": 800,
+        "post_delay": 1500,
         "roi": [
             547,
             1160,
             127,
             42
+        ],
+        "next": [
+            "Click_进入外勤区域"
         ]
     },
-    "Sub_Click_选择外勤区域": {
-        "is_sub": true,
+    "Click_进入外勤区域": {
         "action": "Click",
         "recognition": "OCR",
         "expected": [
-            "滨河区"
+            "嘉南区"
         ],
         "pre_delay": 800,
         "post_delay": 800,
@@ -85,10 +54,20 @@
             1000,
             650,
             150
+        ],
+        "next": [
+            "寻找委托"
         ]
     },
-    "Sub_Click_日常委托": {
-        "is_sub": true,
+    "寻找委托": {
+        "next": [
+            "Click_日常委托",
+            "Click_庭审委托",
+            "Flag_委托搜寻中",
+            "Flag_疲劳值满"
+        ]
+    },
+    "Click_日常委托": {
         "action": "Click",
         "recognition": "OCR",
         "expected": [
@@ -101,10 +80,16 @@
             180,
             720,
             850
+        ],
+        "next": [
+            "Click_开始处理"
+        ],
+        "times_limit": 3,
+        "runout_next": [
+            "Click_返回主界面键"
         ]
     },
-    "Sub_Click_庭审委托": {
-        "is_sub": true,
+    "Click_庭审委托": {
         "action": "Click",
         "recognition": "OCR",
         "expected": [
@@ -117,69 +102,9 @@
             180,
             720,
             850
-        ]
-    },
-    "Sub_Click_开始处理": {
-        "is_sub": true,
-        "action": "Click",
-        "recognition": "OCR",
-        "expected": [
-            "开始处理"
         ],
-        "pre_delay": 800,
-        "post_delay": 800,
-        "roi": [
-            277,
-            872,
-            164,
-            52
-        ]
-    },
-    "Click_庭审委托结束": {
-        "action": "Click",
-        "recognition": "OCR",
-        "expected": "结束",
-        "pre_wait_freezes": {
-            "time": 500,
-            "target": [
-                43,
-                243,
-                600,
-                724
-            ]
-        },
-        "pre_delay": 800,
-        "roi": [
-            304,
-            885,
-            109,
-            43
-        ]
-    },
-    "Flag_In外勤区域": {
-        "recognition": "OCR",
-        "expected": [
-            "疲劳值"
-        ],
-        "pre_wait_freezes": 800,
-        "roi": [
-            113,
-            1160,
-            75,
-            33
-        ]
-    },
-    "Flag_疲劳值满": {
-        "recognition": "OCR",
-        "expected": [
-            "50/50"
-        ],
-        "pre_wait_freezes": 800,
-        "roi": [
-            190,
-            1160,
-            80,
-            33
+        "next": [
+            "Click_开始处理"
         ]
     },
     "Flag_委托搜寻中": {
@@ -193,6 +118,236 @@
             494,
             107,
             31
+        ],
+        "next": [
+            "Click_返回主界面键"
+        ]
+    },
+    "Flag_疲劳值满": {
+        "recognition": "OCR",
+        "expected": [
+            "50/50"
+        ],
+        "pre_wait_freezes": 800,
+        "roi": [
+            190,
+            1160,
+            80,
+            33
+        ],
+        "next": [
+            "Click_返回主界面键"
+        ]
+    },
+    "Click_开始处理": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "开始处理"
+        ],
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            277,
+            872,
+            164,
+            52
+        ],
+        "next": [
+            "Flag_体力不足弹窗",
+            "Flag_战力不足",
+            "Click_居中开始辩论"
+        ]
+    },
+    "Flag_体力不足弹窗": {
+        "recognition": "OCR",
+        "expected": "体力补充",
+        "roi": [
+            260,
+            290,
+            112,
+            36
+        ],
+        "next": [
+            "喝能量饮料",
+            "Click_取消喝饮料"
+        ]
+    },
+    "Flag_战力不足": {
+        "recognition": "ColorMatch",
+        "roi": [
+            570,
+            130,
+            100,
+            36
+        ],
+        "lower": [
+            155,
+            71,
+            58
+        ],
+        "upper": [
+            213,
+            82,
+            63
+        ],
+        "count": 100,
+        "next": [
+            "Click_战力不足返回上一级键"
+        ]
+    },
+    "Click_战力不足返回上一级键": {
+        "action": "Click",
+        "pre_delay": 1000,
+        "recognition": "TemplateMatch",
+        "template": "Button/Back.PNG",
+        "roi": [
+            51,
+            31,
+            33,
+            39
+        ],
+        "next": [
+            "Click_退出委托X按钮"
+        ]
+    },
+    "Click_退出委托X按钮": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/XKey.png",
+        "green_mask": true,
+        "threshold": 0.5,
+        "pre_delay": 1000,
+        "roi": [
+            341,
+            1100,
+            37,
+            65
+        ],
+        "next": [
+            "Click_返回主界面键"
+        ]
+    },
+    "Click_居中开始辩论": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "开始辩论",
+        "pre_delay": 800,
+        "post_delay": 10000,
+        "roi": [
+            294,
+            1170,
+            130,
+            46
+        ],
+        "next": [
+            "Flag_自动出卡已开启",
+            "Click_开启自动出卡"
+        ]
+    },
+    "喝能量饮料": {
+        "next": [
+            "Click_取消喝饮料"
+        ]
+    },
+    "Click_取消喝饮料": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "取消",
+        "pre_delay": 500,
+        "roi": [
+            380,
+            700,
+            100,
+            250
+        ],
+        "next": [
+            "Click_退出委托X按钮"
+        ]
+    },
+    "Flag_自动出卡已开启": {
+        "recognition": "OCR",
+        "expected": [
+            "自动出卡中"
+        ],
+        "pre_wait_freezes": 1000,
+        "post_delay": 1000,
+        "roi": [
+            258,
+            1009,
+            166,
+            44
+        ],
+        "next": [
+            "Flag_自动出卡中"
+        ]
+    },
+    "Click_开启自动出卡": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/自动出卡.png",
+        "pre_delay": 800,
+        "post_delay": 10000,
+        "roi": [
+            650,
+            1202,
+            28,
+            37
+        ],
+        "next": [
+            "Flag_自动出卡中"
+        ]
+    },
+    "Flag_自动出卡中": {
+        "recognition": "OCR",
+        "expected": [
+            "自动出卡中"
+        ],
+        "pre_wait_freezes": 1000,
+        "post_delay": 1000,
+        "roi": [
+            258,
+            1009,
+            166,
+            44
+        ],
+        "next": [
+            "Flag_自动出卡中",
+            "Click_点击继续"
+        ]
+    },
+    "Click_点击继续": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "点击继续",
+        "pre_delay": 800,
+        "post_wait_freezes": 1000,
+        "roi": [
+            292,
+            1060,
+            132,
+            51
+        ],
+        "next": [
+            "Click_外勤结算界面"
+        ]
+    },
+    "Click_外勤结算界面": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "结束",
+        "pre_wait_freezes": 500,
+        "pre_delay": 800,
+        "roi": [
+            304,
+            885,
+            109,
+            232
+        ],
+        "next": [
+            "Click_外勤结算界面",
+            "寻找委托",
+            "Click_返回主界面键"
         ]
     }
 }
