@@ -33,6 +33,7 @@
             "Flag_StartLoadingVersion",
             "Click_官服接受协议",
             "Flag_MihoyoSlogan",
+            "Flag_更新版本",
             "Sub_StartApp"
         ]
     },
@@ -49,6 +50,7 @@
             "Flag_StartLoadingVersion",
             "Click_官服接受协议",
             "Flag_MihoyoSlogan",
+            "Flag_更新版本",
             "StartTOT"
         ]
     },
@@ -167,6 +169,21 @@
             158,
             442,
             970
+        ]
+    },
+    "Flag_更新版本": {
+        "focus": true,
+        "action": "StopTask",
+        "recognition": "OCR",
+        "expected": [
+            "请点击确定更新至最新版本"
+        ],
+        "post_delay": 800,
+        "roi": [
+            200,
+            554,
+            321,
+            43
         ]
     }
 }
