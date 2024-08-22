@@ -18,8 +18,24 @@
             33
         ],
         "next": [
+            "Flag_下一次花露收取"
+        ]
+    },
+    "Flag_下一次花露收取": {
+        "recognition": "OCR",
+        "expected": "下一次花露收取",
+        "pre_delay": 800,
+        "post_delay": 4000,
+        "roi": [
+            307,
+            465,
+            150,
+            27
+        ],
+        "next": [
             "Click_收取花露",
-            "Click_收取特殊花露"
+            "Click_收取特殊花露",
+            "Click_返回上一级键"
         ]
     },
     "Click_收取花露": {
@@ -29,12 +45,14 @@
         "green_mask": true,
         "pre_delay": 1000,
         "roi": [
-            105,
-            482,
-            509,
-            404
+            80,
+            440,
+            600,
+            500
         ],
         "next": [
+            "Click_收取花露",
+            "Click_收取特殊花露",
             "Click_返回上一级键"
         ]
     },
@@ -45,12 +63,14 @@
         "green_mask": true,
         "pre_delay": 1000,
         "roi": [
-            105,
-            482,
-            509,
-            404
+            80,
+            440,
+            600,
+            500
         ],
         "next": [
+            "Click_收取花露",
+            "Click_收取特殊花露",
             "Click_返回上一级键"
         ]
     },
