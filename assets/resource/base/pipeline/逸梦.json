@@ -1,0 +1,66 @@
+{
+    "逸梦": {
+        "next": [
+            "Click_逸梦",
+            "Sub_StartUp"
+        ]
+    },
+    "Click_逸梦": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "逸梦",
+        "pre_delay": 1000,
+        "roi": [
+            41,
+            1232,
+            65,
+            33
+        ],
+        "next": [
+            "Click_收取花露",
+            "Click_收取特殊花露"
+        ]
+    },
+    "Click_收取花露": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "逸梦/花露.png",
+        "pre_delay": 1000,
+        "roi": [
+            105,
+            482,
+            509,
+            404
+        ],
+        "next": [
+            "Click_返回上一级键"
+        ]
+    },
+    "Click_收取特殊花露": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "逸梦/特殊花露.png",
+        "pre_delay": 1000,
+        "roi": [
+            105,
+            482,
+            509,
+            404
+        ],
+        "next": [
+            "Click_返回上一级键"
+        ]
+    },
+    "Click_加入花露": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "加入花露",
+        "pre_delay": 1000,
+        "roi": [
+            315,
+            1097,
+            92,
+            71
+        ]
+    }
+}
