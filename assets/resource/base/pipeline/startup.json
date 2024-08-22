@@ -31,7 +31,7 @@
             "Sub_Click_关闭广告弹窗",
             "Flag_ThemisLoading",
             "Flag_StartLoadingVersion",
-            "Click_官服接受协议",
+            "Sub_Click_官服接受协议",
             "Flag_MihoyoSlogan",
             "Flag_更新版本",
             "Sub_StartApp"
@@ -48,7 +48,7 @@
             "Flag_TipsLoading",
             "Flag_ThemisLoading",
             "Flag_StartLoadingVersion",
-            "Click_官服接受协议",
+            "Sub_Click_官服接受协议",
             "Flag_MihoyoSlogan",
             "Flag_更新版本",
             "StartTOT"
@@ -123,7 +123,8 @@
             34
         ]
     },
-    "Click_官服接受协议": {
+    "Sub_Click_官服接受协议": {
+        "is_sub": true,
         "action": "Click",
         "recognition": "OCR",
         "expected": "接受",
