@@ -7,7 +7,7 @@
         "is_sub": true,
         "next": [
             "Flag_In思绪",
-            "Sub_Click_B服同意协议",
+            "Click_B服同意协议",
             "Sub_Click_下载确定",
             "Sub_Click_账户登录",
             "Sub_Click_点击B服登录",
@@ -18,11 +18,12 @@
             "Sub_Click_关闭广告弹窗",
             "Flag_ThemisLoading",
             "Flag_StartLoadingVersion",
+            "Click_官服接受协议",
             "Flag_MihoyoSlogan",
             "Sub_StartApp"
         ]
     },
-    "Sub_Click_B服同意协议": {
+    "Click_B服同意协议": {
         "action": "Click",
         "recognition": "OCR",
         "expected": "同意",
