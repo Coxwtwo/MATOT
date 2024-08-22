@@ -116,6 +116,7 @@
             "思绪"
         ],
         "pre_wait_freezes": 800,
+        "pre_delay": 1000,
         "roi": [
             181,
             1232,
