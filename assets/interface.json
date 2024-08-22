@@ -243,10 +243,10 @@
                     "name": "x1",
                     "param": {
                         "Click_工作证使用张数": {
-                            "expected": 1
+                            "expected": "1"
                         },
                         "Click_复盘次数": {
-                            "expected": 1
+                            "expected": "1"
                         }
                     }
                 },
@@ -254,10 +254,10 @@
                     "name": "x2",
                     "param": {
                         "Click_工作证使用张数": {
-                            "expected": 2
+                            "expected": "2"
                         },
                         "Click_复盘次数": {
-                            "expected": 2
+                            "expected": "2"
                         }
                     }
                 },
@@ -265,10 +265,10 @@
                     "name": "x3",
                     "param": {
                         "Click_工作证使用张数": {
-                            "expected": 3
+                            "expected": "3"
                         },
                         "Click_复盘次数": {
-                            "expected": 3
+                            "expected": "3"
                         }
                     }
                 },
@@ -276,10 +276,10 @@
                     "name": "x4",
                     "param": {
                         "Click_工作证使用张数": {
-                            "expected": 4
+                            "expected": "4"
                         },
                         "Click_复盘次数": {
-                            "expected": 4
+                            "expected": "4"
                         }
                     }
                 },
@@ -287,10 +287,10 @@
                     "name": "x5",
                     "param": {
                         "Click_工作证使用张数": {
-                            "expected": 5
+                            "expected": "5"
                         },
                         "Click_复盘次数": {
-                            "expected": 5
+                            "expected": "5"
                         }
                     }
                 }
