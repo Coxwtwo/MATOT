@@ -1,8 +1,25 @@
 {
     "外勤委托": {
         "next": [
-            "Click_外勤",
+            "Click_未名日程",
             "Sub_StartUp"
+        ]
+    },
+    "Click_未名日程": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "未名日程"
+        ],
+        "pre_delay": 800,
+        "roi": [
+            599,
+            1235,
+            95,
+            26
+        ],
+        "next": [
+            "Click_外勤"
         ]
     },
     "Click_外勤": {
@@ -14,10 +31,10 @@
         "pre_delay": 800,
         "post_delay": 4500,
         "roi": [
-            37,
-            1230,
-            73,
-            40
+            621,
+            1067,
+            58,
+            32
         ],
         "next": [
             "Click_法律援助"
@@ -60,6 +77,7 @@
         ]
     },
     "寻找委托": {
+        "times_limit": 5,
         "next": [
             "Click_日常委托",
             "Click_庭审委托",
