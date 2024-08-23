@@ -38,7 +38,11 @@
     "Click_好感交流": {
         "action": "Click",
         "recognition": "OCR",
-        "expected": "交流",
+        "expected": [
+            "交流",
+            "交",
+            "立"
+        ],
         "pre_delay": 1000,
         "roi": [
             38,

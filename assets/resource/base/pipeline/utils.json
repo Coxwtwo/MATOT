@@ -191,6 +191,7 @@
         ]
     },
     "Sub_Click_主界面左侧菜单": {
+        "is_sub": true,
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Awards/主界面菜单.PNG",
