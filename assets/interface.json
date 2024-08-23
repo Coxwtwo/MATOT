@@ -83,16 +83,23 @@
             }
         },
         {
+            "name": "逸梦",
+            "entry": "逸梦"
+        },
+        {
+            "name": "好感度",
+            "entry": "好感度",
+            "option": [
+                "好感度男主"
+            ]
+        },
+        {
             "name": "领取任务奖励",
             "entry": "领取任务奖励"
         },
         {
             "name": "专属甜心",
             "entry": "专属甜心"
-        },
-        {
-            "name": "逸梦",
-            "entry": "逸梦"
         },
         {
             "name": "退出游戏",
@@ -374,6 +381,42 @@
                     "param": {
                         "Click_日常委托": {
                             "times_limit": 3
+                        }
+                    }
+                }
+            ]
+        },
+        "好感度男主": {
+            "cases": [
+                {
+                    "name": "夏彦",
+                    "param": {
+                        "Click_选择好感男主": {
+                            "template": "好感/好感夏彦.png"
+                        }
+                    }
+                },
+                {
+                    "name": "左然",
+                    "param": {
+                        "Click_选择好感男主": {
+                            "template": "好感/好感左然.png"
+                        }
+                    }
+                },
+                {
+                    "name": "莫弈",
+                    "param": {
+                        "Click_选择好感男主": {
+                            "template": "好感/好感莫弈.png"
+                        }
+                    }
+                },
+                {
+                    "name": "陆景和",
+                    "param": {
+                        "Click_选择好感男主": {
+                            "template": "好感/好感陆景和.png"
                         }
                     }
                 }
