@@ -35,15 +35,52 @@
         },
         {
             "name": "领取资源申请",
-            "entry": "领取资源申请"
+            "entry": "领取资源申请",
+            "param": {
+                "Click_基地": {
+                    "next": [
+                        "Click_资源申请"
+                    ]
+                },
+                "Click_一键领取亮": {
+                    "next": [
+                        "Flag_暂无可领取的资源申请",
+                        "Flag_一键领取暗",
+                        "Sub_Click_关闭奖励弹窗",
+                        "Click_一键领取亮"
+                    ]
+                }
+            }
         },
         {
             "name": "领取案件解析",
-            "entry": "领取案件解析"
+            "entry": "领取案件解析",
+            "param": {
+                "Click_基地": {
+                    "next": [
+                        "Click_资料室"
+                    ]
+                },
+                "Click_一键领取亮": {
+                    "next": [
+                        "Flag_暂无可领取的奖励",
+                        "Click_一键解析",
+                        "Sub_Click_X按钮",
+                        "Click_一键领取亮"
+                    ]
+                }
+            }
         },
         {
             "name": "领取酬谢",
-            "entry": "领取酬谢"
+            "entry": "领取酬谢",
+            "param": {
+                "Click_基地": {
+                    "next": [
+                        "Click_酬谢"
+                    ]
+                }
+            }
         },
         {
             "name": "进修副本",

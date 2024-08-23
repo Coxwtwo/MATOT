@@ -1,18 +1,22 @@
 {
     "领取任务奖励": {
         "next": [
-            "Click_返回主界面键",
-            "Click_返回上一级键",
-            "Sub_领取任务奖励"
+            "Click_任务",
+            "Sub_Click_返回主界面键"
         ]
     },
-    "Sub_领取任务奖励": {
-        "is_sub": true,
+    "Click_任务": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Awards/任务.PNG",
+        "roi": [
+            28,
+            359,
+            44,
+            40
+        ],
         "next": [
-            "Flag_一键领取暗",
-            "Sub_Click_关闭奖励弹窗",
-            "Click_一键领取重复",
-            "Sub_Click_任务"
+            "Click_每日"
         ]
     },
     "Click_每日": {
@@ -28,6 +32,10 @@
             123,
             70,
             36
+        ],
+        "next": [
+            "Flag_一键领取暗",
+            "Sub_Click_一键领取亮"
         ]
     },
     "Click_每周": {
@@ -43,21 +51,6 @@
             126,
             67,
             32
-        ]
-    },
-    "Flag_In任务": {
-        "recognition": "OCR",
-        "expected": [
-            "每",
-            "母",
-            "每日"
-        ],
-        "pre_wait_freezes": 800,
-        "roi": [
-            208,
-            123,
-            70,
-            36
         ]
     }
 }

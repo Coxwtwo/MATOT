@@ -1,95 +1,11 @@
 {
     "领取资源申请": {
-        "is_sub": true,
         "next": [
-            "Click_返回主界面键",
-            "Click_返回上一级键",
-            "Sub_领取资源申请"
+            "Click_基地和沙龙",
+            "Sub_返回主界面"
         ]
     },
-    "Sub_领取资源申请": {
-        "is_sub": true,
-        "next": [
-            "Flag_暂无可领取的资源申请",
-            "Flag_一键领取暗",
-            "Click_一键领取亮",
-            "Sub_Click_关闭奖励弹窗",
-            "Sub_打开资源申请"
-        ]
-    },
-    "Sub_打开资源申请": {
-        "is_sub": true,
-        "next": [
-            "Flag_资源申请界面",
-            "Sub_Click_资源申请",
-            "Sub_Click_基地",
-            "Sub_Click_基地和沙龙",
-            "Sub_Click_关闭奖励弹窗"
-        ]
-    },
-    "领取案件解析": {
-        "is_sub": true,
-        "next": [
-            "Click_返回主界面键",
-            "Click_返回上一级键",
-            "Sub_领取案件解析"
-        ]
-    },
-    "Sub_领取案件解析": {
-        "is_sub": true,
-        "next": [
-            "Flag_暂无可领取的奖励",
-            "Click_一键解析",
-            "Sub_Click_X按钮",
-            "Sub_Click_关闭奖励弹窗",
-            "Sub_Click_一键领取亮",
-            "Sub_打开案件解析"
-        ]
-    },
-    "Sub_打开案件解析": {
-        "is_sub": true,
-        "next": [
-            "Flag_资料室界面",
-            "Sub_Click_资料室",
-            "Sub_Click_基地",
-            "Sub_Click_基地和沙龙",
-            "Sub_Click_X按钮",
-            "Sub_Click_关闭奖励弹窗"
-        ]
-    },
-    "领取酬谢": {
-        "is_sub": true,
-        "next": [
-            "Click_返回主界面键",
-            "Click_返回上一级键",
-            "Sub_领取酬谢"
-        ]
-    },
-    "Sub_领取酬谢": {
-        "is_sub": true,
-        "next": [
-            "Flag_奖励已领取",
-            "Sub_Click_X按钮",
-            "Sub_Click_关闭奖励弹窗",
-            "Sub_Click_点击开启",
-            "Sub_Click_领取奖励",
-            "Sub_打开酬谢界面"
-        ]
-    },
-    "Sub_打开酬谢界面": {
-        "is_sub": true,
-        "next": [
-            "Flag_酬谢界面",
-            "Sub_Click_X按钮",
-            "Sub_Click_关闭奖励弹窗",
-            "Sub_Click_点击开启",
-            "Click_酬谢",
-            "Sub_Click_基地",
-            "Sub_Click_基地和沙龙"
-        ]
-    },
-    "Sub_Click_基地和沙龙": {
-        "is_sub": true,
+    "Click_基地和沙龙": {
         "action": "Click",
         "recognition": "OCR",
         "expected": [
@@ -101,10 +17,12 @@
             1232,
             54,
             30
+        ],
+        "next": [
+            "Click_基地"
         ]
     },
-    "Sub_Click_基地": {
-        "is_sub": true,
+    "Click_基地": {
         "action": "Click",
         "recognition": "OCR",
         "expected": [
@@ -117,10 +35,10 @@
             1064,
             64,
             38
-        ]
+        ],
+        "next": []
     },
-    "Sub_Click_资源申请": {
-        "is_sub": true,
+    "Click_资源申请": {
         "action": "Click",
         "recognition": "OCR",
         "expected": "资源申请",
@@ -129,10 +47,32 @@
             908,
             128,
             49
+        ],
+        "next": [
+            "Flag_一键领取暗",
+            "Click_一键领取亮"
         ]
     },
-    "Sub_Click_资料室": {
-        "is_sub": true,
+    "Flag_暂无可领取的资源申请": {
+        "recognition": "OCR",
+        "expected": "暂无可领取的资源申请",
+        "roi": [
+            244,
+            540,
+            227,
+            43
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "领取案件解析": {
+        "next": [
+            "Click_基地和沙龙",
+            "Sub_返回主界面"
+        ]
+    },
+    "Click_资料室": {
         "action": "Click",
         "recognition": "OCR",
         "expected": "资料室",
@@ -141,28 +81,11 @@
             1013,
             104,
             47
-        ]
-    },
-    "Click_酬谢": {
-        "action": "Click",
-        "recognition": "ColorMatch",
-        "lower": [
-            255,
-            255,
-            255
         ],
-        "upper": [
-            255,
-            255,
-            255
-        ],
-        "count": 600,
-        "pre_delay": 800,
-        "roi": [
-            608,
-            237,
-            41,
-            69
+        "next": [
+            "Flag_一键领取暗",
+            "Click_一键解析",
+            "Click_一键领取亮"
         ]
     },
     "Click_一键解析": {
@@ -179,14 +102,67 @@
             1157,
             162,
             49
+        ],
+        "next": [
+            "返回主界面"
         ]
     },
-    "Sub_Click_领取奖励": {
-        "is_sub": true,
+    "Flag_暂无可领取的奖励": {
+        "recognition": "OCR",
+        "expected": "暂无可领取的奖励",
+        "roi": [
+            266,
+            545,
+            187,
+            39
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "领取酬谢": {
+        "next": [
+            "Click_基地和沙龙",
+            "Sub_返回主界面"
+        ]
+    },
+    "Click_酬谢": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Awards/酬谢.png",
+        "roi": [
+            608,
+            237,
+            41,
+            69
+        ],
+        "next": [
+            "Flag_奖励已领取",
+            "Click_领取奖励",
+            "Sub_Click_X按钮"
+        ]
+    },
+    "Click_领取奖励": {
         "action": "Click",
         "recognition": "OCR",
         "expected": "领取奖励",
         "pre_delay": 1000,
+        "roi": [
+            292,
+            1077,
+            135,
+            44
+        ],
+        "next": [
+            "Flag_奖励已领取",
+            "Sub_Click_点击开启",
+            "Sub_Click_关闭奖励弹窗",
+            "Sub_Click_X按钮"
+        ]
+    },
+    "Flag_奖励已领取": {
+        "recognition": "OCR",
+        "expected": "奖励已领取",
         "roi": [
             292,
             1077,
@@ -212,80 +188,6 @@
             813,
             109,
             44
-        ]
-    },
-    "Flag_资源申请界面": {
-        "recognition": "OCR",
-        "expected": "资源申请",
-        "pre_wait_freezes": 800,
-        "roi": [
-            42,
-            131,
-            209,
-            60
-        ]
-    },
-    "Flag_资料室界面": {
-        "recognition": "OCR",
-        "expected": "资料室",
-        "pre_wait_freezes": 800,
-        "roi": [
-            33,
-            140,
-            166,
-            74
-        ]
-    },
-    "Flag_酬谢界面": {
-        "recognition": "OCR",
-        "expected": "贡献等级",
-        "pre_wait_freezes": 800,
-        "roi": [
-            307,
-            225,
-            104,
-            34
-        ]
-    },
-    "Flag_暂无可领取的奖励": {
-        "recognition": "OCR",
-        "expected": "暂无可领取的奖励",
-        "roi": [
-            266,
-            545,
-            187,
-            39
-        ]
-    },
-    "Flag_暂无可领取的资源申请": {
-        "recognition": "OCR",
-        "expected": "暂无可领取的资源申请",
-        "roi": [
-            244,
-            540,
-            227,
-            43
-        ]
-    },
-    "Flag_奖励已领取": {
-        "recognition": "OCR",
-        "expected": "奖励已领取",
-        "roi": [
-            292,
-            1077,
-            135,
-            44
-        ]
-    },
-    "Flag_In基地": {
-        "recognition": "OCR",
-        "expected": "资料室",
-        "pre_wait_freezes": 800,
-        "roi": [
-            582,
-            1013,
-            104,
-            47
         ]
     }
 }

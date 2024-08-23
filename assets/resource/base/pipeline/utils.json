@@ -153,32 +153,14 @@
             80,
             110
         ],
-        "count": 4000
-    },
-    "Click_一键领取亮": {
-        "action": "Click",
-        "recognition": "OCR",
-        "expected": [
-            "一键领取",
-            "键领取"
-        ],
-        "pre_delay": 500,
-        "post_delay": 1000,
-        "roi": [
-            500,
-            1160,
-            180,
-            80
+        "count": 4000,
+        "next": [
+            "返回主界面"
         ]
     },
-    "Click_一键领取重复": {
-        "action": "Click",
+    "Click_一键领取亮": {
         "times_limit": 3,
-        "next": [
-            "Sub_Click_关闭奖励弹窗",
-            "Click_X按钮",
-            "Click_一键领取重复"
-        ],
+        "action": "Click",
         "recognition": "OCR",
         "expected": [
             "一键领取",
@@ -218,18 +200,6 @@
             151,
             43,
             44
-        ]
-    },
-    "Sub_Click_任务": {
-        "is_sub": true,
-        "action": "Click",
-        "recognition": "TemplateMatch",
-        "template": "Awards/任务.PNG",
-        "roi": [
-            28,
-            359,
-            44,
-            40
         ]
     },
     "Sub_Click_思绪": {
