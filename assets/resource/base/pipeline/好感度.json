@@ -2,7 +2,7 @@
     "好感度": {
         "next": [
             "Click_主界面手机",
-            "Sub_StartUp"
+            "Sub_返回主界面"
         ]
     },
     "Click_主界面手机": {

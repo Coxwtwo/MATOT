@@ -1,4 +1,27 @@
 {
+    "返回主界面": {
+        "next": [
+            "Sub_Click_关闭奖励弹窗",
+            "Sub_Click_返回主界面键",
+            "Sub_Click_返回上一级键",
+            "Sub_Click_X按钮",
+            "Sub_Click_退出手机",
+            "Sub_Click_好感系统返回键",
+            "Flag_主界面任务"
+        ]
+    },
+    "Sub_返回主界面": {
+        "is_sub": true,
+        "next": [
+            "Flag_主界面任务",
+            "Sub_Click_关闭奖励弹窗",
+            "Sub_Click_返回主界面键",
+            "Sub_Click_返回上一级键",
+            "Sub_Click_X按钮",
+            "Sub_Click_退出手机",
+            "Sub_Click_好感系统返回键"
+        ]
+    },
     "Click_返回主界面键": {
         "action": "Click",
         "pre_delay": 1000,
@@ -13,7 +36,8 @@
     },
     "Sub_Click_返回主界面键": {
         "action": "Click",
-        "pre_delay": 1400,
+        "pre_delay": 800,
+        "post_delay": 2000,
         "recognition": "TemplateMatch",
         "template": "Button/Home.PNG",
         "roi": [
@@ -48,22 +72,88 @@
             39
         ]
     },
-    "Click_返回上一级键重复": {
-        "action": "Click",
-        "times_limit": 3,
-        "next": [
-            "Flag_主界面任务",
-            "Click_返回上一级键重复"
-        ],
-        "pre_delay": 1000,
-        "recognition": "TemplateMatch",
-        "template": "Button/Back.PNG",
+    "Flag_TipsLoading": {
+        "recognition": "OCR",
+        "expected": "Tips",
+        "pre_wait_freezes": 800,
+        "post_wait_freezes": 1000,
         "roi": [
-            51,
-            31,
-            33,
-            39
+            448,
+            258,
+            99,
+            56
         ]
+    },
+    "Flag_主界面任务": {
+        "recognition": "TemplateMatch",
+        "template": "Awards/任务.PNG",
+        "pre_wait_freezes": 1500,
+        "post_delay": 1000,
+        "roi": [
+            28,
+            359,
+            44,
+            40
+        ]
+    },
+    "Flag_主界面活动": {
+        "recognition": "TemplateMatch",
+        "template": "Awards/活动.PNG",
+        "pre_wait_freezes": 800,
+        "post_delay": 1000,
+        "roi": [
+            28,
+            454,
+            42,
+            41
+        ]
+    },
+    "Flag_主界面思绪": {
+        "recognition": "OCR",
+        "expected": [
+            "思绪"
+        ],
+        "pre_wait_freezes": 800,
+        "roi": [
+            181,
+            1232,
+            70,
+            34
+        ]
+    },
+    "Flag_In思绪": {
+        "recognition": "OCR",
+        "expected": [
+            "思绪"
+        ],
+        "pre_wait_freezes": 800,
+        "roi": [
+            183,
+            119,
+            73,
+            40
+        ]
+    },
+    "Flag_一键领取暗": {
+        "recognition": "ColorMatch",
+        "pre_wait_freezes": 800,
+        "roi": [
+            500,
+            1160,
+            180,
+            80
+        ],
+        "lower": [
+            60,
+            60,
+            90
+        ],
+        "upper": [
+            80,
+            80,
+            110
+        ],
+        "count": 4000
     },
     "Click_一键领取亮": {
         "action": "Click",
@@ -83,7 +173,7 @@
     },
     "Click_一键领取重复": {
         "action": "Click",
-        "times_limit": 6,
+        "times_limit": 3,
         "next": [
             "Sub_Click_关闭奖励弹窗",
             "Click_X按钮",
@@ -116,19 +206,6 @@
             1160,
             180,
             80
-        ]
-    },
-    "Sub_Click_事件簿": {
-        "is_sub": true,
-        "action": "Click",
-        "recognition": "OCR",
-        "expected": "Story",
-        "pre_delay": 500,
-        "roi": [
-            598,
-            987,
-            63,
-            29
         ]
     },
     "Sub_Click_主界面左侧菜单": {
@@ -288,20 +365,6 @@
             42
         ]
     },
-    "Sub_Click_点击继续": {
-        "is_sub": true,
-        "action": "Click",
-        "recognition": "OCR",
-        "expected": "点击继续",
-        "pre_delay": 800,
-        "post_wait_freezes": 1000,
-        "roi": [
-            292,
-            1060,
-            132,
-            51
-        ]
-    },
     "Sub_Click_居中开始辩论": {
         "is_sub": true,
         "action": "Click",
@@ -343,17 +406,15 @@
             40
         ]
     },
-    "Sub_Click_自动剧情": {
-        "is_sub": true,
-        "action": "Click",
+    "Flag_自动剧情开启中": {
         "recognition": "TemplateMatch",
-        "template": "Button/自动剧情.png",
-        "pre_delay": 800,
-        "post_delay": 3000,
+        "template": "Button/自动剧情开启中.png",
+        "pre_wait_freezes": 800,
+        "post_delay": 5000,
         "roi": [
-            522,
+            532,
             1162,
-            31,
+            33,
             40
         ]
     },
@@ -493,39 +554,7 @@
         ],
         "count": 100,
         "next": [
-            "Click_战力不足返回上一级"
-        ]
-    },
-    "Click_战力不足返回上一级": {
-        "action": "Click",
-        "pre_delay": 1000,
-        "recognition": "TemplateMatch",
-        "template": "Button/Back.PNG",
-        "roi": [
-            51,
-            31,
-            33,
-            39
-        ],
-        "next": [
-            "Click_退出委托X按钮"
-        ]
-    },
-    "Click_退出委托X按钮": {
-        "action": "Click",
-        "recognition": "TemplateMatch",
-        "template": "Button/XKey.png",
-        "green_mask": true,
-        "threshold": 0.5,
-        "pre_delay": 1000,
-        "roi": [
-            341,
-            1100,
-            37,
-            65
-        ],
-        "next": [
-            "Sub_StartUp"
+            "返回主界面"
         ]
     },
     "Flag_体力不足弹窗": {
@@ -559,7 +588,7 @@
             250
         ],
         "next": [
-            "Click_退出委托X按钮"
+            "返回主界面"
         ]
     },
     "Flag_自动出卡已开启": {
@@ -627,6 +656,32 @@
         ],
         "next": [
             "Click_副本结算界面"
+        ]
+    },
+    "Sub_Click_退出手机": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "好感/退出手机.png",
+        "pre_delay": 800,
+        "roi": [
+            330,
+            1146,
+            60,
+            55
+        ]
+    },
+    "Sub_Click_好感系统返回键": {
+        "is_sub": true,
+        "action": "Click",
+        "pre_delay": 1000,
+        "recognition": "TemplateMatch",
+        "template": "好感/好感返回键.png",
+        "roi": [
+            10,
+            1074,
+            59,
+            57
         ]
     }
 }

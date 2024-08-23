@@ -10,7 +10,7 @@
             "Click_B服同意协议",
             "Sub_Click_下载确定",
             "Sub_Click_账户登录",
-            "Sub_Click_点击B服登录",
+            "Click_点击B服登录",
             "Sub_Click_点击进入",
             "Sub_Click_关闭奖励弹窗",
             "Sub_Click_返回上一级键",
@@ -22,6 +22,25 @@
             "Flag_MihoyoSlogan",
             "Flag_更新版本",
             "Sub_StartApp"
+        ]
+    },
+    "Sub_StartApp": {
+        "is_sub": true,
+        "post_wait_freezes": 1000,
+        "next": [
+            "Flag_主界面任务",
+            "Flag_主界面思绪",
+            "Flag_In思绪",
+            "Click_B服同意协议",
+            "Click_点击B服登录",
+            "Sub_Click_关闭广告弹窗",
+            "Flag_TipsLoading",
+            "Flag_ThemisLoading",
+            "Flag_StartLoadingVersion",
+            "Sub_Click_官服接受协议",
+            "Flag_MihoyoSlogan",
+            "Flag_更新版本",
+            "StartTOT"
         ]
     },
     "Click_B服同意协议": {
@@ -36,8 +55,7 @@
             33
         ]
     },
-    "Sub_Click_点击B服登录": {
-        "is_sub": true,
+    "Click_点击B服登录": {
         "action": "Click",
         "recognition": "OCR",
         "expected": "登录",

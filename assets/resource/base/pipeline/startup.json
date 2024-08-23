@@ -8,16 +8,6 @@
             "Sub_点击关闭广告弹窗"
         ]
     },
-    "Sub_StartUp": {
-        "is_sub": true,
-        "next": [
-            "Sub_Click_关闭奖励弹窗",
-            "Sub_Click_返回主界面键",
-            "Sub_Click_返回上一级键",
-            "Flag_主界面任务",
-            "Sub_点击关闭广告弹窗"
-        ]
-    },
     "Sub_点击关闭广告弹窗": {
         "is_sub": true,
         "next": [
@@ -64,6 +54,7 @@
         "recognition": "OCR",
         "expected": "确定",
         "pre_delay": 500,
+        "post_delay": 10000,
         "roi": [
             550,
             700,
@@ -76,7 +67,7 @@
         "action": "Click",
         "recognition": "OCR",
         "expected": "账号登录",
-        "post_delay": 1000,
+        "post_delay": 3000,
         "roi": [
             197,
             1036,
@@ -101,6 +92,7 @@
         "recognition": "TemplateMatch",
         "template": "StartUp/EnterGame.png",
         "pre_delay": 800,
+        "post_delay": 5000,
         "roi": [
             277,
             975,
@@ -117,6 +109,7 @@
         ],
         "pre_wait_freezes": 800,
         "pre_delay": 1000,
+        "post_delay": 1000,
         "roi": [
             181,
             1232,
@@ -154,7 +147,7 @@
     "Flag_StartLoadingVersion": {
         "recognition": "TemplateMatch",
         "template": "StartUp/StartLoading.png",
-        "post_delay": 800,
+        "post_delay": 2000,
         "roi": [
             112,
             960,
@@ -166,6 +159,7 @@
         "recognition": "TemplateMatch",
         "template": "StartUp/ThemisLoading.png",
         "pre_wait_freezes": 800,
+        "post_delay": 2000,
         "roi": [
             129,
             158,

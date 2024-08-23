@@ -2,7 +2,7 @@
     "专属甜心": {
         "next": [
             "Click_甜心",
-            "Sub_StartUp"
+            "Sub_返回主界面"
         ]
     },
     "Click_甜心": {
