@@ -203,8 +203,16 @@
             ]
         },
         {
-            "name": "刷思绪残影",
-            "entry": "刷思绪残影"
+            "name": "旧版刷思绪残影",
+            "entry": "刷思绪残影",
+            "option": [
+                "思绪名称"
+            ],
+            "param": {
+                "Click_复盘次数": {
+                    "expected": "3"
+                }
+            }
         },
         {
             "name": "领取任务奖励",
@@ -775,7 +783,8 @@
                             "expected": "海奥森篇"
                         },
                         "Click_进入异常副本": {
-                            "expected": "Episode\\.(6)\\s+\\(Part\\s+(1)"
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png"
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-11"
@@ -789,7 +798,8 @@
                             "expected": "海奥森篇"
                         },
                         "Click_进入异常副本": {
-                            "expected": "Episode\\.(7)\\s+\\(Part\\s+(1)"
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png"
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-09"
@@ -817,7 +827,8 @@
                             "expected": "海奥森篇"
                         },
                         "Click_进入异常副本": {
-                            "expected": "Episode\\.(6)\\s+\\(Part\\s+(1)"
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png"
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-10"
@@ -831,7 +842,8 @@
                             "expected": "海奥森篇"
                         },
                         "Click_进入异常副本": {
-                            "expected": "Episode\\.(7)\\s+\\(Part\\s+(1)"
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png"
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-10"
@@ -859,7 +871,8 @@
                             "expected": "海奥森篇"
                         },
                         "Click_进入异常副本": {
-                            "expected": "Episode\\.(6)\\s+\\(Part\\s+(2)"
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P2.png"
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-22"
@@ -873,7 +886,8 @@
                             "expected": "海奥森篇"
                         },
                         "Click_进入异常副本": {
-                            "expected": "Episode\\.(7)\\s+\\(Part\\s+(2)"
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P2.png"
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-23"
@@ -901,7 +915,8 @@
                             "expected": "海奥森篇"
                         },
                         "Click_进入异常副本": {
-                            "expected": "Episode\\.(6)\\s+\\(Part\\s+(1)"
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png"
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-09"
@@ -915,7 +930,8 @@
                             "expected": "海奥森篇"
                         },
                         "Click_进入异常副本": {
-                            "expected": "Episode\\.(7)\\s+\\(Part\\s+(1)"
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E7P1.png"
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-11"
@@ -933,7 +949,8 @@
                             "expected": "海奥森篇"
                         },
                         "Click_进入异常副本": {
-                            "expected": "Episode\\.(6)\\s+\\(Part\\s+(1)"
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png"
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-07"
@@ -947,7 +964,8 @@
                             "expected": "海奥森篇"
                         },
                         "Click_进入异常副本": {
-                            "expected": "Episode\\.(6)\\s+\\(Part\\s+(1)"
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png"
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-06"
@@ -961,7 +979,8 @@
                             "expected": "海奥森篇"
                         },
                         "Click_进入异常副本": {
-                            "expected": "Episode\\.(6)\\s+\\(Part\\s+(1)"
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E6P1.png"
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-05"
