@@ -52,5 +52,184 @@
             67,
             32
         ]
+    },
+    "领取绮思经验": {
+        "next": [
+            "Click_活动",
+            "Sub_返回主界面"
+        ]
+    },
+    "Click_活动": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Awards/活动.PNG",
+        "pre_wait_freezes": 800,
+        "post_delay": 1000,
+        "roi": [
+            28,
+            454,
+            42,
+            41
+        ],
+        "next": [
+            "向右寻找绮思"
+        ]
+    },
+    "向右寻找绮思": {
+        "times_limit": 12,
+        "runout_next": [
+            "返回主界面"
+        ],
+        "next": [
+            "Click_绮思",
+            "Swipe_向左滑动寻找绮思"
+        ]
+    },
+    "向左寻找绮思": {
+        "times_limit": 12,
+        "runout_next": [
+            "返回主界面"
+        ],
+        "next": [
+            "Click_绮思",
+            "Swipe_向右滑动寻找绮思"
+        ]
+    },
+    "Swipe_向左滑动寻找绮思": {
+        "times_limit": 5,
+        "runout_next": [
+            "向左寻找绮思"
+        ],
+        "action": "Swipe",
+        "begin": [
+            640,
+            1140,
+            30,
+            60
+        ],
+        "end": [
+            45,
+            1140,
+            30,
+            60
+        ],
+        "next": [
+            "向右寻找绮思"
+        ]
+    },
+    "Swipe_向右滑动寻找绮思": {
+        "times_limit": 5,
+        "runout_next": [
+            "向右寻找绮思"
+        ],
+        "action": "Swipe",
+        "begin": [
+            45,
+            1140,
+            30,
+            60
+        ],
+        "end": [
+            640,
+            1140,
+            30,
+            60
+        ],
+        "next": [
+            "向左寻找绮思"
+        ]
+    },
+    "Click_绮思": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "绮思",
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            18,
+            1120,
+            682,
+            110
+        ],
+        "next": [
+            "Click_绮思任务"
+        ]
+    },
+    "Click_绮思任务": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "任务",
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            482,
+            280,
+            84,
+            48
+        ],
+        "next": [
+            "Flag_绮思一键领取暗",
+            "Click_绮思一键领取亮"
+        ]
+    },
+    "Click_绮思一键领取亮": {
+        "times_limit": 3,
+        "runout_next": [
+            "返回主界面"
+        ],
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Awards/绮思亮.png",
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            494,
+            1033,
+            164,
+            49
+        ],
+        "next": [
+            "Flag_绮思一键领取暗",
+            "Sub_Click_绮思等级提升",
+            "Sub_Click_关闭奖励弹窗",
+            "Click_绮思一键领取亮"
+        ]
+    },
+    "Flag_绮思一键领取暗": {
+        "recognition": "TemplateMatch",
+        "template": "Awards/绮思暗.png",
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            489,
+            1033,
+            172,
+            50
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "Sub_Click_绮思等级提升": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "绮思等级提升"
+        ],
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "target": [
+            300,
+            900,
+            30,
+            30
+        ],
+        "roi": [
+            276,
+            389,
+            163,
+            41
+        ]
     }
 }
