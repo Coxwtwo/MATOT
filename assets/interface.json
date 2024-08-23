@@ -98,11 +98,76 @@
             }
         },
         {
-            "name": "刷思绪残影",
-            "entry": "刷思绪残影",
+            "name": "刷残影",
+            "entry": "异常副本",
             "option": [
-                "思绪名称"
-            ]
+                "异常关卡思绪",
+                "异常关卡次数"
+            ],
+            "param": {
+                "Click_事件簿": {
+                    "next": [
+                        "Click_主线"
+                    ]
+                },
+                "Click_复盘次数": {
+                    "expected": "1"
+                },
+                "Click_副本结算界面": {
+                    "next": [
+                        "Click_副本结算界面",
+                        "Click_再次进入异常关卡"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "刷材料",
+            "entry": "异常副本",
+            "option": [
+                "异常关卡技能",
+                "异常关卡次数"
+            ],
+            "param": {
+                "Click_事件簿": {
+                    "next": [
+                        "Click_主线"
+                    ]
+                },
+                "Click_复盘次数": {
+                    "expected": "1"
+                },
+                "Click_副本结算界面": {
+                    "next": [
+                        "Click_副本结算界面",
+                        "Click_再次进入异常关卡"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "刷印象",
+            "entry": "异常副本",
+            "option": [
+                "异常关卡印象",
+                "异常关卡次数"
+            ],
+            "param": {
+                "Click_事件簿": {
+                    "next": [
+                        "Click_主线"
+                    ]
+                },
+                "Click_复盘次数": {
+                    "expected": "1"
+                },
+                "Click_副本结算界面": {
+                    "next": [
+                        "Click_副本结算界面",
+                        "Click_再次进入异常关卡"
+                    ]
+                }
+            }
         },
         {
             "name": "外勤委托",
@@ -136,6 +201,10 @@
             "option": [
                 "好感度男主"
             ]
+        },
+        {
+            "name": "刷思绪残影",
+            "entry": "刷思绪残影"
         },
         {
             "name": "领取任务奖励",
@@ -590,6 +659,354 @@
                             "expected": [
                                 "铭忘"
                             ]
+                        }
+                    }
+                }
+            ]
+        },
+        "异常关卡次数": {
+            "cases": [
+                {
+                    "name": "x1",
+                    "param": {
+                        "Click_复盘异常关卡": {
+                            "times_limit": 1
+                        }
+                    }
+                },
+                {
+                    "name": "x2",
+                    "param": {
+                        "Click_复盘异常关卡": {
+                            "times_limit": 2
+                        }
+                    }
+                },
+                {
+                    "name": "x3",
+                    "param": {
+                        "Click_复盘异常关卡": {
+                            "times_limit": 3
+                        }
+                    }
+                }
+            ]
+        },
+        "异常关卡思绪": {
+            "cases": [
+                {
+                    "name": "锋芒褪尽01-04",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.1"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "01-04"
+                        }
+                    }
+                },
+                {
+                    "name": "彼时少年01-08",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.1"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "01-08"
+                        }
+                    }
+                },
+                {
+                    "name": "锋芒褪尽01-12",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.1"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "01-12"
+                        }
+                    }
+                },
+                {
+                    "name": "彼时少年01-16",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.1"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "01-16"
+                        }
+                    }
+                }
+            ]
+        },
+        "异常关卡技能": {
+            "cases": [
+                {
+                    "name": "夏彦初级03-10",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-10"
+                        }
+                    }
+                },
+                {
+                    "name": "夏彦中级06-11",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode\\.(6)\\s+\\(Part\\s+(1)"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-11"
+                        }
+                    }
+                },
+                {
+                    "name": "夏彦高级07-09",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode\\.(7)\\s+\\(Part\\s+(1)"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-09"
+                        }
+                    }
+                },
+                {
+                    "name": "左然初级03-12",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-12"
+                        }
+                    }
+                },
+                {
+                    "name": "左然中级06-10",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode\\.(6)\\s+\\(Part\\s+(1)"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-10"
+                        }
+                    }
+                },
+                {
+                    "name": "左然高级07-10",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode\\.(7)\\s+\\(Part\\s+(1)"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-10"
+                        }
+                    }
+                },
+                {
+                    "name": "莫弈初级03-13",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-13"
+                        }
+                    }
+                },
+                {
+                    "name": "莫弈中级06-22",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode\\.(6)\\s+\\(Part\\s+(2)"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-22"
+                        }
+                    }
+                },
+                {
+                    "name": "莫弈高级07-23",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode\\.(7)\\s+\\(Part\\s+(2)"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-23"
+                        }
+                    }
+                },
+                {
+                    "name": "陆景和初级03-09",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-09"
+                        }
+                    }
+                },
+                {
+                    "name": "陆景和中级06-09",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode\\.(6)\\s+\\(Part\\s+(1)"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-09"
+                        }
+                    }
+                },
+                {
+                    "name": "陆景和高级07-11",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode\\.(7)\\s+\\(Part\\s+(1)"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "07-11"
+                        }
+                    }
+                }
+            ]
+        },
+        "异常关卡印象": {
+            "cases": [
+                {
+                    "name": "直觉印象Ⅲ06-07",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode\\.(6)\\s+\\(Part\\s+(1)"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-07"
+                        }
+                    }
+                },
+                {
+                    "name": "共情印象Ⅲ06-06",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode\\.(6)\\s+\\(Part\\s+(1)"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-06"
+                        }
+                    }
+                },
+                {
+                    "name": "逻辑印象Ⅲ06-05",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode\\.(6)\\s+\\(Part\\s+(1)"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "06-05"
+                        }
+                    }
+                },
+                {
+                    "name": "直觉印象Ⅱ＆Ⅰ03-07",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-07"
+                        }
+                    }
+                },
+                {
+                    "name": "共情印象Ⅱ＆Ⅰ03-06",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-06"
+                        }
+                    }
+                },
+                {
+                    "name": "逻辑印象Ⅱ＆Ⅰ03-05",
+                    "param": {
+                        "Click_主线选择篇章": {
+                            "expected": "海奥森篇"
+                        },
+                        "Click_进入异常副本": {
+                            "expected": "Episode.3"
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "03-05"
                         }
                     }
                 }

@@ -23,18 +23,18 @@
     "向下寻找进修副本": {
         "next": [
             "Click_进入进修副本",
-            "Flag_副本列表最下端",
+            "Flag_进修副本列表最下端",
             "Swipe_向上滑动寻找进修副本"
         ]
     },
     "向上寻找进修副本": {
         "next": [
             "Click_进入进修副本",
-            "Flag_副本列表最上端",
+            "Flag_进修副本列表最上端",
             "Swipe_向下滑动寻找进修副本"
         ]
     },
-    "Flag_副本列表最下端": {
+    "Flag_进修副本列表最下端": {
         "focus": true,
         "times_limit": 2,
         "runout_next": [
@@ -71,7 +71,7 @@
             "向下寻找进修副本"
         ]
     },
-    "Flag_副本列表最上端": {
+    "Flag_进修副本列表最上端": {
         "focus": true,
         "times_limit": 2,
         "runout_next": [
