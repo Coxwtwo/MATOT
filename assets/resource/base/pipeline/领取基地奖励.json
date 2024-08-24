@@ -29,7 +29,7 @@
             "基地",
             "基址"
         ],
-        "post_delay": 2500,
+        "post_delay": 4000,
         "roi": [
             431,
             1064,
@@ -42,6 +42,7 @@
         "action": "Click",
         "recognition": "OCR",
         "expected": "资源申请",
+        "post_delay": 1000,
         "roi": [
             555,
             908,
@@ -76,6 +77,7 @@
         "action": "Click",
         "recognition": "OCR",
         "expected": "资料室",
+        "post_delay": 1000,
         "roi": [
             582,
             1013,
@@ -130,6 +132,7 @@
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Awards/酬谢.png",
+        "post_delay": 1000,
         "roi": [
             608,
             237,
