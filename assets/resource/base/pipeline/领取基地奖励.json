@@ -147,6 +147,7 @@
         "recognition": "OCR",
         "expected": "领取奖励",
         "pre_delay": 1000,
+        "post_delay": 1000,
         "roi": [
             292,
             1077,
@@ -154,10 +155,10 @@
             44
         ],
         "next": [
-            "Flag_奖励已领取",
-            "Sub_Click_点击开启",
             "Sub_Click_关闭奖励弹窗",
-            "Sub_Click_X按钮"
+            "Sub_Click_点击开启",
+            "Sub_Click_X按钮",
+            "Flag_奖励已领取"
         ]
     },
     "Flag_奖励已领取": {
