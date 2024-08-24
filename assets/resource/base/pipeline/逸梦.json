@@ -63,10 +63,10 @@
         "template": "逸梦/夏彦.png",
         "pre_delay": 1000,
         "roi": [
-            86,
-            242,
-            126,
-            126
+            0,
+            523,
+            91,
+            431
         ],
         "next": [
             "Sub_Click_收取花露夏彦",
@@ -80,12 +80,12 @@
         "pre_delay": 1000,
         "roi": [
             0,
-            200,
-            183,
-            270
+            539,
+            85,
+            406
         ],
         "next": [
-            "Sub_Click_收取花露夏彦",
+            "Sub_Click_收取花露左然",
             "Sub_Click_收取特殊花露",
             "Click_返回上一级键"
         ]
@@ -96,12 +96,12 @@
         "pre_delay": 1000,
         "roi": [
             0,
-            278,
-            247,
-            176
+            534,
+            106,
+            411
         ],
         "next": [
-            "Sub_Click_收取花露夏彦",
+            "Sub_Click_收取花露莫弈",
             "Sub_Click_收取特殊花露",
             "Click_返回上一级键"
         ]
@@ -111,10 +111,10 @@
         "template": "逸梦/陆景和.png",
         "pre_delay": 1000,
         "roi": [
-            12,
-            230,
-            184,
-            172
+            0,
+            511,
+            103,
+            435
         ],
         "next": [
             "Sub_Click_收取花露陆景和",
@@ -162,7 +162,10 @@
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": [
-            "逸梦/花露.png"
+            "逸梦/花露.png",
+            "逸梦/花露莫1.png",
+            "逸梦/花露莫2.png",
+            "逸梦/花露莫3.png"
         ],
         "green_mask": true,
         "pre_delay": 800,
