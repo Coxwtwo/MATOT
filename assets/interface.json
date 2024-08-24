@@ -788,7 +788,8 @@
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
-                            "template": "Debate/E6P1.png"
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.9
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-11"
@@ -803,7 +804,8 @@
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
-                            "template": "Debate/E7P1.png"
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.9
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-09"
@@ -832,7 +834,8 @@
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
-                            "template": "Debate/E6P1.png"
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.9
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-10"
@@ -847,7 +850,8 @@
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
-                            "template": "Debate/E7P1.png"
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.9
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-10"
@@ -876,7 +880,8 @@
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
-                            "template": "Debate/E6P2.png"
+                            "template": "Debate/E6P2.png",
+                            "threshold": 0.9
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-22"
@@ -891,7 +896,8 @@
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
-                            "template": "Debate/E7P2.png"
+                            "template": "Debate/E7P2.png",
+                            "threshold": 0.9
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-23"
@@ -920,7 +926,8 @@
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
-                            "template": "Debate/E6P1.png"
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.9
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-09"
@@ -935,7 +942,8 @@
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
-                            "template": "Debate/E7P1.png"
+                            "template": "Debate/E7P1.png",
+                            "threshold": 0.9
                         },
                         "Click_进入异常关卡": {
                             "expected": "07-11"
@@ -954,7 +962,8 @@
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
-                            "template": "Debate/E6P1.png"
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.9
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-07"
@@ -969,7 +978,8 @@
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
-                            "template": "Debate/E6P1.png"
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.9
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-06"
@@ -984,7 +994,8 @@
                         },
                         "Click_进入异常副本": {
                             "recognition": "TemplateMatch",
-                            "template": "Debate/E6P1.png"
+                            "template": "Debate/E6P1.png",
+                            "threshold": 0.9
                         },
                         "Click_进入异常关卡": {
                             "expected": "06-05"
