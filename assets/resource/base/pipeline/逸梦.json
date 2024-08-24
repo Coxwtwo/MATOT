@@ -34,11 +34,10 @@
             27
         ],
         "next": [
-            "Click_收取花露",
-            "Click_收取花露",
-            "Click_收取特殊花露",
-            "Click_收取特殊花露",
-            "Click_返回上一级键"
+            "Flag_逸梦夏彦",
+            "Flag_逸梦左然",
+            "Flag_逸梦莫弈",
+            "Flag_逸梦陆景和"
         ]
     },
     "Flag_花露最大值": {
@@ -53,56 +52,158 @@
             39
         ],
         "next": [
-            "Click_收取花露",
-            "Click_收取花露",
-            "Click_收取特殊花露",
-            "Click_收取特殊花露",
+            "Flag_逸梦夏彦",
+            "Flag_逸梦左然",
+            "Flag_逸梦莫弈",
+            "Flag_逸梦陆景和"
+        ]
+    },
+    "Flag_逸梦夏彦": {
+        "recognition": "TemplateMatch",
+        "template": "逸梦/夏彦.png",
+        "pre_delay": 1000,
+        "roi": [
+            86,
+            242,
+            126,
+            126
+        ],
+        "next": [
+            "Sub_Click_收取花露夏彦",
+            "Sub_Click_收取特殊花露",
             "Click_返回上一级键"
         ]
     },
-    "Click_收取花露": {
+    "Flag_逸梦左然": {
+        "recognition": "TemplateMatch",
+        "template": "逸梦/左然.png",
+        "pre_delay": 1000,
+        "roi": [
+            0,
+            200,
+            183,
+            270
+        ],
+        "next": [
+            "Sub_Click_收取花露夏彦",
+            "Sub_Click_收取特殊花露",
+            "Click_返回上一级键"
+        ]
+    },
+    "Flag_逸梦莫弈": {
+        "recognition": "TemplateMatch",
+        "template": "逸梦/莫弈.png",
+        "pre_delay": 1000,
+        "roi": [
+            0,
+            278,
+            247,
+            176
+        ],
+        "next": [
+            "Sub_Click_收取花露夏彦",
+            "Sub_Click_收取特殊花露",
+            "Click_返回上一级键"
+        ]
+    },
+    "Flag_逸梦陆景和": {
+        "recognition": "TemplateMatch",
+        "template": "逸梦/陆景和.png",
+        "pre_delay": 1000,
+        "roi": [
+            12,
+            230,
+            184,
+            172
+        ],
+        "next": [
+            "Sub_Click_收取花露陆景和",
+            "Sub_Click_收取特殊花露",
+            "Click_返回上一级键"
+        ]
+    },
+    "Sub_Click_收取花露夏彦": {
+        "is_sub": true,
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": [
             "逸梦/花露.png",
-            "逸梦/花露2.png",
-            "逸梦/花露3.png",
-            "逸梦/花露4.png"
+            "逸梦/花露夏1.png",
+            "逸梦/花露夏2.png",
+            "逸梦/花露夏3.png"
         ],
         "green_mask": true,
         "pre_delay": 800,
         "roi": [
-            80,
+            90,
             440,
-            600,
-            500
-        ],
-        "next": [
-            "Click_收取花露",
-            "Click_收取花露",
-            "Click_收取特殊花露",
-            "Click_收取特殊花露",
-            "Click_返回上一级键"
+            490,
+            400
         ]
     },
-    "Click_收取特殊花露": {
+    "Sub_Click_收取花露左然": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": [
+            "逸梦/花露.png"
+        ],
+        "green_mask": true,
+        "pre_delay": 800,
+        "roi": [
+            90,
+            440,
+            490,
+            400
+        ]
+    },
+    "Sub_Click_收取花露莫弈": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": [
+            "逸梦/花露.png"
+        ],
+        "green_mask": true,
+        "pre_delay": 800,
+        "roi": [
+            90,
+            440,
+            490,
+            400
+        ]
+    },
+    "Sub_Click_收取花露陆景和": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": [
+            "逸梦/花露.png",
+            "逸梦/花露陆1.png",
+            "逸梦/花露陆2.png",
+            "逸梦/花露陆3.png"
+        ],
+        "green_mask": true,
+        "pre_delay": 800,
+        "roi": [
+            90,
+            440,
+            490,
+            400
+        ]
+    },
+    "Sub_Click_收取特殊花露": {
+        "is_sub": true,
         "action": "Click",
         "recognition": "TemplateMatch",
         "template": "逸梦/特殊花露.png",
         "green_mask": true,
         "pre_delay": 800,
         "roi": [
-            80,
+            90,
             440,
-            600,
-            500
-        ],
-        "next": [
-            "Click_收取花露",
-            "Click_收取花露",
-            "Click_收取特殊花露",
-            "Click_收取特殊花露",
-            "Click_返回上一级键"
+            490,
+            400
         ]
     },
     "Click_加入花露": {
