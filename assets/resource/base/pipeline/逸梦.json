@@ -18,7 +18,8 @@
             33
         ],
         "next": [
-            "Flag_下一次花露收取"
+            "Flag_下一次花露收取",
+            "Flag_花露最大值"
         ]
     },
     "Flag_下一次花露收取": {
@@ -35,8 +36,25 @@
         "next": [
             "Click_收取花露",
             "Click_收取花露",
-            "Click_收取花露",
             "Click_收取特殊花露",
+            "Click_收取特殊花露",
+            "Click_返回上一级键"
+        ]
+    },
+    "Flag_花露最大值": {
+        "recognition": "OCR",
+        "expected": "花露已达到最大数量",
+        "pre_delay": 800,
+        "post_delay": 4000,
+        "roi": [
+            237,
+            418,
+            230,
+            39
+        ],
+        "next": [
+            "Click_收取花露",
+            "Click_收取花露",
             "Click_收取特殊花露",
             "Click_收取特殊花露",
             "Click_返回上一级键"
@@ -45,7 +63,12 @@
     "Click_收取花露": {
         "action": "Click",
         "recognition": "TemplateMatch",
-        "template": "逸梦/花露.png",
+        "template": [
+            "逸梦/花露.png",
+            "逸梦/花露2.png",
+            "逸梦/花露3.png",
+            "逸梦/花露4.png"
+        ],
         "green_mask": true,
         "pre_delay": 800,
         "roi": [
@@ -57,8 +80,6 @@
         "next": [
             "Click_收取花露",
             "Click_收取花露",
-            "Click_收取花露",
-            "Click_收取特殊花露",
             "Click_收取特殊花露",
             "Click_收取特殊花露",
             "Click_返回上一级键"
@@ -79,8 +100,6 @@
         "next": [
             "Click_收取花露",
             "Click_收取花露",
-            "Click_收取花露",
-            "Click_收取特殊花露",
             "Click_收取特殊花露",
             "Click_收取特殊花露",
             "Click_返回上一级键"
