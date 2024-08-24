@@ -9,7 +9,7 @@
         "action": "Click",
         "pre_delay": 1000,
         "recognition": "ColorMatch",
-        "post_delay": 2000,
+        "post_delay": 5000,
         "lower": [
             223,
             199,
