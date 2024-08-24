@@ -55,6 +55,26 @@
     },
     "Flag_每日任务奖励无领取键": {
         "next": [
+            "Click_一键领取每日活跃度"
+        ]
+    },
+    "Click_一键领取每日活跃度": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "一键领取",
+            "键领取"
+        ],
+        "pre_delay": 500,
+        "post_delay": 1000,
+        "roi": [
+            500,
+            1160,
+            180,
+            80
+        ],
+        "next": [
+            "Sub_Click_关闭奖励弹窗",
             "Click_每周"
         ]
     },
@@ -80,6 +100,26 @@
     },
     "Flag_每周任务奖励无领取键": {
         "next": [
+            "Click_一键领取每周活跃度"
+        ]
+    },
+    "Click_一键领取每周活跃度": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "一键领取",
+            "键领取"
+        ],
+        "pre_delay": 500,
+        "post_delay": 1000,
+        "roi": [
+            500,
+            1160,
+            180,
+            80
+        ],
+        "next": [
+            "Sub_Click_关闭奖励弹窗",
             "返回主界面"
         ]
     },
