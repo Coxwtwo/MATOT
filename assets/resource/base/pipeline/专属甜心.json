@@ -146,7 +146,7 @@
         "recognition": "TemplateMatch",
         "template": "Button/自动剧情.png",
         "pre_delay": 800,
-        "post_delay": 3000,
+        "post_delay": 10000,
         "roi": [
             522,
             1162,
