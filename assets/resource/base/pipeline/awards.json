@@ -34,8 +34,27 @@
             36
         ],
         "next": [
-            "Flag_一键领取暗",
-            "Sub_Click_一键领取亮"
+            "Sub_Click_任务奖励领取",
+            "Flag_每日任务奖励无领取键"
+        ]
+    },
+    "Sub_Click_任务奖励领取": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "领取",
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            520,
+            443,
+            184,
+            100
+        ]
+    },
+    "Flag_每日任务奖励无领取键": {
+        "next": [
+            "Click_每周"
         ]
     },
     "Click_每周": {
@@ -51,6 +70,15 @@
             126,
             67,
             32
+        ],
+        "next": [
+            "Sub_Click_任务奖励领取",
+            "Flag_每周任务奖励无领取键"
+        ]
+    },
+    "Flag_每周任务奖励无领取键": {
+        "next": [
+            "返回主界面"
         ]
     },
     "领取绮思经验": {
@@ -168,44 +196,27 @@
             48
         ],
         "next": [
-            "Flag_绮思一键领取暗",
-            "Click_绮思一键领取亮"
-        ]
-    },
-    "Click_绮思一键领取亮": {
-        "times_limit": 3,
-        "runout_next": [
-            "返回主界面"
-        ],
-        "action": "Click",
-        "recognition": "TemplateMatch",
-        "template": "Awards/绮思亮.png",
-        "pre_delay": 800,
-        "post_delay": 1000,
-        "roi": [
-            494,
-            1033,
-            164,
-            49
-        ],
-        "next": [
-            "Flag_绮思一键领取暗",
             "Sub_Click_绮思等级提升",
             "Sub_Click_关闭奖励弹窗",
-            "Click_绮思一键领取亮"
+            "Sub_Click_绮思领取",
+            "Flag_绮思无领取键"
         ]
     },
-    "Flag_绮思一键领取暗": {
-        "recognition": "TemplateMatch",
-        "template": "Awards/绮思暗.png",
+    "Sub_Click_绮思领取": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "领取",
         "pre_delay": 800,
         "post_delay": 1000,
         "roi": [
-            489,
-            1033,
-            172,
-            50
-        ],
+            500,
+            410,
+            130,
+            80
+        ]
+    },
+    "Flag_绮思无领取键": {
         "next": [
             "返回主界面"
         ]
