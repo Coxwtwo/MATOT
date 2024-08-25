@@ -1,0 +1,126 @@
+{
+    "领取任务奖励": {
+        "next": [
+            "Click_任务",
+            "Sub_返回主界面"
+        ]
+    },
+    "Click_任务": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Awards/任务.PNG",
+        "roi": [
+            28,
+            359,
+            44,
+            40
+        ],
+        "next": [
+            "Click_每日"
+        ]
+    },
+    "Click_每日": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "每",
+            "母",
+            "每日"
+        ],
+        "roi": [
+            208,
+            123,
+            70,
+            36
+        ],
+        "next": [
+            "Sub_Click_任务奖励领取",
+            "Sub_Click_关闭奖励弹窗",
+            "Flag_每日任务奖励无领取键"
+        ]
+    },
+    "Sub_Click_任务奖励领取": {
+        "is_sub": true,
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "领取",
+        "pre_delay": 800,
+        "post_delay": 1000,
+        "roi": [
+            520,
+            443,
+            184,
+            100
+        ]
+    },
+    "Flag_每日任务奖励无领取键": {
+        "next": [
+            "Click_一键领取每日活跃度"
+        ]
+    },
+    "Click_一键领取每日活跃度": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "一键领取",
+            "键领取"
+        ],
+        "pre_delay": 500,
+        "post_delay": 1000,
+        "roi": [
+            500,
+            1160,
+            180,
+            80
+        ],
+        "next": [
+            "Sub_Click_关闭奖励弹窗",
+            "Click_每周"
+        ]
+    },
+    "Click_每周": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "每",
+            "母",
+            "每周"
+        ],
+        "roi": [
+            443,
+            126,
+            67,
+            32
+        ],
+        "next": [
+            "Sub_Click_任务奖励领取",
+            "Sub_Click_关闭奖励弹窗",
+            "Flag_每周任务奖励无领取键"
+        ]
+    },
+    "Flag_每周任务奖励无领取键": {
+        "next": [
+            "Click_一键领取每周活跃度"
+        ]
+    },
+    "Click_一键领取每周活跃度": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "一键领取",
+            "键领取"
+        ],
+        "pre_delay": 500,
+        "post_delay": 1000,
+        "roi": [
+            500,
+            1160,
+            180,
+            80
+        ],
+        "next": [
+            "Sub_Click_关闭奖励弹窗",
+            "返回主界面"
+        ]
+    }
+}
