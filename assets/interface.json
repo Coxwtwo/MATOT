@@ -359,39 +359,6 @@
                             "expected": "2"
                         }
                     }
-                },
-                {
-                    "name": "x3",
-                    "param": {
-                        "Click_工作证使用张数": {
-                            "expected": "3"
-                        },
-                        "Click_复盘次数": {
-                            "expected": "3"
-                        }
-                    }
-                },
-                {
-                    "name": "x4",
-                    "param": {
-                        "Click_工作证使用张数": {
-                            "expected": "4"
-                        },
-                        "Click_复盘次数": {
-                            "expected": "4"
-                        }
-                    }
-                },
-                {
-                    "name": "x5",
-                    "param": {
-                        "Click_工作证使用张数": {
-                            "expected": "5"
-                        },
-                        "Click_复盘次数": {
-                            "expected": "5"
-                        }
-                    }
                 }
             ]
         },
