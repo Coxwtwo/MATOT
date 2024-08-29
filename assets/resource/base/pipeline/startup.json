@@ -4,6 +4,7 @@
             "Sub_Click_关闭奖励弹窗",
             "Sub_Click_返回主界面键",
             "Sub_Click_返回上一级键",
+            "Sub_Click_确定",
             "Flag_主界面任务",
             "Sub_点击关闭广告弹窗"
         ]
@@ -19,6 +20,7 @@
             "Sub_Click_返回上一级键",
             "Sub_Click_返回主界面键",
             "Sub_Click_关闭广告弹窗",
+            "Sub_Click_确定",
             "Flag_ThemisLoading",
             "Flag_StartLoadingVersion",
             "Sub_Click_官服接受协议",
