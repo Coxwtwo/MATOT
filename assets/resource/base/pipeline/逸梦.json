@@ -10,7 +10,7 @@
         "recognition": "OCR",
         "expected": "逸梦",
         "pre_delay": 1000,
-        "post_delay": 1000,
+        "post_delay": 1500,
         "roi": [
             41,
             1232,
@@ -34,10 +34,7 @@
             27
         ],
         "next": [
-            "Flag_逸梦夏彦",
-            "Flag_逸梦左然",
-            "Flag_逸梦莫弈",
-            "Flag_逸梦陆景和"
+            "Swipe_收取花露第一行"
         ]
     },
     "Flag_花露最大值": {
@@ -52,164 +49,147 @@
             39
         ],
         "next": [
-            "Flag_逸梦夏彦",
-            "Flag_逸梦左然",
-            "Flag_逸梦莫弈",
-            "Flag_逸梦陆景和"
+            "Swipe_收取花露第一行"
         ]
     },
-    "Flag_逸梦夏彦": {
-        "recognition": "TemplateMatch",
-        "template": "逸梦/夏彦.png",
-        "pre_delay": 1000,
-        "roi": [
-            0,
-            523,
-            91,
-            431
+    "Swipe_收取花露第一行": {
+        "action": "Swipe",
+        "begin": [
+            90,
+            480,
+            20,
+            20
         ],
+        "end": [
+            620,
+            480,
+            20,
+            20
+        ],
+        "duration": 1000,
         "next": [
-            "Sub_Click_收取花露夏彦",
-            "Sub_Click_收取特殊花露",
-            "Click_返回上一级键"
+            "Click_加入花露",
+            "Swipe_收取花露第二行"
         ]
     },
-    "Flag_逸梦左然": {
-        "recognition": "TemplateMatch",
-        "template": "逸梦/左然.png",
-        "pre_delay": 1000,
-        "roi": [
-            0,
-            539,
-            85,
-            406
+    "Swipe_收取花露第二行": {
+        "action": "Swipe",
+        "begin": [
+            90,
+            530,
+            20,
+            20
         ],
+        "end": [
+            620,
+            530,
+            20,
+            20
+        ],
+        "duration": 1000,
         "next": [
-            "Sub_Click_收取花露左然",
-            "Sub_Click_收取特殊花露",
-            "Click_返回上一级键"
+            "Click_加入花露",
+            "Swipe_收取花露第三行"
         ]
     },
-    "Flag_逸梦莫弈": {
-        "recognition": "TemplateMatch",
-        "template": "逸梦/莫弈.png",
-        "pre_delay": 1000,
-        "roi": [
-            0,
-            534,
-            106,
-            411
+    "Swipe_收取花露第三行": {
+        "action": "Swipe",
+        "begin": [
+            90,
+            580,
+            20,
+            20
         ],
+        "end": [
+            620,
+            580,
+            20,
+            20
+        ],
+        "duration": 1000,
         "next": [
-            "Sub_Click_收取花露莫弈",
-            "Sub_Click_收取特殊花露",
-            "Click_返回上一级键"
+            "Click_加入花露",
+            "Swipe_收取花露第四行"
         ]
     },
-    "Flag_逸梦陆景和": {
-        "recognition": "TemplateMatch",
-        "template": "逸梦/陆景和.png",
-        "pre_delay": 1000,
-        "roi": [
-            0,
-            511,
-            103,
-            435
+    "Swipe_收取花露第四行": {
+        "action": "Swipe",
+        "begin": [
+            90,
+            630,
+            20,
+            20
         ],
+        "end": [
+            620,
+            630,
+            20,
+            20
+        ],
+        "duration": 1000,
         "next": [
-            "Sub_Click_收取花露陆景和",
-            "Sub_Click_收取特殊花露",
-            "Click_返回上一级键"
+            "Click_加入花露",
+            "Swipe_收取花露第五行"
         ]
     },
-    "Sub_Click_收取花露夏彦": {
-        "is_sub": true,
-        "action": "Click",
-        "recognition": "TemplateMatch",
-        "template": [
-            "逸梦/花露.png",
-            "逸梦/花露夏1.png",
-            "逸梦/花露夏2.png",
-            "逸梦/花露夏3.png"
+    "Swipe_收取花露第五行": {
+        "action": "Swipe",
+        "begin": [
+            90,
+            680,
+            20,
+            20
         ],
-        "green_mask": true,
-        "pre_delay": 800,
-        "roi": [
-            90,
-            440,
-            490,
-            400
-        ]
-    },
-    "Sub_Click_收取花露左然": {
-        "is_sub": true,
-        "action": "Click",
-        "recognition": "TemplateMatch",
-        "template": [
-            "逸梦/花露.png",
-            "逸梦/花露左1.png",
-            "逸梦/花露左2.png",
-            "逸梦/花露左3.png"
+        "end": [
+            620,
+            680,
+            20,
+            20
         ],
-        "green_mask": true,
-        "pre_delay": 800,
-        "roi": [
-            90,
-            440,
-            490,
-            400
+        "duration": 1000,
+        "next": [
+            "Click_加入花露",
+            "Swipe_收取花露第六行"
         ]
     },
-    "Sub_Click_收取花露莫弈": {
-        "is_sub": true,
-        "action": "Click",
-        "recognition": "TemplateMatch",
-        "template": [
-            "逸梦/花露.png",
-            "逸梦/花露莫1.png",
-            "逸梦/花露莫2.png",
-            "逸梦/花露莫3.png"
+    "Swipe_收取花露第六行": {
+        "action": "Swipe",
+        "begin": [
+            90,
+            730,
+            20,
+            20
         ],
-        "green_mask": true,
-        "pre_delay": 800,
-        "roi": [
-            90,
-            440,
-            490,
-            400
-        ]
-    },
-    "Sub_Click_收取花露陆景和": {
-        "is_sub": true,
-        "action": "Click",
-        "recognition": "TemplateMatch",
-        "template": [
-            "逸梦/花露.png",
-            "逸梦/花露陆1.png",
-            "逸梦/花露陆2.png",
-            "逸梦/花露陆3.png"
+        "end": [
+            620,
+            730,
+            20,
+            20
         ],
-        "green_mask": true,
-        "pre_delay": 800,
-        "roi": [
-            90,
-            440,
-            490,
-            400
+        "duration": 1000,
+        "next": [
+            "Click_加入花露",
+            "Swipe_收取花露第七行"
         ]
     },
-    "Sub_Click_收取特殊花露": {
-        "is_sub": true,
-        "action": "Click",
-        "recognition": "TemplateMatch",
-        "template": "逸梦/特殊花露.png",
-        "green_mask": true,
-        "pre_delay": 800,
-        "roi": [
+    "Swipe_收取花露第七行": {
+        "action": "Swipe",
+        "begin": [
             90,
-            440,
-            490,
-            400
+            780,
+            20,
+            20
+        ],
+        "end": [
+            620,
+            780,
+            20,
+            20
+        ],
+        "duration": 1000,
+        "next": [
+            "Click_加入花露",
+            "返回主界面"
         ]
     },
     "Click_加入花露": {
@@ -222,6 +202,24 @@
             1097,
             92,
             71
+        ],
+        "next": [
+            "Click_梦笺"
+        ]
+    },
+    "Click_梦笺": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "前往梦笺",
+        "pre_delay": 1000,
+        "roi": [
+            300,
+            1140,
+            200,
+            80
+        ],
+        "next": [
+            "返回主界面"
         ]
     }
 }
