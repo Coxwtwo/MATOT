@@ -453,4 +453,4 @@ venv
 !venv/requirements.txt
 GitReference.txt
 assets/config
-!assets/python/dll
+!assets/python/dll/
