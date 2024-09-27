@@ -2,8 +2,8 @@
 
 ## MATOT
 
-基于MAA全新架构的未定助手。图像技术 + 模拟控制，解放双手！
-由[MaaFramework](https://github.com/MaaXYZ/MaaFramework)强力驱动！
+基于MAA全新架构的未定小助手。图像技术 + 模拟控制，解放双手！
+由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 强力驱动！
 
 
 ## 可能会有的功能
@@ -26,7 +26,6 @@
   - [x] 复盘异常关卡刷印象
   - [ ] 复盘异常关卡刷思绪残影（残影卡太多了没写完）
   - [x] 外勤委托：需要提前配好卡组，战力不足时会直接退出。
-  - [x] 旧版刷思绪残影：只能复盘第一个关卡3次，要求刷取的残影至少有一个且可复盘次数为3。
 - [x] 其他
   - [x] 专属甜心制作：目前会自动制作背包中第一件未完成物品。
   - [x] 逸梦系统收集花露
@@ -35,77 +34,50 @@
 
 ## 图形化界面
 
-本项目目前无GUI，但社区中有[overflow65537](https://github.com/overflow65537)贡献的[MAAFW-GUI](https://github.com/overflow65537/Tkinter_MAA-GUI)项目
+本项目目前无GUI，只能在命令行窗口运行。
 
 ## 如何使用
 
-以windows用户为例：
-1. 下载对应平台的压缩包并解压。
-2. 修改模拟器分辨率，最低 `1280 * 720`。
-3. 双击打开 `MaaPiCli.exe`
-4. 首次使用需要按提示设置连接设备和游戏服务器。
-5. 设置需要执行的任务然后执行。
+**以windows用户为例：**
+
+前置准备:
+
+1. 请参考 [模拟器支持情况](https://maa.plus/docs/1.3-模拟器支持.html) 下载模拟器，推荐使用 `MuMu 模拟器 12`。
+
+2. 修改模拟器分辨率，最低 `1280 * 720`，更高不限。
+
+3. 在模拟器上安装未定事件簿（支持官服和B服）。
+
+4. 启动未定事件簿并登录账号（只需要登录一次，除非登录失效或者你希望切换账号）。
+
+5. 下载对应平台的压缩包并解压（大多数情况下选择 MATOT-win-x86_64-vXXX.zip，除非你确定自己的电脑是 arm 架构）。
+
+6. 确认解压完整，请勿将压缩包解压到有中文的目录下，也不要解压到如 `C:\`、`C:\Program Files\` 等需要 UAC 权限的路径。
+
+开始使用:
+1. 首次使用，双击打开 `MATOT.exe`。
+
+2. 设置连接设备。通常输入 `1` 即可，程序会自动检测正在运行的模拟器，你也可以选择手动输入 `adb.exe` 的完整路径。
+
+3. 选择客户端类型。
+
+4. 输入需要执行的任务序号。
+    - 以空格分隔，例如 `1 2 3 4 5` 和 `2 3 1 4 5`，序号的顺序代表着执行顺序
+    - 序号可重复，例如 `5 1 2 3 4 5`
+
+5. 启动！
+
+ - 后续使用除非需要连接的设备的配置不存在，否则无需再次进行连接设备设置
+ - 后续使用无需再次选择客户端和输入需要执行的任务
+
+本项目基于 MaaFramework 开发，使用中遇到的问题可以参考 [MAA常见问题](https://maa.plus/docs/zh-cn/manual/faq.html)
 
 ## 开发相关
+如果你希望参与开发才需要看这节，使用本项目开发的软件请看 [如何使用](#如何使用) 这节。
 
-1. 完整克隆本项目及子项目。
-
-    ```bash 
-    git clone --recursive https://github.com/Coxwtwo/MATOT.git
-    ```
-
-    **请注意，一定要完整克隆子项目，不要漏了 `--recursive`，也不要下载 zip 包！**
-
-2. 下载 MaaFramework 的 [Release 包](https://github.com/MaaXYZ/MaaFramework/releases)，解压到 `deps` 文件夹中。
-
-3. 配置资源文件。
-
-    ```bash
-    python ./configure.py
-    ```
-
-4. 按需求修改 `assets` 中的资源文件并测试。
-
-   请参考 [MaaFramework](https://github.com/MaaXYZ/MaaFramework/blob/main/docs/zh_cn/1.1-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.md) 相关文档。
-
-    **本项目完全依赖 Json 低代码编程（Pipeline Json），请注意查看[Pipeline 协议](https://github.com/MaaAssistantArknights/MaaFramework/blob/main/docs/zh_cn/3.1-%E4%BB%BB%E5%8A%A1%E6%B5%81%E6%B0%B4%E7%BA%BF%E5%8D%8F%E8%AE%AE.md)。**
-
-    - 可使用 [MaaDebugger](https://github.com/MaaXYZ/MaaDebugger) 进行调试；
-    - 也可以在本地安装后测试：
-
-        1. 执行安装脚本
-
-            ```bash
-            python ./install.py
-            ```
-
-        2. 运行 `install/MaaPiCli.exe`
-
-5. 完成开发工作后，上传代码。
-
-    ```bash
-    # 配置 git 信息（仅第一次需要，后续不用再配置）
-    git config user.name "您的 GitHub 昵称"
-    git config user.email "您的 GitHub 邮箱"
-    
-    # 提交修改
-    git add .
-    git commit -m "XX 新功能"
-    git push origin HEAD -u
-    ```
-
-6. 发布版本
-
-    ```bash
-    # CI 检测到 tag 会自动进行发版
-    git tag v1.0.0
-    git push origin v1.0.0
-    ```
-
+本项目基于MaaFramework开发，在开发前，请先了解 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 相关事项。
+开发相关事项请查看文档 [开发相关](./docs/开发相关.md) 。
 
 ## 鸣谢
 
-本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！
-
-感谢MaaFW开发者的贡献。
-
+感谢自动化测试框架 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 开发者的贡献。
