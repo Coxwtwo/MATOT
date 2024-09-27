@@ -71,6 +71,11 @@ jobs:
           out-file-path: "deps"
           extract: true
 
+      - name: Install
+        shell: bash
+        run: |
+          python ./install.py ${{ needs.meta.outputs.tag }}
+
       - name: Build dependencies
         run: |
           python -m pip install --upgrade pip
@@ -81,11 +86,6 @@ jobs:
         shell: bash
         run: |
           python ./build.py ${{ needs.meta.outputs.tag }}
-
-      - name: Install
-        shell: bash
-        run: |
-          python ./install.py ${{ needs.meta.outputs.tag }}
 
       - uses: actions/upload-artifact@v3
         with:
