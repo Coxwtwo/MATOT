@@ -449,8 +449,6 @@ tools/ImageCropper/**/*.png
 
 # else
 venv
-!venv/pyvenv.cfg
-!venv/requirements.txt
 GitReference.txt
 assets/config
 !assets/python/dll/*.dll
