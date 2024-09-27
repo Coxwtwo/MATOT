@@ -452,3 +452,5 @@ venv
 GitReference.txt
 assets/config
 !assets/python/dll/*.dll
+!msvcp140.dll
+!vcruntime140.dll
