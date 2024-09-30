@@ -1,0 +1,233 @@
+{
+    "返回主界面": {
+        "next": [
+            "Flag_主界面任务"
+        ],
+        "interrupt": [
+            "Click_关闭奖励弹窗",
+            "Click_返回主界面键",
+            "Click_返回上一级键",
+            "Click_X按钮",
+            "Click_结束",
+            "Click_退出手机",
+            "Click_好感系统返回键",
+            "Click_确定"
+        ]
+    },
+    "Click_关闭奖励弹窗": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/获得奖励.png",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "target": [
+            300,
+            1000,
+            30,
+            30
+        ],
+        "roi": [
+            305,
+            230,
+            110,
+            190
+        ]
+    },
+    "Click_返回主界面键": {
+        "action": "Click",
+        "pre_delay": 1000,
+        "post_delay": 1500,
+        "recognition": "TemplateMatch",
+        "template": "Button/Home.PNG",
+        "roi": [
+            168,
+            30,
+            44,
+            38
+        ]
+    },
+    "Click_返回上一级键": {
+        "action": "Click",
+        "pre_delay": 1000,
+        "post_delay": 2000,
+        "recognition": "TemplateMatch",
+        "template": "Button/Back.PNG",
+        "roi": [
+            51,
+            31,
+            33,
+            39
+        ]
+    },
+    "Click_确定": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "确定",
+        "pre_delay": 500,
+        "roi": [
+            565,
+            720,
+            70,
+            100
+        ]
+    },
+    "Click_过期资源确定": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "确定",
+        "pre_delay": 500,
+        "roi": [
+            565,
+            720,
+            70,
+            40
+        ]
+    },
+    "Click_主界面思绪": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "思绪"
+        ],
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "roi": [
+            181,
+            1232,
+            70,
+            34
+        ]
+    },
+    "Click_主界面左侧菜单": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/主界面菜单.PNG",
+        "green_mask": true,
+        "roi": [
+            22,
+            150,
+            50,
+            50
+        ]
+    },
+    "Click_X按钮": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/XKey.png",
+        "green_mask": true,
+        "threshold": 0.5,
+        "pre_delay": 1000,
+        "roi": [
+            341,
+            1100,
+            37,
+            65
+        ]
+    },
+    "Click_结束": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "结束",
+        "pre_wait_freezes": {
+            "time": 800,
+            "target": [
+                43,
+                243,
+                600,
+                724
+            ]
+        },
+        "pre_delay": 6000,
+        "roi": [
+            300,
+            800,
+            300,
+            300
+        ]
+    },
+    "Click_退出手机": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "好感/退出手机.png",
+        "pre_delay": 800,
+        "roi": [
+            330,
+            1146,
+            60,
+            55
+        ]
+    },
+    "Click_好感系统返回键": {
+        "action": "Click",
+        "pre_delay": 1000,
+        "recognition": "TemplateMatch",
+        "template": "好感/好感返回键.png",
+        "roi": [
+            10,
+            1074,
+            59,
+            57
+        ]
+    },
+    "Click_一键领取亮": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/一键领取亮.PNG",
+        "pre_delay": 1000,
+        "roi": [
+            550,
+            1160,
+            120,
+            50
+        ]
+    },
+    "Click_事件簿": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Debate/Story.png",
+        "pre_delay": 500,
+        "roi": [
+            596,
+            990,
+            66,
+            26
+        ]
+    },
+    "Flag_主界面任务": {
+        "recognition": "TemplateMatch",
+        "template": "Button/任务.PNG",
+        "pre_delay": 1500,
+        "post_delay": 1000,
+        "roi": [
+            28,
+            359,
+            44,
+            40
+        ]
+    },
+    "Flag_TipsLoading": {
+        "recognition": "OCR",
+        "expected": "Tips",
+        "pre_delay": 800,
+        "post_delay": 3000,
+        "roi": [
+            448,
+            258,
+            99,
+            56
+        ]
+    },
+    "Flag_In思绪": {
+        "recognition": "OCR",
+        "expected": [
+            "思绪整理"
+        ],
+        "pre_delay": 800,
+        "roi": [
+            590,
+            30,
+            104,
+            36
+        ]
+    }
+}

@@ -1,0 +1,182 @@
+{
+    "StartUp": {
+        "next": [
+            "Flag_主界面任务",
+            "Click_关闭奖励弹窗",
+            "Click_返回主界面键",
+            "Click_返回上一级键",
+            "Click_X按钮",
+            "Click_结束",
+            "Click_退出手机",
+            "Click_好感系统返回键",
+            "StartTOT"
+        ]
+    },
+    "StartTOT": {
+        "action": "StartApp",
+        "package": "com.miHoYo.wd/com.miHoYo.wd.MainActivity",
+        "next": [
+            "StartApp"
+        ]
+    },
+    "StartApp": {
+        "next": [
+            "点击进入",
+            "Flag_更新版本"
+        ],
+        "interrupt": [
+            "Flag_ThemisLoading",
+            "Flag_StartLoadingVersion",
+            "Flag_TipsLoading",
+            "Click_下载确定",
+            "Flag_MihoyoSlogan"
+        ]
+    },
+    "点击进入": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/TapToStart.png",
+        "pre_delay": 800,
+        "roi": [
+            277,
+            975,
+            164,
+            36
+        ],
+        "next": [
+            "领取登录奖励",
+            "关闭广告弹窗"
+        ],
+        "interrupt": [
+            "Flag_TipsLoading",
+            "Click_点击进入"
+        ]
+    },
+    "领取登录奖励": {
+        "recognition": "OCR",
+        "expected": "获得奖励",
+        "roi": [
+            300,
+            228,
+            120,
+            220
+        ],
+        "post_delay": 1000,
+        "next": [
+            "关闭广告弹窗"
+        ],
+        "interrupt": [
+            "Click_关闭奖励弹窗",
+            "Click_返回上一级键",
+            "Click_过期资源确定"
+        ]
+    },
+    "关闭广告弹窗": {
+        "recognition": "OCR",
+        "expected": [
+            "思绪"
+        ],
+        "roi": [
+            181,
+            1232,
+            70,
+            34
+        ],
+        "next": [
+            "Flag_In思绪"
+        ],
+        "interrupt": [
+            "Click_主界面思绪",
+            "Click_过期资源确定"
+        ]
+    },
+    "Click_下载确定": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "确定",
+        "pre_delay": 500,
+        "post_delay": 10000,
+        "roi": [
+            550,
+            700,
+            93,
+            47
+        ]
+    },
+    "Click_点击进入": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "StartUp/TapToStart.png",
+        "pre_delay": 800,
+        "post_delay": 5000,
+        "roi": [
+            277,
+            975,
+            164,
+            36
+        ]
+    },
+    "Click_官服接受协议": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "接受",
+        "post_delay": 1500,
+        "roi": [
+            381,
+            767,
+            261,
+            71
+        ]
+    },
+    "Flag_MihoyoSlogan": {
+        "recognition": "OCR",
+        "expected": [
+            "TECHOTAKUSSAVETHEWORLD",
+            "TECH OTAKUS SAVE THE WORLD"
+        ],
+        "post_delay": 800,
+        "roi": [
+            166,
+            436,
+            384,
+            33
+        ]
+    },
+    "Flag_StartLoadingVersion": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/StartLoading.png",
+        "post_delay": 3000,
+        "roi": [
+            112,
+            960,
+            480,
+            184
+        ]
+    },
+    "Flag_ThemisLoading": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/ThemisLoading.png",
+        "pre_wait_freezes": 800,
+        "post_delay": 2000,
+        "roi": [
+            290,
+            290,
+            110,
+            210
+        ]
+    },
+    "Flag_更新版本": {
+        "focus": true,
+        "action": "StopTask",
+        "recognition": "OCR",
+        "expected": [
+            "请点击确定更新至最新版本"
+        ],
+        "post_delay": 800,
+        "roi": [
+            200,
+            554,
+            321,
+            43
+        ]
+    }
+}

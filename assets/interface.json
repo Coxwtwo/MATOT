@@ -22,6 +22,10 @@
     ],
     "task": [
         {
+            "name": "启动游戏",
+            "entry": "StartUp"
+        },
+        {
             "name": "退出游戏",
             "entry": "CloseTOT"
         }
