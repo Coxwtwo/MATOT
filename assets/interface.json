@@ -85,9 +85,54 @@
             "entry": "领取任务奖励"
         },
         {
+            "name": "好感度",
+            "entry": "好感度",
+            "option": [
+                "好感度男主"
+            ]
+        },
+        {
             "name": "退出游戏",
             "entry": "CloseTOT"
         }
     ],
+    "option": {
+        "好感度男主": {
+            "cases": [
+                {
+                    "name": "夏彦",
+                    "pipeline_override": {
+                        "Click_选择好感男主": {
+                            "template": "好感/好感夏彦.png"
+                        }
+                    }
+                },
+                {
+                    "name": "左然",
+                    "pipeline_override": {
+                        "Click_选择好感男主": {
+                            "template": "好感/好感左然.png"
+                        }
+                    }
+                },
+                {
+                    "name": "莫弈",
+                    "pipeline_override": {
+                        "Click_选择好感男主": {
+                            "template": "好感/好感莫弈.png"
+                        }
+                    }
+                },
+                {
+                    "name": "陆景和",
+                    "pipeline_override": {
+                        "Click_选择好感男主": {
+                            "template": "好感/好感陆景和.png"
+                        }
+                    }
+                }
+            ]
+        }
+    },
     "version": "v2.0.0-alpha"
 }

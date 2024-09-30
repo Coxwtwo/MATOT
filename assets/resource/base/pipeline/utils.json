@@ -10,7 +10,7 @@
             "Click_X按钮",
             "Click_结束",
             "Click_退出手机",
-            "Click_好感系统返回键",
+            "Click_退出好感交流",
             "Click_确定"
         ]
     },
@@ -157,7 +157,7 @@
             55
         ]
     },
-    "Click_好感系统返回键": {
+    "Click_退出好感交流": {
         "action": "Click",
         "pre_delay": 1000,
         "recognition": "TemplateMatch",
@@ -167,6 +167,9 @@
             1074,
             59,
             57
+        ],
+        "next": [
+            "Click_返回主界面键"
         ]
     },
     "Click_一键领取亮": {

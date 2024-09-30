@@ -1,0 +1,110 @@
+{
+    "好感度": {
+        "next": [
+            "Click_主界面手机"
+        ],
+        "interrupt": [
+            "返回主界面"
+        ]
+    },
+    "Click_主界面手机": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "好感/手机.png",
+        "pre_delay": 800,
+        "post_delay": 800,
+        "roi": [
+            46,
+            1007,
+            45,
+            46
+        ],
+        "next": [
+            "Click_选择好感男主"
+        ]
+    },
+    "Click_选择好感男主": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "",
+        "pre_delay": 1000,
+        "roi": [
+            120,
+            135,
+            500,
+            320
+        ],
+        "next": [
+            "Click_好感交流"
+        ]
+    },
+    "Click_好感交流": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "交流",
+            "交",
+            "立"
+        ],
+        "pre_delay": 1000,
+        "roi": [
+            38,
+            1084,
+            57,
+            28
+        ],
+        "next": [
+            "触摸获得好感"
+        ]
+    },
+    "触摸获得好感": {
+        "next": [
+            "Flag_今日好感度获取完毕"
+        ],
+        "interrupt": [
+            "Click_好感度等级提升",
+            "Click_触摸获得好感"
+        ]
+    },
+    "Click_触摸获得好感": {
+        "action": "Click",
+        "post_delay": 1000,
+        "target": [
+            204,
+            539,
+            315,
+            192
+        ]
+    },
+    "Flag_今日好感度获取完毕": {
+        "recognition": "OCR",
+        "expected": "今日好感度获取完毕",
+        "roi": [
+            56,
+            1198,
+            209,
+            33
+        ],
+        "next": [
+            "Click_退出好感交流"
+        ]
+    },
+    "Click_好感度等级提升": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "好感度等级提升",
+        "post_delay": 1000,
+        "target": [
+            300,
+            1100,
+            50,
+            50
+        ],
+        "roi": [
+            56,
+            1198,
+            209,
+            33
+        ]
+    }
+}
