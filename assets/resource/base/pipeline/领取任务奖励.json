@@ -1,0 +1,132 @@
+{
+    "领取任务奖励": {
+        "next": [
+            "Click_任务"
+        ],
+        "interrupt": [
+            "返回主界面"
+        ]
+    },
+    "Click_任务": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/任务.PNG",
+        "roi": [
+            28,
+            359,
+            44,
+            40
+        ],
+        "next": [
+            "Click_每日"
+        ]
+    },
+    "Click_每日": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "每",
+            "母",
+            "每日"
+        ],
+        "roi": [
+            208,
+            123,
+            70,
+            36
+        ],
+        "next": [
+            "Flag_Inverse_每日任务奖励领取键"
+        ],
+        "interrupt": [
+            "Click_一键领取亮",
+            "Click_关闭奖励弹窗"
+        ]
+    },
+    "Flag_Inverse_每日任务奖励领取键": {
+        "inverse": true,
+        "recognition": "TemplateMatch",
+        "template": "Button/任务奖励领取.PNG",
+        "post_delay": 1000,
+        "roi": [
+            560,
+            470,
+            70,
+            40
+        ],
+        "next": [
+            "Click_一键领取每日活跃度"
+        ]
+    },
+    "Click_一键领取每日活跃度": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/一键领取亮.PNG",
+        "pre_delay": 500,
+        "post_delay": 1000,
+        "roi": [
+            570,
+            1172,
+            90,
+            40
+        ],
+        "next": [
+            "Click_每周"
+        ],
+        "interrupt": [
+            "Click_关闭奖励弹窗"
+        ]
+    },
+    "Click_每周": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "每",
+            "母",
+            "每周"
+        ],
+        "roi": [
+            443,
+            126,
+            67,
+            32
+        ],
+        "next": [
+            "Flag_Inverse_每周任务奖励领取键"
+        ],
+        "interrupt": [
+            "Click_一键领取亮",
+            "Click_关闭奖励弹窗"
+        ]
+    },
+    "Flag_Inverse_每周任务奖励领取键": {
+        "inverse": true,
+        "recognition": "TemplateMatch",
+        "template": "Button/任务奖励领取.PNG",
+        "roi": [
+            560,
+            470,
+            70,
+            40
+        ],
+        "next": [
+            "Click_一键领取每周活跃度"
+        ]
+    },
+    "Click_一键领取每周活跃度": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/一键领取亮.PNG",
+        "pre_delay": 500,
+        "post_delay": 1000,
+        "roi": [
+            570,
+            1172,
+            90,
+            40
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    }
+}

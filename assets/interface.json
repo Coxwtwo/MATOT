@@ -26,6 +26,65 @@
             "entry": "StartUp"
         },
         {
+            "name": "领取邮件",
+            "entry": "领取邮件",
+            "pipeline_override": {
+                "Click_一键领取亮": {
+                    "next": [
+                        "返回主界面"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "领取友谊徽章",
+            "entry": "领取友谊徽章",
+            "pipeline_override": {
+                "Click_一键领取亮": {
+                    "next": [
+                        "返回主界面"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "领取资源申请",
+            "entry": "领取资源申请",
+            "pipeline_override": {
+                "Click_基地": {
+                    "next": [
+                        "Click_资源申请"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "领取案件解析",
+            "entry": "领取案件解析",
+            "pipeline_override": {
+                "Click_基地": {
+                    "next": [
+                        "Click_资料室"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "领取酬谢",
+            "entry": "领取酬谢",
+            "pipeline_override": {
+                "Click_基地": {
+                    "next": [
+                        "Click_酬谢"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "领取任务奖励",
+            "entry": "领取任务奖励"
+        },
+        {
             "name": "退出游戏",
             "entry": "CloseTOT"
         }

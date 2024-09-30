@@ -16,8 +16,8 @@
     },
     "Click_关闭奖励弹窗": {
         "action": "Click",
-        "recognition": "TemplateMatch",
-        "template": "Button/获得奖励.png",
+        "recognition": "OCR",
+        "expected": "获得奖励",
         "pre_delay": 1000,
         "post_delay": 1000,
         "target": [
@@ -30,7 +30,7 @@
             305,
             230,
             110,
-            190
+            200
         ]
     },
     "Click_返回主界面键": {
@@ -174,6 +174,7 @@
         "recognition": "TemplateMatch",
         "template": "Button/一键领取亮.PNG",
         "pre_delay": 1000,
+        "post_delay": 1000,
         "roi": [
             550,
             1160,
@@ -228,6 +229,17 @@
             30,
             104,
             36
+        ]
+    },
+    "Flag_一键领取暗": {
+        "recognition": "TemplateMatch",
+        "template": "Button/一键领取暗.PNG",
+        "pre_delay": 800,
+        "roi": [
+            550,
+            1160,
+            120,
+            50
         ]
     }
 }

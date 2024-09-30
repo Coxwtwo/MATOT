@@ -1,0 +1,286 @@
+{
+    "打开基地和沙龙": {
+        "recognition": "OCR",
+        "expected": [
+            "基地",
+            "基址"
+        ],
+        "roi": [
+            445,
+            1232,
+            54,
+            30
+        ],
+        "next": [
+            "Click_基地"
+        ],
+        "interrupt": [
+            "Click_基地和沙龙"
+        ]
+    },
+    "Click_基地和沙龙": {
+        "action": "Click",
+        "recognition": "OCR",
+        "post_delay": 1000,
+        "expected": [
+            "基地",
+            "基址"
+        ],
+        "roi": [
+            445,
+            1232,
+            54,
+            30
+        ]
+    },
+    "Click_基地": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "基地",
+            "基址"
+        ],
+        "post_delay": 4000,
+        "roi": [
+            431,
+            1064,
+            64,
+            38
+        ]
+    },
+    "领取资源申请": {
+        "next": [
+            "打开基地和沙龙"
+        ],
+        "interrupt": [
+            "返回主界面"
+        ]
+    },
+    "Click_资源申请": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "资源申请",
+        "post_delay": 2000,
+        "roi": [
+            555,
+            908,
+            128,
+            49
+        ],
+        "next": [
+            "Flag_In资源申请"
+        ]
+    },
+    "Flag_In资源申请": {
+        "recognition": "OCR",
+        "expected": "资源",
+        "roi": [
+            50,
+            135,
+            100,
+            50
+        ],
+        "next": [
+            "Flag_Inverse_资源申请领取"
+        ],
+        "interrupt": [
+            "Click_关闭奖励弹窗",
+            "Click_一键领取亮"
+        ]
+    },
+    "Flag_Inverse_资源申请领取": {
+        "inverse": true,
+        "recognition": "TemplateMatch",
+        "template": "Button/资源申请领取.PNG",
+        "roi": [
+            160,
+            500,
+            52,
+            32
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "领取案件解析": {
+        "next": [
+            "打开基地和沙龙"
+        ],
+        "interrupt": [
+            "返回主界面"
+        ]
+    },
+    "Click_资料室": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "资料室",
+        "post_delay": 1000,
+        "roi": [
+            582,
+            1013,
+            104,
+            47
+        ],
+        "next": [
+            "Flag_In资料室"
+        ]
+    },
+    "Flag_In资料室": {
+        "recognition": "OCR",
+        "expected": "资料",
+        "roi": [
+            50,
+            156,
+            100,
+            50
+        ],
+        "next": [
+            "Flag_Inverse_资料解析领取"
+        ],
+        "interrupt": [
+            "Click_一键领取亮",
+            "Click_X按钮"
+        ]
+    },
+    "Flag_Inverse_资料解析领取": {
+        "inverse": true,
+        "recognition": "TemplateMatch",
+        "template": "Button/资料解析领取.PNG",
+        "post_delay": 1000,
+        "roi": [
+            544,
+            490,
+            52,
+            30
+        ],
+        "next": [
+            "资料解析"
+        ]
+    },
+    "资料解析": {
+        "next": [
+            "Flag_资料未解析",
+            "Flag_资料解析中"
+        ]
+    },
+    "Flag_资料未解析": {
+        "recognition": "TemplateMatch",
+        "template": "Button/资料未解析.PNG",
+        "post_delay": 1000,
+        "roi": [
+            620,
+            368,
+            34,
+            34
+        ],
+        "next": [
+            "Click_一键解析"
+        ]
+    },
+    "Flag_资料解析中": {
+        "recognition": "TemplateMatch",
+        "template": "Button/资料解析中.PNG",
+        "post_delay": 1000,
+        "roi": [
+            620,
+            368,
+            34,
+            34
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "Click_一键解析": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "一键解析",
+            "键解析"
+        ],
+        "pre_delay": 1000,
+        "post_delay": 800,
+        "roi": [
+            502,
+            1157,
+            162,
+            49
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "领取酬谢": {
+        "next": [
+            "打开基地和沙龙"
+        ],
+        "interrupt": [
+            "返回主界面"
+        ]
+    },
+    "Click_酬谢": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/酬谢.png",
+        "post_delay": 1000,
+        "roi": [
+            608,
+            237,
+            41,
+            70
+        ],
+        "next": [
+            "Flag_奖励已领取"
+        ],
+        "interrupt": [
+            "Click_关闭奖励弹窗",
+            "Click_点击开启",
+            "Click_领取奖励"
+        ]
+    },
+    "Flag_奖励已领取": {
+        "recognition": "OCR",
+        "expected": "奖励已领取",
+        "roi": [
+            292,
+            1077,
+            135,
+            44
+        ],
+        "next": [
+            "返回主界面"
+        ]
+    },
+    "Click_领取奖励": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "领取奖励",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "roi": [
+            292,
+            1077,
+            135,
+            44
+        ]
+    },
+    "Click_点击开启": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "点击开启",
+        "pre_delay": 800,
+        "post_delay": 1200,
+        "target": [
+            375,
+            700,
+            30,
+            30
+        ],
+        "roi": [
+            305,
+            813,
+            109,
+            44
+        ]
+    }
+}

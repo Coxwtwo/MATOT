@@ -1,0 +1,27 @@
+{
+    "领取友谊徽章": {
+        "next": [
+            "Click_好友"
+        ],
+        "interrupt": [
+            "Click_主界面左侧菜单",
+            "返回主界面"
+        ]
+    },
+    "Click_好友": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/好友.png",
+        "green_mask": true,
+        "post_delay": 800,
+        "roi": [
+            205,
+            147,
+            41,
+            47
+        ],
+        "next": [
+            "Click_一键领取亮"
+        ]
+    }
+}

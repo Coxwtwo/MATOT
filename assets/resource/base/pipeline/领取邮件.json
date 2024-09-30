@@ -1,0 +1,27 @@
+{
+    "领取邮件": {
+        "next": [
+            "Click_邮件"
+        ],
+        "interrupt": [
+            "Click_主界面左侧菜单",
+            "返回主界面"
+        ]
+    },
+    "Click_邮件": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/邮件.PNG",
+        "green_mask": true,
+        "post_delay": 800,
+        "roi": [
+            293,
+            149,
+            45,
+            45
+        ],
+        "next": [
+            "Click_一键领取亮"
+        ]
+    }
+}
