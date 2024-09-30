@@ -1,0 +1,288 @@
+{
+    "专属甜心": {
+        "next": [
+            "Click_甜心缩",
+            "Click_甜心伸"
+        ],
+        "interrupt": [
+            "返回主界面"
+        ]
+    },
+    "Click_甜心缩": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "专属甜心/甜心右手缩.png",
+        "pre_delay": 800,
+        "post_delay": 5000,
+        "roi": [
+            0,
+            778,
+            12,
+            16
+        ],
+        "next": [
+            "Click_剪刀"
+        ]
+    },
+    "Click_甜心伸": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "专属甜心/甜心右手伸.png",
+        "pre_delay": 800,
+        "post_delay": 5000,
+        "roi": [
+            0,
+            778,
+            12,
+            16
+        ],
+        "next": [
+            "Click_剪刀"
+        ]
+    },
+    "Click_剪刀": {
+        "action": "Click",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "recognition": "TemplateMatch",
+        "template": "Button/甜心剪刀.png",
+        "roi": [
+            427,
+            1164,
+            65,
+            51
+        ],
+        "next": [
+            "Click_选择第一行制作中图纸",
+            "Click_选择第二行制作中图纸",
+            "Click_选择第一张图纸",
+            "Click_具体制作步骤",
+            "Flag_Inverse_第一行可制作图纸",
+            "Flag_Inverse_第二行可制作图纸"
+        ]
+    },
+    "Flag_Inverse_第一行可制作图纸": {
+        "inverse": true,
+        "pre_delay": 1000,
+        "recognition": "TemplateMatch",
+        "template": "专属甜心/图纸空进度条.png",
+        "roi": [
+            36,
+            955,
+            648,
+            13
+        ],
+        "next": [
+            "Click_返回主界面键"
+        ]
+    },
+    "Flag_Inverse_第二行可制作图纸": {
+        "inverse": true,
+        "pre_delay": 1000,
+        "recognition": "TemplateMatch",
+        "template": "专属甜心/图纸空进度条.png",
+        "roi": [
+            36,
+            1112,
+            648,
+            13
+        ],
+        "next": [
+            "Click_返回主界面键"
+        ]
+    },
+    "Click_选择第一行制作中图纸": {
+        "action": "Click",
+        "pre_delay": 1000,
+        "recognition": "TemplateMatch",
+        "template": "专属甜心/图纸制作中.png",
+        "roi": [
+            36,
+            955,
+            648,
+            13
+        ],
+        "next": [
+            "Click_开始制作",
+            "Click_具体制作步骤"
+        ]
+    },
+    "Click_选择第二行制作中图纸": {
+        "action": "Click",
+        "pre_delay": 1000,
+        "recognition": "TemplateMatch",
+        "template": "专属甜心/图纸制作中.png",
+        "roi": [
+            36,
+            1112,
+            648,
+            13
+        ],
+        "next": [
+            "Click_开始制作"
+        ]
+    },
+    "Click_选择第一张图纸": {
+        "action": "Click",
+        "pre_delay": 1000,
+        "recognition": "TemplateMatch",
+        "template": "专属甜心/图纸空进度条.png",
+        "roi": [
+            120,
+            954,
+            16,
+            16
+        ],
+        "next": [
+            "Click_开始制作"
+        ]
+    },
+    "Click_开始制作": {
+        "action": "Click",
+        "pre_delay": 1000,
+        "recognition": "OCR",
+        "expected": "开始制作",
+        "roi": [
+            562,
+            724,
+            118,
+            45
+        ],
+        "next": [
+            "Click_具体制作步骤"
+        ]
+    },
+    "Click_具体制作步骤": {
+        "action": "Click",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "recognition": "OCR",
+        "expected": [
+            "制版",
+            "缝边",
+            "调版",
+            "定版",
+            "缝制",
+            "裁片",
+            "测量",
+            "涂胶",
+            "组装",
+            "适配",
+            "固定",
+            "制作",
+            "修改"
+        ],
+        "roi": [
+            287,
+            970,
+            147,
+            62
+        ],
+        "next": [
+            "Flag_蜜意甜心值不足",
+            "Flag_自动制作中",
+            "Flag_Zero蜜意甜心值"
+        ]
+    },
+    "Flag_自动制作中": {
+        "recognition": "OCR",
+        "expected": [
+            "自动",
+            "三动",
+            "自云",
+            "三云"
+        ],
+        "pre_wait_freezes": 800,
+        "post_delay": 1000,
+        "roi": [
+            618,
+            1226,
+            60,
+            40
+        ],
+        "next": [
+            "Flag_自动制作中",
+            "Click_具体制作步骤",
+            "Click_甜心自动剧情"
+        ]
+    },
+    "Click_甜心自动剧情": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/自动剧情.png",
+        "pre_delay": 800,
+        "post_delay": 2000,
+        "roi": [
+            522,
+            1162,
+            31,
+            40
+        ],
+        "next": [
+            "Click_关闭甜心奖励弹窗"
+        ],
+        "interrupt": [
+            "Flag_自动剧情开启中"
+        ]
+    },
+    "Click_关闭甜心奖励弹窗": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": "获得奖励",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "target": [
+            300,
+            1000,
+            30,
+            30
+        ],
+        "roi": [
+            305,
+            230,
+            110,
+            200
+        ],
+        "next": [
+            "Click_选择第一行制作中图纸",
+            "Click_选择第二行制作中图纸",
+            "Click_选择第一张图纸",
+            "Flag_Inverse_第一行可制作图纸",
+            "Flag_Inverse_第二行可制作图纸"
+        ]
+    },
+    "Flag_Zero蜜意甜心值": {
+        "pre_delay": 1000,
+        "recognition": "OCR",
+        "expected": [
+            "Q",
+            "0/2",
+            "?"
+        ],
+        "roi": [
+            621,
+            1171,
+            35,
+            30
+        ],
+        "next": [
+            "Click_返回主界面键"
+        ]
+    },
+    "Flag_蜜意甜心值不足": {
+        "pre_delay": 1000,
+        "recognition": "OCR",
+        "expected": [
+            "蜜意甜心值不足"
+        ],
+        "roi": [
+            218,
+            546,
+            156,
+            34
+        ],
+        "next": [
+            "Click_返回主界面键"
+        ]
+    }
+}

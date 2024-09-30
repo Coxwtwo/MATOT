@@ -111,17 +111,16 @@
         ]
     },
     "Click_X按钮": {
-        "action": "Click",
         "recognition": "TemplateMatch",
         "template": "Button/XKey.png",
         "green_mask": true,
-        "threshold": 0.5,
+        "threshold": 0.45,
         "pre_delay": 1000,
         "roi": [
-            341,
-            1100,
-            37,
-            65
+            340,
+            1000,
+            38,
+            200
         ]
     },
     "Click_结束": {
@@ -177,7 +176,7 @@
         "recognition": "TemplateMatch",
         "template": "Button/一键领取亮.PNG",
         "pre_delay": 1000,
-        "post_delay": 1000,
+        "post_delay": 1500,
         "roi": [
             550,
             1160,
@@ -195,6 +194,46 @@
             990,
             66,
             26
+        ]
+    },
+    "Click_自动剧情": {
+        "action": "Click",
+        "recognition": "TemplateMatch",
+        "template": "Button/自动剧情.png",
+        "pre_delay": 800,
+        "post_delay": 3000,
+        "roi": [
+            522,
+            1162,
+            31,
+            40
+        ]
+    },
+    "Click_跳过剧情": {
+        "action": "Click",
+        "recognition": "OCR",
+        "expected": [
+            "跳过"
+        ],
+        "pre_delay": 800,
+        "post_delay": 10000,
+        "roi": [
+            619,
+            1208,
+            46,
+            27
+        ]
+    },
+    "Flag_自动剧情开启中": {
+        "recognition": "TemplateMatch",
+        "template": "Button/自动剧情开启中.png",
+        "pre_wait_freezes": 800,
+        "post_delay": 5000,
+        "roi": [
+            532,
+            1162,
+            33,
+            40
         ]
     },
     "Flag_主界面任务": {
