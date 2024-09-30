@@ -44,7 +44,7 @@
 
 前置准备:
 
-1. 请参考 [模拟器支持情况](https://maa.plus/docs/1.3-模拟器支持.html) 下载模拟器，推荐使用 `MuMu 模拟器 12`。
+1. 可以参考 [模拟器支持情况](https://maa.plus/docs/zh-cn/manual/device/windows.html) 下载模拟器，推荐使用 `MuMu 模拟器 12`。
 
 2. 修改模拟器分辨率，最低 `1280 * 720`，更高不限。
 
@@ -78,6 +78,7 @@
 如果你希望参与开发才需要看这节，使用本项目开发的软件请看 [如何使用](#如何使用) 这节。
 
 本项目基于MaaFramework开发，在开发前，请先了解 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 相关事项。
+
 开发相关事项请查看文档 [开发相关](./docs/开发相关.md) 。
 
 ## 鸣谢
