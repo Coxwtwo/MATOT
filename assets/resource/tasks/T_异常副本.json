@@ -1404,6 +1404,12 @@
                     "option": [
                         "陆景和斡旋思绪残影关卡"
                     ]
+                },
+                {
+                    "name": "片言",
+                    "option": [
+                        "陆景和片言思绪残影关卡"
+                    ]
                 }
             ]
         },
@@ -2040,6 +2046,25 @@
                             "expected": "8"
                         }
                     }
+                },
+                {
+                    "name": "20-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-07"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
                 }
             ]
         },
@@ -2317,6 +2342,47 @@
                             "expected": "9"
                         }
                     }
+                },
+                {
+                    "name": "20-07",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-07"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "20-15",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-15"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
+                        }
+                    }
                 }
             ]
         },
@@ -2543,6 +2609,25 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "18-05"
+                        }
+                    }
+                },
+                {
+                    "name": "20-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-05"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
                         }
                     }
                 }
@@ -2793,6 +2878,47 @@
                             "expected": "18-23"
                         }
                     }
+                },
+                {
+                    "name": "20-05",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-05"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "20-13",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-13"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
+                        }
+                    }
                 }
             ]
         },
@@ -2886,6 +3012,25 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "19-07"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "20-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-06"
                         },
                         "Flag_异常关卡列表最下端": {
                             "expected": "8"
@@ -3118,6 +3263,25 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "19-07"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "20-06",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-06"
                         },
                         "Flag_异常关卡列表最下端": {
                             "expected": "8"
@@ -3369,6 +3533,28 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "19-15"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
+                        }
+                    }
+                },
+                {
+                    "name": "20-14",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-14"
                         },
                         "Flag_异常关卡列表最下端": {
                             "expected": "16"
@@ -4438,6 +4624,47 @@
                             "expected": "9"
                         }
                     }
+                },
+                {
+                    "name": "20-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-01"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "20-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-09"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
+                        }
+                    }
                 }
             ]
         },
@@ -4955,6 +5182,47 @@
                             "expected": "9"
                         }
                     }
+                },
+                {
+                    "name": "20-01",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-01"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "20-09",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-09"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
+                        }
+                    }
                 }
             ]
         },
@@ -5420,6 +5688,47 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "19-10"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
+                        }
+                    }
+                },
+                {
+                    "name": "20-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-02"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "20-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-10"
                         },
                         "Flag_异常关卡列表最下端": {
                             "expected": "16"
@@ -5945,6 +6254,47 @@
                             "expected": "9"
                         }
                     }
+                },
+                {
+                    "name": "20-02",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-02"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "20-10",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-10"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
+                        }
+                    }
                 }
             ]
         },
@@ -6410,6 +6760,47 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "19-11"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
+                        }
+                    }
+                },
+                {
+                    "name": "20-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-03"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "20-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-11"
                         },
                         "Flag_异常关卡列表最下端": {
                             "expected": "16"
@@ -6935,6 +7326,47 @@
                             "expected": "9"
                         }
                     }
+                },
+                {
+                    "name": "20-03",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-03"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "20-11",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-11"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
+                        }
+                    }
                 }
             ]
         },
@@ -7015,6 +7447,94 @@
                         },
                         "Click_进入异常关卡": {
                             "expected": "19-16"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
+                        }
+                    }
+                }
+            ]
+        },
+        "陆景和片言思绪残影关卡": {
+            "type": "select",
+            "label": "片言",
+            "cases": [
+                {
+                    "name": "20-04",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-04"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "20-08",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P1.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-08"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "8"
+                        }
+                    }
+                },
+                {
+                    "name": "20-12",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-12"
+                        },
+                        "Flag_异常关卡列表最下端": {
+                            "expected": "16"
+                        },
+                        "Flag_异常关卡列表最上端": {
+                            "expected": "9"
+                        }
+                    }
+                },
+                {
+                    "name": "20-16",
+                    "pipeline_override": {
+                        "Click_选择主线篇章": {
+                            "expected": "亚宁篇"
+                        },
+                        "Click_进入异常副本": {
+                            "recognition": "TemplateMatch",
+                            "template": "Debate/E20P2.png",
+                            "threshold": 0.93
+                        },
+                        "Click_进入异常关卡": {
+                            "expected": "20-16"
                         },
                         "Flag_异常关卡列表最下端": {
                             "expected": "16"
